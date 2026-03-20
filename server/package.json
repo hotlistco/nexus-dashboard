@@ -1,0 +1,18 @@
+{
+  "name": "nexus-dashboard-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "google-tasks-token": "node get-google-tasks-token.mjs"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.1",
+    "googleapis": "^149.0.0"
+  }
+}
+
