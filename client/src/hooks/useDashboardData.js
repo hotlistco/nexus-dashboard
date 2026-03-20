@@ -3,6 +3,33 @@ import { dashboardApi } from '../lib/api';
 import { initTizenRemoteKeys, isTizenDevice } from '../lib/tizenRemote';
 
 const modes = ['news', 'trends', 'stocks', 'learning', 'tasks'];
+const modeDurationsMs = {
+  news: 20000,
+  trends: 16000,
+  stocks: 16000,
+  learning: 18000,
+  tasks: 20000
+};
+
+const fallbackTasks = {
+  source: 'fallback',
+  configured: false,
+  listName: 'Sample Tasks',
+  items: [
+    { id: '1', title: 'Schedule dentist appointment', completed: false, status: 'needsAction', due: null },
+    { id: '2', title: 'Call mom', completed: false, status: 'needsAction', due: null },
+    { id: '3', title: 'Prep Monday priorities', completed: false, status: 'needsAction', due: null },
+    { id: '4', title: 'Order household supplies', completed: true, status: 'completed', due: null }
+  ],
+  groups: {
+    overdue: [{ id: '1', title: 'Schedule dentist appointment', completed: false, status: 'needsAction', due: null }],
+    today: [{ id: '2', title: 'Call mom', completed: false, status: 'needsAction', due: null }],
+    upcoming: [{ id: '3', title: 'Prep Monday priorities', completed: false, status: 'needsAction', due: null }],
+    completed: [{ id: '4', title: 'Order household supplies', completed: true, status: 'completed', due: null }]
+  },
+  summary: { total: 4, overdue: 1, today: 1, upcoming: 1, completed: 1 }
+};
+
 const learningPool = [
   {
     type: 'Quote',
@@ -17,7 +44,7 @@ const learningPool = [
   {
     type: 'Fact',
     title: 'Forecast cadence',
-    body: 'OpenWeather recommends calling its One Call API periodically; current data can update on short intervals, so caching avoids needless traffic.'
+    body: 'OpenWeather recommends periodic refreshes and local caching so your display stays current without over-polling.'
   }
 ];
 
@@ -42,7 +69,7 @@ export function useDashboardData() {
     news: [],
     trends: [],
     stocks: [],
-    tasks: [],
+    tasks: fallbackTasks,
     error: null,
     updatedAt: null
   });
@@ -51,11 +78,12 @@ export function useDashboardData() {
   const [rotationPaused, setRotationPaused] = useState(false);
   const [lastRemoteAction, setLastRemoteAction] = useState('');
   const [clock, setClock] = useState(getNowStrings);
+  const [activeTaskGroupIndex, setActiveTaskGroupIndex] = useState(0);
 
   const setRemoteAction = useCallback((message) => {
     setLastRemoteAction(message);
-    window.clearTimeout(globalThis.__tviewRemoteToastTimeout);
-    globalThis.__tviewRemoteToastTimeout = window.setTimeout(() => {
+    window.clearTimeout(globalThis.__nexusRemoteToastTimeout);
+    globalThis.__nexusRemoteToastTimeout = window.setTimeout(() => {
       setLastRemoteAction('');
     }, 2200);
   }, []);
@@ -75,12 +103,12 @@ export function useDashboardData() {
         news: news.items || [],
         trends: trends.items || [],
         stocks: stocks.items || [],
-        tasks: tasks.items || [],
+        tasks: tasks?.groups ? tasks : fallbackTasks,
         error: null,
         updatedAt: new Date().toISOString()
       });
     } catch (error) {
-      setData((current) => ({ ...current, error: error.message }));
+      setData((current) => ({ ...current, error: error.message, tasks: current.tasks?.groups ? current.tasks : fallbackTasks }));
     }
   }, []);
 
@@ -116,18 +144,38 @@ export function useDashboardData() {
 
   useEffect(() => {
     if (rotationPaused) return undefined;
-    const intervalId = window.setInterval(() => {
+    const currentMode = modes[modeIndex];
+    const timeoutId = window.setTimeout(() => {
       nextMode();
-    }, 20000);
-    return () => window.clearInterval(intervalId);
-  }, [rotationPaused, nextMode]);
+    }, modeDurationsMs[currentMode] || 18000);
+    return () => window.clearTimeout(timeoutId);
+  }, [modeIndex, rotationPaused, nextMode]);
 
   useEffect(() => {
     const intervalId = window.setInterval(() => {
       setLearningIndex((current) => (current + 1) % learningPool.length);
-    }, 25000);
+    }, 12000);
     return () => window.clearInterval(intervalId);
   }, []);
+
+  useEffect(() => {
+    if (modes[modeIndex] !== 'tasks') return undefined;
+
+    const groups = [
+      ...(data.tasks?.groups?.overdue || []).length ? ['overdue'] : [],
+      ...(data.tasks?.groups?.today || []).length ? ['today'] : [],
+      ...(data.tasks?.groups?.upcoming || []).length ? ['upcoming'] : [],
+      ...(data.tasks?.groups?.completed || []).length ? ['completed'] : []
+    ];
+
+    if (groups.length <= 1) return undefined;
+
+    const intervalId = window.setInterval(() => {
+      setActiveTaskGroupIndex((current) => (current + 1) % groups.length);
+    }, 2600);
+
+    return () => window.clearInterval(intervalId);
+  }, [modeIndex, data.tasks]);
 
   useEffect(() => {
     initTizenRemoteKeys();
@@ -145,10 +193,6 @@ export function useDashboardData() {
           event.preventDefault();
           break;
         case 'Enter':
-          toggleRotationPaused();
-          setRemoteAction(rotationPaused ? 'Auto-rotate resumed' : 'Auto-rotate paused');
-          event.preventDefault();
-          break;
         case 'MediaPlayPause':
         case 'MediaPlay':
         case 'MediaPause':
@@ -157,6 +201,7 @@ export function useDashboardData() {
           event.preventDefault();
           break;
         case 'ColorF0Red':
+        case 'ArrowUp':
           refresh();
           setRemoteAction('Refreshing data');
           event.preventDefault();
@@ -172,15 +217,6 @@ export function useDashboardData() {
           event.preventDefault();
           break;
         case 'ColorF3Blue':
-          jumpToMode('tasks');
-          setRemoteAction('Mode: tasks');
-          event.preventDefault();
-          break;
-        case 'ArrowUp':
-          refresh();
-          setRemoteAction('Refreshing data');
-          event.preventDefault();
-          break;
         case 'ArrowDown':
           jumpToMode('tasks');
           setRemoteAction('Mode: tasks');
@@ -194,7 +230,7 @@ export function useDashboardData() {
     window.addEventListener('keydown', onKeyDown);
     return () => {
       window.removeEventListener('keydown', onKeyDown);
-      window.clearTimeout(globalThis.__tviewRemoteToastTimeout);
+      window.clearTimeout(globalThis.__nexusRemoteToastTimeout);
     };
   }, [jumpToMode, modeIndex, nextMode, previousMode, refresh, rotationPaused, setRemoteAction, toggleRotationPaused]);
 
@@ -208,8 +244,9 @@ export function useDashboardData() {
       refresh,
       rotationPaused,
       lastRemoteAction,
-      remoteSupported: isTizenDevice()
+      remoteSupported: isTizenDevice(),
+      activeTaskGroupIndex
     }),
-    [data, clock, modeIndex, learningIndex, refresh, rotationPaused, lastRemoteAction]
+    [data, clock, modeIndex, learningIndex, refresh, rotationPaused, lastRemoteAction, activeTaskGroupIndex]
   );
 }

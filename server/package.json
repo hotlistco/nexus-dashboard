@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch src/server.js",
-    "start": "node src/server.js",
-    "google-tasks-token": "node get-google-tasks-token.mjs"
+    "start": "node src/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -15,4 +14,3 @@
     "googleapis": "^149.0.0"
   }
 }
-
