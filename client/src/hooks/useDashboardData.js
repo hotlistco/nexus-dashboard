@@ -2,13 +2,13 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { dashboardApi } from '../lib/api';
 import { initTizenRemoteKeys, isTizenDevice } from '../lib/tizenRemote';
 
-const modes = ['news', 'weather', 'trends', 'stocks', 'learning', 'tasks'];
+const modes = ['news', 'weather', 'trends', 'stocks', 'wod', 'tasks'];
 const modeDurationsMs = {
   news: 20000,
   weather: 16000,
   trends: 16000,
   stocks: 16000,
-  learning: 18000,
+  wod: 20000,
   tasks: 20000
 };
 
@@ -70,6 +70,7 @@ export function useDashboardData() {
     trends: [],
     stocks: [],
     tasks: fallbackTasks,
+    wod: null,
     error: null,
     updatedAt: null
   });
@@ -89,27 +90,44 @@ export function useDashboardData() {
   }, []);
 
   const refresh = useCallback(async () => {
-    try {
-      const [weather, news, trends, stocks, tasks] = await Promise.all([
-        dashboardApi.getWeather(),
-        dashboardApi.getNews(),
-        dashboardApi.getTrends(),
-        dashboardApi.getStocks(),
-        dashboardApi.getTasks()
-      ]);
+    const [weatherResult, newsResult, trendsResult, stocksResult, tasksResult, wodResult] = await Promise.allSettled([
+      dashboardApi.getWeather(),
+      dashboardApi.getNews(),
+      dashboardApi.getTrends(),
+      dashboardApi.getStocks(),
+      dashboardApi.getTasks(),
+      dashboardApi.getWod()
+    ]);
 
-      setData({
-        weather,
-        news: news.items || [],
-        trends: trends.items || [],
-        stocks: stocks.items || [],
-        tasks: tasks?.groups ? tasks : fallbackTasks,
-        error: null,
-        updatedAt: new Date().toISOString()
-      });
-    } catch (error) {
-      setData((current) => ({ ...current, error: error.message, tasks: current.tasks?.groups ? current.tasks : fallbackTasks }));
-    }
+    const errors = [];
+
+    setData((current) => {
+      const next = { ...current, updatedAt: new Date().toISOString() };
+
+      if (weatherResult.status === 'fulfilled') next.weather = weatherResult.value;
+      else errors.push(`Weather: ${weatherResult.reason?.message || 'failed'}`);
+
+      if (newsResult.status === 'fulfilled') next.news = newsResult.value.items || [];
+      else errors.push(`News: ${newsResult.reason?.message || 'failed'}`);
+
+      if (trendsResult.status === 'fulfilled') next.trends = trendsResult.value.items || [];
+      else errors.push(`Trends: ${trendsResult.reason?.message || 'failed'}`);
+
+      if (stocksResult.status === 'fulfilled') next.stocks = stocksResult.value.items || [];
+      else errors.push(`Stocks: ${stocksResult.reason?.message || 'failed'}`);
+
+      if (tasksResult.status === 'fulfilled') next.tasks = tasksResult.value?.groups ? tasksResult.value : fallbackTasks;
+      else {
+        errors.push(`Tasks: ${tasksResult.reason?.message || 'failed'}`);
+        if (!current.tasks?.groups) next.tasks = fallbackTasks;
+      }
+
+      if (wodResult.status === 'fulfilled') next.wod = wodResult.value;
+      else errors.push(`WoD: ${wodResult.reason?.message || 'failed'}`);
+
+      next.error = errors.length > 0 ? errors.join(' · ') : null;
+      return next;
+    });
   }, []);
 
   const nextMode = useCallback(() => {
@@ -243,7 +261,8 @@ export function useDashboardData() {
       rotationPaused,
       lastRemoteAction,
       remoteSupported: isTizenDevice(),
-      activeTaskGroupIndex
+      activeTaskGroupIndex,
+      wod: data.wod
     }),
     [data, clock, modeIndex, learningIndex, refresh, rotationPaused, lastRemoteAction, activeTaskGroupIndex]
   );

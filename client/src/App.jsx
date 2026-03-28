@@ -1,6 +1,32 @@
 import { useMemo, useState, useEffect } from 'react';
 import { useDashboardData } from './hooks/useDashboardData';
 
+const OW_TO_BASMILIUS = {
+  '01d': 'clear-day',
+  '01n': 'clear-night',
+  '02d': 'partly-cloudy-day',
+  '02n': 'partly-cloudy-night',
+  '03d': 'cloudy',
+  '03n': 'cloudy',
+  '04d': 'overcast-day',
+  '04n': 'overcast-night',
+  '09d': 'drizzle',
+  '09n': 'drizzle',
+  '10d': 'partly-cloudy-day-rain',
+  '10n': 'partly-cloudy-night-rain',
+  '11d': 'thunderstorms-day',
+  '11n': 'thunderstorms-night',
+  '13d': 'snow',
+  '13n': 'snow',
+  '50d': 'fog-day',
+  '50n': 'fog-night',
+};
+
+function weatherIcon(code) {
+  const name = OW_TO_BASMILIUS[code] || 'cloudy';
+  return `/weather-icons/${name}.svg`;
+}
+
 function SectionTitle({ children, right }) {
   return (
     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
@@ -29,17 +55,18 @@ function WeatherPanel({ weather }) {
     <Card style={{ padding: '12px 20px', height: '100%', boxSizing: 'border-box', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(14,165,233,0.18), rgba(255,255,255,0.04))', display: 'flex', alignItems: 'center' }}>
       {current ? (
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%', gap: 20 }}>
-          <div style={{ display: 'flex', gap: 14, alignItems: 'center' }}>
-            <div style={{ fontSize: 52 }}>{current.icon}</div>
+          <div style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
+            <img src={weatherIcon(current.iconCode)} alt={current.description} style={{ width: 64, height: 64 }} />
             <div>
               <div style={{ fontSize: 48, fontWeight: 700, lineHeight: 1 }}>{current.temp}</div>
-              <div style={{ fontSize: 16, color: '#d8e2ef', marginTop: 4 }}>{current.summary}</div>
+              <div style={{ fontSize: 15, color: '#d8e2ef', marginTop: 2, textTransform: 'capitalize' }}>{current.description}</div>
             </div>
           </div>
-          <div style={{ textAlign: 'right', fontSize: 15, color: '#b9c6d8', lineHeight: 1.6 }}>
+          <div style={{ textAlign: 'right', fontSize: 15, color: '#b9c6d8', lineHeight: 1.7 }}>
             <div style={{ fontSize: 17, color: '#d8e2ef' }}>{current.location}</div>
             <div>Feels like {current.feelsLike}</div>
-            <div>{current.detail}</div>
+            {current.wind ? <div>Wind {current.wind}</div> : null}
+            <div>Humidity {current.humidity}</div>
           </div>
         </div>
       ) : <div style={{ fontSize: 20, color: '#d8e2ef' }}>Loading weather…</div>}
@@ -55,21 +82,30 @@ function WeatherMode({ weather }) {
       <SectionTitle right="Mode B">5-Day Forecast</SectionTitle>
       {current ? (
         <>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 24, marginBottom: 28 }}>
-            <div style={{ fontSize: 72 }}>{current.icon}</div>
-            <div>
-              <div style={{ fontSize: 64, fontWeight: 700, lineHeight: 1 }}>{current.temp}</div>
-              <div style={{ fontSize: 24, color: '#d8e2ef', marginTop: 6 }}>{current.summary} · {current.location}</div>
-              <div style={{ fontSize: 18, color: '#b9c6d8', marginTop: 4 }}>Feels like {current.feelsLike} · {current.detail}</div>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 20 }}>
+            <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
+              <img src={weatherIcon(current.iconCode)} alt={current.description} style={{ width: 80, height: 80 }} />
+              <div>
+                <div style={{ fontSize: 64, fontWeight: 700, lineHeight: 1 }}>{current.temp}</div>
+                <div style={{ fontSize: 22, color: '#d8e2ef', marginTop: 4, textTransform: 'capitalize' }}>{current.description} · {current.location}</div>
+              </div>
+            </div>
+            <div style={{ textAlign: 'right', fontSize: 18, color: '#b9c6d8', lineHeight: 2 }}>
+              <div>Feels like {current.feelsLike}</div>
+              {current.wind ? <div>Wind {current.wind}</div> : null}
+              <div>Humidity {current.humidity}</div>
+              <div>🌅 {current.sunrise} &nbsp; 🌇 {current.sunset}</div>
             </div>
           </div>
           <div style={{ flex: 1, display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 14, minHeight: 0 }}>
             {forecast.map((day) => (
-              <div key={day.day} style={{ background: 'rgba(255,255,255,0.07)', borderRadius: 18, padding: '20px 12px', textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 8 }}>
-                <div style={{ fontSize: 18, color: '#b9c6d8' }}>{day.day}</div>
-                <div style={{ fontSize: 48 }}>{day.icon}</div>
-                <div style={{ fontSize: 26, fontWeight: 600 }}>{day.high}</div>
-                <div style={{ fontSize: 18, color: '#b9c6d8' }}>{day.low}</div>
+              <div key={day.day} style={{ background: 'rgba(255,255,255,0.07)', borderRadius: 18, padding: '16px 12px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between' }}>
+                <div style={{ fontSize: 26, fontWeight: 600, color: '#d8e2ef' }}>{day.day}</div>
+                <img src={weatherIcon(day.iconCode)} alt={day.description} style={{ width: 80, height: 80 }} />
+                <div style={{ fontSize: 18, color: '#94a3b8', textTransform: 'capitalize', minHeight: 44, display: 'flex', alignItems: 'center', textAlign: 'center' }}>{day.description}</div>
+                <div style={{ fontSize: 32, fontWeight: 700 }}>{day.high} <span style={{ fontSize: 24, color: '#94a3b8', fontWeight: 400 }}>{day.low}</span></div>
+                <div style={{ fontSize: 18, color: '#7dd3fc' }}>💧 {day.pop}{day.precip ? ` · ${day.precip}` : ''}</div>
+                {day.wind ? <div style={{ fontSize: 17, color: '#b9c6d8' }}>🌬️ {day.wind}</div> : null}
               </div>
             ))}
           </div>
@@ -240,12 +276,44 @@ function FullScreenTasksMode({ tasks, activeTaskGroupIndex, tasksSourceLabel }) 
   );
 }
 
+function WodMode({ wod }) {
+  if (!wod) return (
+    <Card style={{ height: '100%', padding: 36, boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ fontSize: 28, color: '#d8e2ef' }}>Loading word of the day…</div>
+    </Card>
+  );
+  return (
+    <Card style={{ height: '100%', padding: 36, boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center', background: 'linear-gradient(145deg, rgba(15,23,42,0.95), rgba(30,41,59,0.72))' }}>
+      <SectionTitle>Word of the Day</SectionTitle>
+      <div style={{ display: 'flex', alignItems: 'baseline', gap: 24, marginBottom: 12 }}>
+        <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1 }}>{wod.word}</div>
+        {wod.pronunciation && <div style={{ fontSize: 28, color: '#7dd3fc', fontStyle: 'italic' }}>{wod.pronunciation}</div>}
+      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginBottom: 28 }}>
+        {wod.definitions.map((def, i) => (
+          <div key={i} style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
+            <div style={{ fontSize: 20, color: '#7dd3fc', fontWeight: 700, minWidth: 28, marginTop: 3 }}>{i + 1}.</div>
+            <div style={{ fontSize: 30, color: '#d8e2ef', lineHeight: 1.4 }}>{def}</div>
+          </div>
+        ))}
+      </div>
+      {wod.example && (
+        <div style={{ borderLeft: '3px solid #7dd3fc44', paddingLeft: 24 }}>
+          <div style={{ fontSize: 16, letterSpacing: 3, color: '#7dd3fc', textTransform: 'uppercase', marginBottom: 8 }}>Example</div>
+          <div style={{ fontSize: 26, color: '#94a3b8', fontStyle: 'italic', lineHeight: 1.5 }}>{wod.example}</div>
+        </div>
+      )}
+    </Card>
+  );
+}
+
 function MainZone(props) {
   const style = { height: '100%', padding: 24, boxSizing: 'border-box', animation: 'fadeSlide 600ms ease' };
   switch (props.mode) {
     case 'weather': return <WeatherMode weather={props.weather} />;
     case 'trends': return <Card style={style}><TrendsMode items={props.trends} /></Card>;
     case 'stocks': return <Card style={style}><StocksMode items={props.stocks} /></Card>;
+    case 'wod': return <WodMode wod={props.wod} />;
     case 'learning': return <LearningMode learning={props.learning} />;
     case 'tasks': return <FullScreenTasksMode tasks={props.tasks} activeTaskGroupIndex={props.activeTaskGroupIndex} tasksSourceLabel={props.tasksSourceLabel} />;
     case 'news':
@@ -255,7 +323,7 @@ function MainZone(props) {
 }
 
 export default function App() {
-  const { timeText, dateText, weather, news, trends, stocks, tasks, learning, currentMode, error, updatedAt, rotationPaused, lastRemoteAction, remoteSupported, activeTaskGroupIndex } = useDashboardData();
+  const { timeText, dateText, weather, news, trends, stocks, tasks, wod, learning, currentMode, error, updatedAt, rotationPaused, lastRemoteAction, remoteSupported, activeTaskGroupIndex } = useDashboardData();
 
   const tasksSourceLabel = tasks?.configured ? (tasks?.listName || 'Google Tasks') : 'Sample tasks';
 
@@ -292,7 +360,7 @@ export default function App() {
 
         {/* Main zone */}
         <div style={{ position: 'relative', minHeight: 0, overflow: 'hidden' }}>
-          <MainZone mode={currentMode} weather={weather} news={news} trends={trends} stocks={stocks} tasks={tasks} learning={learning} activeTaskGroupIndex={activeTaskGroupIndex} tasksSourceLabel={tasksSourceLabel} />
+          <MainZone mode={currentMode} weather={weather} news={news} trends={trends} stocks={stocks} tasks={tasks} wod={wod} learning={learning} activeTaskGroupIndex={activeTaskGroupIndex} tasksSourceLabel={tasksSourceLabel} />
           {lastRemoteAction ? (
             <div style={{ position: 'absolute', top: 16, right: 16, padding: '10px 16px', borderRadius: 12, background: 'rgba(2,6,23,0.82)', border: '1px solid rgba(125,211,252,0.3)', color: '#e2e8f0', fontSize: 18, backdropFilter: 'blur(8px)' }}>
               {lastRemoteAction}

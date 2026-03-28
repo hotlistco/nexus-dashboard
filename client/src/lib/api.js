@@ -15,5 +15,6 @@ export const dashboardApi = {
   getTrends: () => readJson('/trends'),
   getStocks: () => readJson('/stocks'),
   getTasks: () => readJson('/tasks'),
-  getHealth: () => readJson('/health')
+  getHealth: () => readJson('/health'),
+  getWod: () => readJson('/wod')
 };

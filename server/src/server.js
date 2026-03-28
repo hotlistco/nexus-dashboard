@@ -6,6 +6,7 @@ import { getNews } from './providers/news.js';
 import { getStocks } from './providers/stocks.js';
 import { getTrends } from './providers/trends.js';
 import { getTasks } from './providers/tasks.js';
+import { getWod } from './providers/wod.js';
 
 const app = express();
 const port = Number(process.env.PORT || 8787);
@@ -22,6 +23,7 @@ app.get('/api', (_req, res) => {
       'GET /api/stocks',
       'GET /api/trends',
       'GET /api/tasks',
+      'GET /api/wod',
     ]
   });
 });
@@ -46,6 +48,7 @@ app.get('/api/news', route(getNews));
 app.get('/api/stocks', route(getStocks));
 app.get('/api/trends', route(getTrends));
 app.get('/api/tasks', route(getTasks));
+app.get('/api/wod', route(getWod));
 
 app.listen(port, () => {
   console.log(`Nexus server listening on http://localhost:${port}`);

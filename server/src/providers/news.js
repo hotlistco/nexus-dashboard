@@ -15,7 +15,7 @@ export async function getNews(env) {
   url.searchParams.set('max', '5');
   url.searchParams.set('apikey', env.GNEWS_API_KEY);
   if (env.NEWS_TOPIC) {
-    url.searchParams.set('category', env.NEWS_TOPIC);
+    url.searchParams.set('category', env.NEWS_TOPIC.toLowerCase());
   }
 
   const response = await fetch(url);
