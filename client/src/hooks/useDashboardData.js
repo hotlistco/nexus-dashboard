@@ -2,9 +2,8 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { dashboardApi } from '../lib/api';
 import { initTizenRemoteKeys, isTizenDevice } from '../lib/tizenRemote';
 
-const modes = ['news', 'nythome', 'nyttech', 'weather', 'trends', 'stocks', 'wod', 'tasks'];
+const modes = ['nythome', 'nyttech', 'weather', 'trends', 'stocks', 'wod', 'tasks'];
 const modeDurationsMs = {
-  news: 30000,
   nythome: 60000,
   nyttech: 60000,
   weather: 20000,
@@ -68,7 +67,6 @@ function getNowStrings() {
 export function useDashboardData() {
   const [data, setData] = useState({
     weather: null,
-    news: [],
     nytHome: [],
     nytTech: [],
     trends: [],
@@ -94,9 +92,8 @@ export function useDashboardData() {
   }, []);
 
   const refresh = useCallback(async () => {
-    const [weatherResult, newsResult, nytHomeResult, nytTechResult, trendsResult, stocksResult, tasksResult, wodResult] = await Promise.allSettled([
+    const [weatherResult, nytHomeResult, nytTechResult, trendsResult, stocksResult, tasksResult, wodResult] = await Promise.allSettled([
       dashboardApi.getWeather(),
-      dashboardApi.getNews(),
       dashboardApi.getNytHome(),
       dashboardApi.getNytTech(),
       dashboardApi.getTrends(),
@@ -112,9 +109,6 @@ export function useDashboardData() {
 
       if (weatherResult.status === 'fulfilled') next.weather = weatherResult.value;
       else errors.push(`Weather: ${weatherResult.reason?.message || 'failed'}`);
-
-      if (newsResult.status === 'fulfilled') next.news = newsResult.value.items || [];
-      else errors.push(`News: ${newsResult.reason?.message || 'failed'}`);
 
       if (nytHomeResult.status === 'fulfilled') next.nytHome = nytHomeResult.value.items || [];
       else errors.push(`NYT Home: ${nytHomeResult.reason?.message || 'failed'}`);
@@ -232,11 +226,6 @@ export function useDashboardData() {
         case 'ArrowUp':
           refresh();
           setRemoteAction('Refreshing data');
-          event.preventDefault();
-          break;
-        case 'ColorF1Green':
-          jumpToMode('news');
-          setRemoteAction('Mode: news');
           event.preventDefault();
           break;
         case 'ColorF2Yellow':

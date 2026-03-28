@@ -11,7 +11,6 @@ async function readJson(path) {
 
 export const dashboardApi = {
   getWeather: () => readJson('/weather'),
-  getNews: () => readJson('/news'),
   getTrends: () => readJson('/trends'),
   getStocks: () => readJson('/stocks'),
   getTasks: () => readJson('/tasks'),

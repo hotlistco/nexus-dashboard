@@ -193,30 +193,6 @@ function NytTechMode({ items }) {
   );
 }
 
-function NewsMode({ items }) {
-  return (
-    <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <SectionTitle>News headlines</SectionTitle>
-      <div style={{ flex: 1, display: 'grid', gridTemplateRows: '1.3fr 1fr', gap: 14, minHeight: 0 }}>
-        {items[0] ? (
-          <Card style={{ padding: 24, overflow: 'hidden', backgroundImage: `linear-gradient(rgba(2,6,23,0.35), rgba(2,6,23,0.65)), url(${items[0].image || ''})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-            <div style={{ fontSize: 36, lineHeight: 1.15, fontWeight: 650, maxWidth: '82%' }}>{items[0].title}</div>
-            <div style={{ marginTop: 12, fontSize: 18, color: '#d8e2ef' }}>{items[0].source} · {items[0].published}</div>
-          </Card>
-        ) : <Card style={{ padding: 24, fontSize: 24 }}>No headlines available.</Card>}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
-          {items.slice(1, 3).map((item) => (
-            <Card key={item.title} style={{ padding: 20, overflow: 'hidden' }}>
-              <div style={{ fontSize: 22, lineHeight: 1.25, fontWeight: 600 }}>{item.title}</div>
-              <div style={{ marginTop: 12, fontSize: 16, color: '#b9c6d8' }}>{item.source}</div>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function formatVolume(v) {
   const n = typeof v === 'string' ? parseFloat(v.replace(/,/g, '')) : v;
   if (isNaN(n) || n === 0) return typeof v === 'string' && v ? v : 'Trending';
@@ -440,15 +416,14 @@ function MainZone(props) {
     case 'learning': return <LearningMode learning={props.learning} />;
     case 'tasks': return <FullScreenTasksMode tasks={props.tasks} activeTaskGroupIndex={props.activeTaskGroupIndex} tasksSourceLabel={props.tasksSourceLabel} />;
     case 'nythome': return <Card style={style}><NytHomeMode items={props.nytHome} /></Card>;
-    case 'nyttech': return <Card style={style}><NytTechMode items={props.nytTech} /></Card>;
-    case 'news':
+    case 'nyttech':
     default:
-      return <Card style={style}><NewsMode items={props.news} /></Card>;
+      return <Card style={style}><NytTechMode items={props.nytTech} /></Card>;
   }
 }
 
 export default function App() {
-  const { timeText, dateText, weather, news, nytHome, nytTech, trends, stocks, tasks, wod, learning, currentMode, error, updatedAt, rotationPaused, lastRemoteAction, remoteSupported, activeTaskGroupIndex } = useDashboardData();
+  const { timeText, dateText, weather, nytHome, nytTech, trends, stocks, tasks, wod, learning, currentMode, error, updatedAt, rotationPaused, lastRemoteAction, remoteSupported, activeTaskGroupIndex } = useDashboardData();
 
   const tasksSourceLabel = tasks?.configured ? (tasks?.listName || 'Google Tasks') : 'Sample tasks';
 
@@ -485,7 +460,7 @@ export default function App() {
 
         {/* Main zone */}
         <div style={{ position: 'relative', minHeight: 0, overflow: 'hidden' }}>
-          <MainZone mode={currentMode} weather={weather} news={news} nytHome={nytHome} nytTech={nytTech} trends={trends} stocks={stocks} tasks={tasks} wod={wod} learning={learning} activeTaskGroupIndex={activeTaskGroupIndex} tasksSourceLabel={tasksSourceLabel} />
+          <MainZone mode={currentMode} weather={weather} nytHome={nytHome} nytTech={nytTech} trends={trends} stocks={stocks} tasks={tasks} wod={wod} learning={learning} activeTaskGroupIndex={activeTaskGroupIndex} tasksSourceLabel={tasksSourceLabel} />
           {lastRemoteAction ? (
             <div style={{ position: 'absolute', top: 16, right: 16, padding: '10px 16px', borderRadius: 12, background: 'rgba(2,6,23,0.82)', border: '1px solid rgba(125,211,252,0.3)', color: '#e2e8f0', fontSize: 18, backdropFilter: 'blur(8px)', visibility: 'hidden' }}>
               {lastRemoteAction}

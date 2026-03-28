@@ -2,7 +2,6 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import { getWeather } from './providers/weather.js';
-import { getNews } from './providers/news.js';
 import { getStocks } from './providers/stocks.js';
 import { getTrends } from './providers/trends.js';
 import { getTasks } from './providers/tasks.js';
@@ -21,7 +20,6 @@ app.get('/api', (_req, res) => {
     endpoints: [
       'GET /api/health',
       'GET /api/weather',
-      'GET /api/news',
       'GET /api/stocks',
       'GET /api/trends',
       'GET /api/tasks',
@@ -48,7 +46,6 @@ function route(handler) {
 }
 
 app.get('/api/weather', route(getWeather));
-app.get('/api/news', route(getNews));
 app.get('/api/stocks', route(getStocks));
 app.get('/api/trends', route(getTrends));
 app.get('/api/tasks', route(getTasks));
