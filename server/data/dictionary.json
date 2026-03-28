@@ -1,29 +1,2252 @@
 [
   {
-    "word": "serendipity",
-    "pronunciation": "/ˌserənˈdɪpɪti/",
+    "word": "aberration",
+    "part_of_speech": "noun",
+    "pronunciation": "/ˌæbɚˈeɪʃən/",
     "definitions": [
-      "The occurrence of events by chance in a happy or beneficial way.",
-      "An aptitude for making desirable discoveries by accident."
+      "a departure from what is normal or expected"
     ],
-    "example": "Finding that perfect apartment just as it came on the market felt like pure serendipity."
+    "example": "The report revealed an aberration that the team had not anticipated."
+  },
+  {
+    "word": "abstemious",
+    "part_of_speech": "adjective",
+    "pronunciation": null,
+    "definitions": [
+      "moderate and self-disciplined, especially in eating or drinking"
+    ],
+    "example": "It was a abstemious choice for the situation."
+  },
+  {
+    "word": "accolade",
+    "part_of_speech": "noun",
+    "pronunciation": "/ˈækəlˌeɪd/",
+    "definitions": [
+      "an award, honor, or expression of praise"
+    ],
+    "example": "The article highlighted an accolade in a clear and memorable way."
+  },
+  {
+    "word": "acumen",
+    "part_of_speech": "noun",
+    "pronunciation": "/əkjˈumən/",
+    "definitions": [
+      "keen judgment and practical understanding"
+    ],
+    "example": "Her acumen made a strong impression during the meeting."
+  },
+  {
+    "word": "adroit",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ədrˈɔɪt/",
+    "definitions": [
+      "skillful, clever, and quick in action or thought"
+    ],
+    "example": "It was a adroit choice for the situation."
+  },
+  {
+    "word": "affable",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˈæfəbəl/",
+    "definitions": [
+      "friendly and easy to talk to"
+    ],
+    "example": "She remained affable even when the discussion became tense."
+  },
+  {
+    "word": "alacrity",
+    "part_of_speech": "noun",
+    "pronunciation": "/əlˈækrəti/",
+    "definitions": [
+      "brisk and cheerful readiness"
+    ],
+    "example": "The article highlighted an alacrity in a clear and memorable way."
+  },
+  {
+    "word": "alleviate",
+    "part_of_speech": "verb",
+    "pronunciation": "/əlˈiviˌeɪt/",
+    "definitions": [
+      "to make something less severe"
+    ],
+    "example": "The new process should alleviate delays and improve the final result."
+  },
+  {
+    "word": "amalgamate",
+    "part_of_speech": "verb",
+    "pronunciation": "/əmˈælɡəmˌeɪt/",
+    "definitions": [
+      "to combine into a unified whole"
+    ],
+    "example": "Good leaders know when to amalgamate rather than react impulsively."
+  },
+  {
+    "word": "ambivalent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/æmbˈɪvələnt/",
+    "definitions": [
+      "having mixed or conflicting feelings"
+    ],
+    "example": "It was a ambivalent choice for the situation."
+  },
+  {
+    "word": "ameliorate",
+    "part_of_speech": "verb",
+    "pronunciation": "/əmˈiljɚˌeɪt/",
+    "definitions": [
+      "to improve or make better"
+    ],
+    "example": "Good leaders know when to ameliorate rather than react impulsively."
+  },
+  {
+    "word": "anachronistic",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ənˌækrənˈɪstɪk/",
+    "definitions": [
+      "belonging to a time different from the one being discussed"
+    ],
+    "example": "It was a anachronistic choice for the situation."
+  },
+  {
+    "word": "analogous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ənˈæləɡəs/",
+    "definitions": [
+      "comparable in certain respects"
+    ],
+    "example": "It was a analogous choice for the situation."
+  },
+  {
+    "word": "anomaly",
+    "part_of_speech": "noun",
+    "pronunciation": "/ənˈɑməli/",
+    "definitions": [
+      "something that deviates from the usual pattern"
+    ],
+    "example": "The report revealed an anomaly that the team had not anticipated."
+  },
+  {
+    "word": "antagonize",
+    "part_of_speech": "verb",
+    "pronunciation": "/æntˈæɡənˌaɪz/",
+    "definitions": [
+      "to provoke hostility or opposition"
+    ],
+    "example": "Good leaders know when to antagonize rather than react impulsively."
+  },
+  {
+    "word": "antithesis",
+    "part_of_speech": "noun",
+    "pronunciation": "/æntˈɪθəsəs/",
+    "definitions": [
+      "the direct opposite of something"
+    ],
+    "example": "The article highlighted an antithesis in a clear and memorable way."
+  },
+  {
+    "word": "aplomb",
+    "part_of_speech": "noun",
+    "pronunciation": "/əplˈɑm/",
+    "definitions": [
+      "self-confidence and composure"
+    ],
+    "example": "Her aplomb made a strong impression during the meeting."
+  },
+  {
+    "word": "apocryphal",
+    "part_of_speech": "adjective",
+    "pronunciation": "/əpˈɑkrəfəl/",
+    "definitions": [
+      "of doubtful authenticity, though widely repeated"
+    ],
+    "example": "It was a apocryphal choice for the situation."
+  },
+  {
+    "word": "arcane",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɑrkˈeɪn/",
+    "definitions": [
+      "understood by only a few; obscure"
+    ],
+    "example": "It was a arcane choice for the situation."
+  },
+  {
+    "word": "articulate",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɑrtˈɪkjəlˌeɪt/",
+    "definitions": [
+      "able to express ideas clearly and effectively"
+    ],
+    "example": "It was a articulate choice for the situation."
+  },
+  {
+    "word": "assiduous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/əsˈɪdwəs/",
+    "definitions": [
+      "showing careful and persistent effort"
+    ],
+    "example": "It was a assiduous choice for the situation."
+  },
+  {
+    "word": "astute",
+    "part_of_speech": "adjective",
+    "pronunciation": "/əstˈut/",
+    "definitions": [
+      "quick to notice and understand things accurately"
+    ],
+    "example": "It was a astute choice for the situation."
+  },
+  {
+    "word": "audacious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɑdˈeɪʃəs/",
+    "definitions": [
+      "bold, daring, and sometimes shockingly confident"
+    ],
+    "example": "It was a audacious choice for the situation."
+  },
+  {
+    "word": "austere",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɔstˈɪr/",
+    "definitions": [
+      "severe in manner or simple in style"
+    ],
+    "example": "It was a austere choice for the situation."
+  },
+  {
+    "word": "avarice",
+    "part_of_speech": "noun",
+    "pronunciation": "/ˈævɚəs/",
+    "definitions": [
+      "extreme greed for wealth"
+    ],
+    "example": "The article highlighted an avarice in a clear and memorable way."
+  },
+  {
+    "word": "bane",
+    "part_of_speech": "noun",
+    "pronunciation": "/bˈeɪn/",
+    "definitions": [
+      "a cause of great distress or annoyance"
+    ],
+    "example": "The article highlighted a bane in a clear and memorable way."
+  },
+  {
+    "word": "belie",
+    "part_of_speech": "verb",
+    "pronunciation": "/bɪlˈaɪ/",
+    "definitions": [
+      "to give a false impression of"
+    ],
+    "example": "Good leaders know when to belie rather than react impulsively."
+  },
+  {
+    "word": "benevolent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/bənˈɛvələnt/",
+    "definitions": [
+      "kind and well meaning"
+    ],
+    "example": "She remained benevolent even when the discussion became tense."
+  },
+  {
+    "word": "benign",
+    "part_of_speech": "adjective",
+    "pronunciation": "/bɪnˈaɪn/",
+    "definitions": [
+      "gentle, harmless, or kindly"
+    ],
+    "example": "It was a benign choice for the situation."
+  },
+  {
+    "word": "blithe",
+    "part_of_speech": "adjective",
+    "pronunciation": "/blˈaɪð/",
+    "definitions": [
+      "showing a casual and cheerful indifference"
+    ],
+    "example": "It was a blithe choice for the situation."
+  },
+  {
+    "word": "brevity",
+    "part_of_speech": "noun",
+    "pronunciation": "/brˈɛvəti/",
+    "definitions": [
+      "concise and exact use of words"
+    ],
+    "example": "Her brevity made a strong impression during the meeting."
+  },
+  {
+    "word": "cacophony",
+    "part_of_speech": "noun",
+    "pronunciation": "/kækˈɑfəni/",
+    "definitions": [
+      "a harsh mixture of sounds"
+    ],
+    "example": "The article highlighted a cacophony in a clear and memorable way."
+  },
+  {
+    "word": "candid",
+    "part_of_speech": "adjective",
+    "pronunciation": "/kˈændəd/",
+    "definitions": [
+      "truthful and straightforward"
+    ],
+    "example": "She remained candid even when the discussion became tense."
+  },
+  {
+    "word": "capricious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/kəprˈɪʃəs/",
+    "definitions": [
+      "given to sudden and unpredictable changes"
+    ],
+    "example": "His capricious style made collaboration more difficult than it needed to be."
+  },
+  {
+    "word": "censure",
+    "part_of_speech": "verb",
+    "pronunciation": "/sˈɛnʃɚ/",
+    "definitions": [
+      "to express strong disapproval of"
+    ],
+    "example": "Good leaders know when to censure rather than react impulsively."
+  },
+  {
+    "word": "circumspect",
+    "part_of_speech": "adjective",
+    "pronunciation": "/sˈɝkəmspˌɛkt/",
+    "definitions": [
+      "careful to consider possible risks before acting"
+    ],
+    "example": "It was a circumspect choice for the situation."
+  },
+  {
+    "word": "cogent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/kˈoʊdʒənt/",
+    "definitions": [
+      "clear, logical, and convincing"
+    ],
+    "example": "She gave a cogent explanation that everyone could follow."
+  },
+  {
+    "word": "coherent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/koʊhˈɪrənt/",
+    "definitions": [
+      "logical, consistent, and easy to follow"
+    ],
+    "example": "She gave a coherent explanation that everyone could follow."
+  },
+  {
+    "word": "complacent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/kəmplˈeɪsənt/",
+    "definitions": [
+      "too satisfied to see the need for improvement"
+    ],
+    "example": "It was a complacent choice for the situation."
+  },
+  {
+    "word": "concise",
+    "part_of_speech": "adjective",
+    "pronunciation": "/kənsˈaɪs/",
+    "definitions": [
+      "brief but comprehensive"
+    ],
+    "example": "She gave a concise explanation that everyone could follow."
+  },
+  {
+    "word": "concur",
+    "part_of_speech": "verb",
+    "pronunciation": "/kənkˈɝ/",
+    "definitions": [
+      "to agree with an opinion or decision"
+    ],
+    "example": "Good leaders know when to concur rather than react impulsively."
+  },
+  {
+    "word": "conflate",
+    "part_of_speech": "verb",
+    "pronunciation": "/kənflˈeɪt/",
+    "definitions": [
+      "to combine two ideas as if they were one"
+    ],
+    "example": "Good leaders know when to conflate rather than react impulsively."
+  },
+  {
+    "word": "conscientious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/kˌɑnʃiˈɛnʃəs/",
+    "definitions": [
+      "careful, responsible, and thorough"
+    ],
+    "example": "The team took a conscientious approach and solved the problem efficiently."
+  },
+  {
+    "word": "consensus",
+    "part_of_speech": "noun",
+    "pronunciation": "/kənsˈɛnsəs/",
+    "definitions": [
+      "general agreement among a group"
+    ],
+    "example": "The report revealed a consensus that the team had not anticipated."
+  },
+  {
+    "word": "contentious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/kəntˈɛnʃəs/",
+    "definitions": [
+      "likely to cause argument or disagreement"
+    ],
+    "example": "It was a contentious choice for the situation."
+  },
+  {
+    "word": "conundrum",
+    "part_of_speech": "noun",
+    "pronunciation": "/kənˈʌndrəm/",
+    "definitions": [
+      "a confusing and difficult problem"
+    ],
+    "example": "The report revealed a conundrum that the team had not anticipated."
+  },
+  {
+    "word": "copious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/kˈoʊpiəs/",
+    "definitions": [
+      "abundant in quantity"
+    ],
+    "example": "It was a copious choice for the situation."
+  },
+  {
+    "word": "corroborate",
+    "part_of_speech": "verb",
+    "pronunciation": "/kɚˈɑbɚˌeɪt/",
+    "definitions": [
+      "to confirm or support with evidence"
+    ],
+    "example": "The new process should corroborate delays and improve the final result."
+  },
+  {
+    "word": "credible",
+    "part_of_speech": "adjective",
+    "pronunciation": "/krˈɛdəbəl/",
+    "definitions": [
+      "believable and trustworthy"
+    ],
+    "example": "It was a credible choice for the situation."
+  },
+  {
+    "word": "cryptic",
+    "part_of_speech": "adjective",
+    "pronunciation": "/krˈɪptɪk/",
+    "definitions": [
+      "having a meaning that is mysterious or obscure"
+    ],
+    "example": "It was a cryptic choice for the situation."
+  },
+  {
+    "word": "cursory",
+    "part_of_speech": "adjective",
+    "pronunciation": "/kˈɝsɚi/",
+    "definitions": [
+      "hasty and not thorough"
+    ],
+    "example": "It was a cursory choice for the situation."
+  },
+  {
+    "word": "dearth",
+    "part_of_speech": "noun",
+    "pronunciation": "/dˈɝθ/",
+    "definitions": [
+      "a scarcity or lack of something"
+    ],
+    "example": "The report revealed a dearth that the team had not anticipated."
+  },
+  {
+    "word": "debacle",
+    "part_of_speech": "noun",
+    "pronunciation": "/dəbˈɑkəl/",
+    "definitions": [
+      "a sudden and disastrous failure"
+    ],
+    "example": "The report revealed a debacle that the team had not anticipated."
+  },
+  {
+    "word": "deference",
+    "part_of_speech": "noun",
+    "pronunciation": "/dˈɛfɚəns/",
+    "definitions": [
+      "respectful submission to another's judgment"
+    ],
+    "example": "The article highlighted a deference in a clear and memorable way."
+  },
+  {
+    "word": "deleterious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/dˌɛlətˈɪriəs/",
+    "definitions": [
+      "harmful or damaging"
+    ],
+    "example": "It was a deleterious choice for the situation."
+  },
+  {
+    "word": "delineate",
+    "part_of_speech": "verb",
+    "pronunciation": "/dɪlˈɪniˌeɪt/",
+    "definitions": [
+      "to describe or explain precisely"
+    ],
+    "example": "The speaker used examples to delineate the main idea."
+  },
+  {
+    "word": "demure",
+    "part_of_speech": "adjective",
+    "pronunciation": "/dɪmjˈʊr/",
+    "definitions": [
+      "reserved, modest, and quiet"
+    ],
+    "example": "It was a demure choice for the situation."
+  },
+  {
+    "word": "denigrate",
+    "part_of_speech": "verb",
+    "pronunciation": "/dˈɛnəɡrˌeɪt/",
+    "definitions": [
+      "to unfairly criticize and belittle"
+    ],
+    "example": "Good leaders know when to denigrate rather than react impulsively."
+  },
+  {
+    "word": "deride",
+    "part_of_speech": "verb",
+    "pronunciation": "/dɪrˈaɪd/",
+    "definitions": [
+      "to mock or ridicule"
+    ],
+    "example": "Good leaders know when to deride rather than react impulsively."
+  },
+  {
+    "word": "desolate",
+    "part_of_speech": "adjective",
+    "pronunciation": "/dˈɛsələt/",
+    "definitions": [
+      "empty, bleak, and lonely"
+    ],
+    "example": "It was a desolate choice for the situation."
+  },
+  {
+    "word": "dexterous",
+    "part_of_speech": "adjective",
+    "pronunciation": null,
+    "definitions": [
+      "skillful with the hands or with actions"
+    ],
+    "example": "It was a dexterous choice for the situation."
+  },
+  {
+    "word": "didactic",
+    "part_of_speech": "adjective",
+    "pronunciation": "/daɪdˈæktɪk/",
+    "definitions": [
+      "intended to teach, sometimes too directly"
+    ],
+    "example": "It was a didactic choice for the situation."
+  },
+  {
+    "word": "diffident",
+    "part_of_speech": "adjective",
+    "pronunciation": null,
+    "definitions": [
+      "lacking confidence; shy"
+    ],
+    "example": "It was a diffident choice for the situation."
+  },
+  {
+    "word": "diligent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/dˈɪlɪdʒənt/",
+    "definitions": [
+      "hardworking and careful"
+    ],
+    "example": "The team took a diligent approach and solved the problem efficiently."
+  },
+  {
+    "word": "discern",
+    "part_of_speech": "verb",
+    "pronunciation": "/dɪsˈɝn/",
+    "definitions": [
+      "to perceive or recognize clearly"
+    ],
+    "example": "Good leaders know when to discern rather than react impulsively."
+  },
+  {
+    "word": "disparate",
+    "part_of_speech": "adjective",
+    "pronunciation": "/dˈɪspɚɪt/",
+    "definitions": [
+      "fundamentally different in kind"
+    ],
+    "example": "It was a disparate choice for the situation."
+  },
+  {
+    "word": "disseminate",
+    "part_of_speech": "verb",
+    "pronunciation": "/dɪsˈɛmənˌeɪt/",
+    "definitions": [
+      "to spread information widely"
+    ],
+    "example": "Good leaders know when to disseminate rather than react impulsively."
+  },
+  {
+    "word": "docile",
+    "part_of_speech": "adjective",
+    "pronunciation": "/dˈɑsəl/",
+    "definitions": [
+      "easy to manage or teach"
+    ],
+    "example": "It was a docile choice for the situation."
+  },
+  {
+    "word": "dogmatic",
+    "part_of_speech": "adjective",
+    "pronunciation": "/dɑɡmˈætɪk/",
+    "definitions": [
+      "asserting opinions as unquestionably true"
+    ],
+    "example": "His dogmatic style made collaboration more difficult than it needed to be."
+  },
+  {
+    "word": "dubious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/dˈubiəs/",
+    "definitions": [
+      "doubtful or not to be relied on"
+    ],
+    "example": "It was a dubious choice for the situation."
+  },
+  {
+    "word": "ebullient",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪbˈʌljənt/",
+    "definitions": [
+      "cheerful and full of energy"
+    ],
+    "example": "It was a ebullient choice for the situation."
+  },
+  {
+    "word": "eclectic",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɪklˈɛktɪk/",
+    "definitions": [
+      "drawing ideas or style from many sources"
+    ],
+    "example": "It was a eclectic choice for the situation."
+  },
+  {
+    "word": "efficacy",
+    "part_of_speech": "noun",
+    "pronunciation": "/ˈɛfɪkˌæsi/",
+    "definitions": [
+      "the ability to produce the intended result"
+    ],
+    "example": "The article highlighted an efficacy in a clear and memorable way."
+  },
+  {
+    "word": "eloquent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˈɛləkwənt/",
+    "definitions": [
+      "fluent, persuasive, and expressive"
+    ],
+    "example": "She gave a eloquent explanation that everyone could follow."
+  },
+  {
+    "word": "elucidate",
+    "part_of_speech": "verb",
+    "pronunciation": "/ɪlˈusədˌeɪt/",
+    "definitions": [
+      "to make clear by explanation"
+    ],
+    "example": "The speaker used examples to elucidate the main idea."
+  },
+  {
+    "word": "elusive",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɪlˈusɪv/",
+    "definitions": [
+      "difficult to find, catch, or understand"
+    ],
+    "example": "It was a elusive choice for the situation."
+  },
+  {
+    "word": "emulate",
+    "part_of_speech": "verb",
+    "pronunciation": "/ˈɛmjəlˌeɪt/",
+    "definitions": [
+      "to imitate in order to equal or surpass"
+    ],
+    "example": "Good leaders know when to emulate rather than react impulsively."
+  },
+  {
+    "word": "enigma",
+    "part_of_speech": "noun",
+    "pronunciation": "/ɪnˈɪɡmə/",
+    "definitions": [
+      "a person or thing that is mysterious or puzzling"
+    ],
+    "example": "The article highlighted an enigma in a clear and memorable way."
+  },
+  {
+    "word": "enmity",
+    "part_of_speech": "noun",
+    "pronunciation": "/ˈɛnməti/",
+    "definitions": [
+      "deep-seated hostility"
+    ],
+    "example": "The article highlighted an enmity in a clear and memorable way."
+  },
+  {
+    "word": "enormity",
+    "part_of_speech": "noun",
+    "pronunciation": "/ɪnˈɔrməti/",
+    "definitions": [
+      "great wickedness or the extreme seriousness of something bad"
+    ],
+    "example": "The article highlighted an enormity in a clear and memorable way."
+  },
+  {
+    "word": "enervate",
+    "part_of_speech": "verb",
+    "pronunciation": null,
+    "definitions": [
+      "to weaken or drain of energy"
+    ],
+    "example": "Good leaders know when to enervate rather than react impulsively."
+  },
+  {
+    "word": "engender",
+    "part_of_speech": "verb",
+    "pronunciation": "/ɛndʒˈɛndɚ/",
+    "definitions": [
+      "to cause or bring about"
+    ],
+    "example": "Good leaders know when to engender rather than react impulsively."
+  },
+  {
+    "word": "ephemeral",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɪfˈɛmɚəl/",
+    "definitions": [
+      "lasting for a very short time"
+    ],
+    "example": "The improvement proved ephemeral and soon began to fade."
+  },
+  {
+    "word": "epitome",
+    "part_of_speech": "noun",
+    "pronunciation": "/ɪpˈɪtəmi/",
+    "definitions": [
+      "a perfect example of a quality or type"
+    ],
+    "example": "The article highlighted an epitome in a clear and memorable way."
+  },
+  {
+    "word": "equanimity",
+    "part_of_speech": "noun",
+    "pronunciation": "/ˌikwənˈɪmɪti/",
+    "definitions": [
+      "mental calmness, especially in a difficult situation"
+    ],
+    "example": "Her equanimity made a strong impression during the meeting."
+  },
+  {
+    "word": "equivocate",
+    "part_of_speech": "verb",
+    "pronunciation": "/ɪkwˈɪvəkˌeɪt/",
+    "definitions": [
+      "to use vague language to avoid committing to a position"
+    ],
+    "example": "Good leaders know when to equivocate rather than react impulsively."
+  },
+  {
+    "word": "erudite",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˈɛrədˌaɪt/",
+    "definitions": [
+      "having extensive knowledge gained from study"
+    ],
+    "example": "It was a erudite choice for the situation."
+  },
+  {
+    "word": "esoteric",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɛsətˈɛrɪk/",
+    "definitions": [
+      "intended for or understood by a small specialized group"
+    ],
+    "example": "It was a esoteric choice for the situation."
+  },
+  {
+    "word": "ethos",
+    "part_of_speech": "noun",
+    "pronunciation": "/ˈiθɑs/",
+    "definitions": [
+      "the guiding beliefs or character of a group or culture"
+    ],
+    "example": "The article highlighted an ethos in a clear and memorable way."
+  },
+  {
+    "word": "euphemism",
+    "part_of_speech": "noun",
+    "pronunciation": "/jˈufəmˌɪzəm/",
+    "definitions": [
+      "a mild word used in place of one that may seem harsh"
+    ],
+    "example": "The article highlighted an euphemism in a clear and memorable way."
+  },
+  {
+    "word": "evince",
+    "part_of_speech": "verb",
+    "pronunciation": "/ɪvˈɪns/",
+    "definitions": [
+      "to show clearly"
+    ],
+    "example": "The speaker used examples to evince the main idea."
+  },
+  {
+    "word": "exacerbate",
+    "part_of_speech": "verb",
+    "pronunciation": "/ɪɡzˈæsɚbˌeɪt/",
+    "definitions": [
+      "to make a problem worse"
+    ],
+    "example": "Good leaders know when to exacerbate rather than react impulsively."
+  },
+  {
+    "word": "exculpate",
+    "part_of_speech": "verb",
+    "pronunciation": "/ˌɛkskˈʌlpeɪt/",
+    "definitions": [
+      "to clear from blame"
+    ],
+    "example": "Good leaders know when to exculpate rather than react impulsively."
+  },
+  {
+    "word": "exemplary",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɪɡzˈɛmplɚi/",
+    "definitions": [
+      "serving as an excellent model"
+    ],
+    "example": "It was a exemplary choice for the situation."
+  },
+  {
+    "word": "explicit",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɪksplˈɪsət/",
+    "definitions": [
+      "stated clearly and in detail"
+    ],
+    "example": "She gave a explicit explanation that everyone could follow."
+  },
+  {
+    "word": "expedite",
+    "part_of_speech": "verb",
+    "pronunciation": "/ˈɛkspɪdˌaɪt/",
+    "definitions": [
+      "to make a process happen sooner or faster"
+    ],
+    "example": "The new process should expedite delays and improve the final result."
+  },
+  {
+    "word": "extol",
+    "part_of_speech": "verb",
+    "pronunciation": "/ɪkstˈoʊl/",
+    "definitions": [
+      "to praise enthusiastically"
+    ],
+    "example": "Good leaders know when to extol rather than react impulsively."
+  },
+  {
+    "word": "extraneous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɛkstrˈeɪniəs/",
+    "definitions": [
+      "irrelevant or unnecessary"
+    ],
+    "example": "It was a extraneous choice for the situation."
+  },
+  {
+    "word": "facetious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/fəsˈiʃəs/",
+    "definitions": [
+      "treating serious issues with joking humor"
+    ],
+    "example": "It was a facetious choice for the situation."
+  },
+  {
+    "word": "facilitate",
+    "part_of_speech": "verb",
+    "pronunciation": "/fəsˈɪlətˌeɪt/",
+    "definitions": [
+      "to make an action or process easier"
+    ],
+    "example": "The new process should facilitate delays and improve the final result."
+  },
+  {
+    "word": "fallacious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/fəlˈeɪʃəs/",
+    "definitions": [
+      "based on mistaken belief or flawed reasoning"
+    ],
+    "example": "It was a fallacious choice for the situation."
+  },
+  {
+    "word": "fastidious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/fæstˈɪdiəs/",
+    "definitions": [
+      "very attentive to detail and accuracy"
+    ],
+    "example": "It was a fastidious choice for the situation."
+  },
+  {
+    "word": "fathom",
+    "part_of_speech": "verb",
+    "pronunciation": "/fˈæðəm/",
+    "definitions": [
+      "to understand after much thought"
+    ],
+    "example": "Good leaders know when to fathom rather than react impulsively."
+  },
+  {
+    "word": "feasible",
+    "part_of_speech": "adjective",
+    "pronunciation": "/fˈizəbəl/",
+    "definitions": [
+      "practical and capable of being done"
+    ],
+    "example": "It was a feasible choice for the situation."
+  },
+  {
+    "word": "fervent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/fˈɝvənt/",
+    "definitions": [
+      "having or showing intense feeling"
+    ],
+    "example": "It was a fervent choice for the situation."
+  },
+  {
+    "word": "flagrant",
+    "part_of_speech": "adjective",
+    "pronunciation": "/flˈeɪɡrənt/",
+    "definitions": [
+      "shockingly obvious and offensive"
+    ],
+    "example": "It was a flagrant choice for the situation."
+  },
+  {
+    "word": "florid",
+    "part_of_speech": "adjective",
+    "pronunciation": "/flˈɔrəd/",
+    "definitions": [
+      "overly elaborate in style or language"
+    ],
+    "example": "It was a florid choice for the situation."
+  },
+  {
+    "word": "forthright",
+    "part_of_speech": "adjective",
+    "pronunciation": "/fˈɔrθrˈaɪt/",
+    "definitions": [
+      "direct and honest in speech and behavior"
+    ],
+    "example": "She remained forthright even when the discussion became tense."
+  },
+  {
+    "word": "fortuitous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/fɔrtˈuɪtəs/",
+    "definitions": [
+      "happening by chance, often in a helpful way"
+    ],
+    "example": "It was a fortuitous choice for the situation."
+  },
+  {
+    "word": "frugal",
+    "part_of_speech": "adjective",
+    "pronunciation": "/frˈuɡəl/",
+    "definitions": [
+      "careful about spending money or resources"
+    ],
+    "example": "It was a frugal choice for the situation."
+  },
+  {
+    "word": "galvanize",
+    "part_of_speech": "verb",
+    "pronunciation": "/ɡˈælvənˌaɪz/",
+    "definitions": [
+      "to shock or spur into action"
+    ],
+    "example": "Good leaders know when to galvanize rather than react impulsively."
+  },
+  {
+    "word": "garrulous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɡˈɛrələs/",
+    "definitions": [
+      "excessively talkative"
+    ],
+    "example": "It was a garrulous choice for the situation."
+  },
+  {
+    "word": "gregarious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɡrəɡˈɛriəs/",
+    "definitions": [
+      "sociable and fond of company"
+    ],
+    "example": "It was a gregarious choice for the situation."
+  },
+  {
+    "word": "hackneyed",
+    "part_of_speech": "adjective",
+    "pronunciation": "/hˈæknid/",
+    "definitions": [
+      "overused and lacking freshness"
+    ],
+    "example": "It was a hackneyed choice for the situation."
+  },
+  {
+    "word": "harbinger",
+    "part_of_speech": "noun",
+    "pronunciation": "/hˈɑrbɪndʒɚ/",
+    "definitions": [
+      "a sign that something is about to happen"
+    ],
+    "example": "The article highlighted a harbinger in a clear and memorable way."
+  },
+  {
+    "word": "heed",
+    "part_of_speech": "verb",
+    "pronunciation": "/hˈid/",
+    "definitions": [
+      "to pay careful attention to"
+    ],
+    "example": "Good leaders know when to heed rather than react impulsively."
+  },
+  {
+    "word": "homogeneous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/hˌoʊmədʒˈiniəs/",
+    "definitions": [
+      "uniform in composition or character"
+    ],
+    "example": "It was a homogeneous choice for the situation."
+  },
+  {
+    "word": "iconoclast",
+    "part_of_speech": "noun",
+    "pronunciation": "/ˌaɪkˈɑnəklˌæst/",
+    "definitions": [
+      "a person who challenges widely accepted beliefs"
+    ],
+    "example": "The article highlighted an iconoclast in a clear and memorable way."
+  },
+  {
+    "word": "idiosyncratic",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪdioʊsˌɪnkrˈætɪk/",
+    "definitions": [
+      "peculiar to an individual"
+    ],
+    "example": "It was a idiosyncratic choice for the situation."
+  },
+  {
+    "word": "imminent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˈɪmənənt/",
+    "definitions": [
+      "about to happen very soon"
+    ],
+    "example": "It was a imminent choice for the situation."
+  },
+  {
+    "word": "immutable",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪmjˈutəbəl/",
+    "definitions": [
+      "unchanging over time"
+    ],
+    "example": "It was a immutable choice for the situation."
+  },
+  {
+    "word": "impartial",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪmpˈɑrʃəl/",
+    "definitions": [
+      "fair and not favoring one side"
+    ],
+    "example": "It was a impartial choice for the situation."
+  },
+  {
+    "word": "imperative",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪmpˈɛrətɪv/",
+    "definitions": [
+      "absolutely necessary or urgent"
+    ],
+    "example": "It was a imperative choice for the situation."
+  },
+  {
+    "word": "impecunious",
+    "part_of_speech": "adjective",
+    "pronunciation": null,
+    "definitions": [
+      "having very little money"
+    ],
+    "example": "It was a impecunious choice for the situation."
+  },
+  {
+    "word": "impertinent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪmpˈɝtənənt/",
+    "definitions": [
+      "rude, disrespectful, or not relevant"
+    ],
+    "example": "It was a impertinent choice for the situation."
+  },
+  {
+    "word": "impetuous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪmpˈɛtʃwəs/",
+    "definitions": [
+      "acting quickly without enough thought"
+    ],
+    "example": "It was a impetuous choice for the situation."
+  },
+  {
+    "word": "implicit",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪmplˈɪsət/",
+    "definitions": [
+      "suggested without being directly stated"
+    ],
+    "example": "It was a implicit choice for the situation."
+  },
+  {
+    "word": "improvise",
+    "part_of_speech": "verb",
+    "pronunciation": "/ˈɪmprəvˌaɪz/",
+    "definitions": [
+      "to create or act without preparation"
+    ],
+    "example": "Good leaders know when to improvise rather than react impulsively."
+  },
+  {
+    "word": "inadvertent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪnədvˈɝtənt/",
+    "definitions": [
+      "not intentional"
+    ],
+    "example": "It was a inadvertent choice for the situation."
+  },
+  {
+    "word": "incisive",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪnsˈaɪsɪv/",
+    "definitions": [
+      "clear, sharp, and intelligently analytical"
+    ],
+    "example": "It was a incisive choice for the situation."
+  },
+  {
+    "word": "incredulous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪnkrˈɛdʒələs/",
+    "definitions": [
+      "unwilling or unable to believe something"
+    ],
+    "example": "It was a incredulous choice for the situation."
+  },
+  {
+    "word": "indolent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˈɪndələnt/",
+    "definitions": [
+      "habitually lazy"
+    ],
+    "example": "It was a indolent choice for the situation."
+  },
+  {
+    "word": "industrious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪndˈʌstriəs/",
+    "definitions": [
+      "hardworking and productive"
+    ],
+    "example": "It was a industrious choice for the situation."
+  },
+  {
+    "word": "ineffable",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪnˈɛfəbəl/",
+    "definitions": [
+      "too great or extreme to be described in words"
+    ],
+    "example": "It was a ineffable choice for the situation."
+  },
+  {
+    "word": "inept",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪnˈɛpt/",
+    "definitions": [
+      "lacking skill or competence"
+    ],
+    "example": "It was a inept choice for the situation."
+  },
+  {
+    "word": "inexorable",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪnˈɛksɚəbəl/",
+    "definitions": [
+      "impossible to stop or prevent"
+    ],
+    "example": "It was a inexorable choice for the situation."
+  },
+  {
+    "word": "infer",
+    "part_of_speech": "verb",
+    "pronunciation": "/ˌɪnfˈɝ/",
+    "definitions": [
+      "to draw a conclusion from evidence"
+    ],
+    "example": "Good leaders know when to infer rather than react impulsively."
+  },
+  {
+    "word": "ingenuous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪndʒˈɛnjuəs/",
+    "definitions": [
+      "innocent, sincere, and straightforward"
+    ],
+    "example": "It was a ingenuous choice for the situation."
+  },
+  {
+    "word": "inhibit",
+    "part_of_speech": "verb",
+    "pronunciation": "/ˌɪnhˈɪbət/",
+    "definitions": [
+      "to restrain or hold back"
+    ],
+    "example": "Good leaders know when to inhibit rather than react impulsively."
+  },
+  {
+    "word": "innate",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪnˈeɪt/",
+    "definitions": [
+      "present from birth or naturally possessed"
+    ],
+    "example": "It was a innate choice for the situation."
+  },
+  {
+    "word": "insatiable",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪnsˈeɪʃəbəl/",
+    "definitions": [
+      "impossible to satisfy"
+    ],
+    "example": "It was a insatiable choice for the situation."
+  },
+  {
+    "word": "insidious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪnsˈɪdˌiəs/",
+    "definitions": [
+      "spreading harm gradually and subtly"
+    ],
+    "example": "It was a insidious choice for the situation."
+  },
+  {
+    "word": "integrity",
+    "part_of_speech": "noun",
+    "pronunciation": "/ˌɪntˈɛɡrəti/",
+    "definitions": [
+      "honesty and strong moral principles"
+    ],
+    "example": "Her integrity made a strong impression during the meeting."
+  },
+  {
+    "word": "intermittent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪntɚmˈɪtənt/",
+    "definitions": [
+      "occurring at irregular intervals"
+    ],
+    "example": "The improvement proved intermittent and soon began to fade."
+  },
+  {
+    "word": "intrepid",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɪntrˈɛpəd/",
+    "definitions": [
+      "fearless and adventurous"
+    ],
+    "example": "It was a intrepid choice for the situation."
+  },
+  {
+    "word": "intuitive",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪntˈuətɪv/",
+    "definitions": [
+      "easy to understand or use without instruction"
+    ],
+    "example": "It was a intuitive choice for the situation."
+  },
+  {
+    "word": "inure",
+    "part_of_speech": "verb",
+    "pronunciation": "/ˌɪnjˈʊr/",
+    "definitions": [
+      "to accustom someone to something difficult"
+    ],
+    "example": "Good leaders know when to inure rather than react impulsively."
+  },
+  {
+    "word": "inveterate",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɪnvˈɛtɚət/",
+    "definitions": [
+      "firmly established by long habit"
+    ],
+    "example": "It was a inveterate choice for the situation."
+  },
+  {
+    "word": "ironic",
+    "part_of_speech": "adjective",
+    "pronunciation": "/aɪrˈɑnɪk/",
+    "definitions": [
+      "happening in a way that is opposite of what was expected"
+    ],
+    "example": "It was a ironic choice for the situation."
+  },
+  {
+    "word": "judicious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/dʒudˈɪʃəs/",
+    "definitions": [
+      "showing good judgment and restraint"
+    ],
+    "example": "The team took a judicious approach and solved the problem efficiently."
+  },
+  {
+    "word": "juxtapose",
+    "part_of_speech": "verb",
+    "pronunciation": "/dʒˌʌkstəpˈoʊz/",
+    "definitions": [
+      "to place side by side for comparison or contrast"
+    ],
+    "example": "The speaker used examples to juxtapose the main idea."
+  },
+  {
+    "word": "keen",
+    "part_of_speech": "adjective",
+    "pronunciation": "/kˈin/",
+    "definitions": [
+      "highly developed, sharp, or eager"
+    ],
+    "example": "It was a keen choice for the situation."
+  },
+  {
+    "word": "laconic",
+    "part_of_speech": "adjective",
+    "pronunciation": "/lɑkˈɑnɪk/",
+    "definitions": [
+      "using very few words"
+    ],
+    "example": "It was a laconic choice for the situation."
+  },
+  {
+    "word": "laudable",
+    "part_of_speech": "adjective",
+    "pronunciation": "/lˈɔdəbəl/",
+    "definitions": [
+      "deserving praise"
+    ],
+    "example": "It was a laudable choice for the situation."
+  },
+  {
+    "word": "latent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/lˈeɪtənt/",
+    "definitions": [
+      "present but not yet visible or active"
+    ],
+    "example": "It was a latent choice for the situation."
+  },
+  {
+    "word": "laud",
+    "part_of_speech": "verb",
+    "pronunciation": "/lˈɔd/",
+    "definitions": [
+      "to praise highly"
+    ],
+    "example": "Good leaders know when to laud rather than react impulsively."
+  },
+  {
+    "word": "lethargic",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ləθˈɑrdʒɪk/",
+    "definitions": [
+      "sluggish and lacking energy"
+    ],
+    "example": "It was a lethargic choice for the situation."
+  },
+  {
+    "word": "levity",
+    "part_of_speech": "noun",
+    "pronunciation": "/lˈɛvɪti/",
+    "definitions": [
+      "lightness of manner or humor"
+    ],
+    "example": "Her levity made a strong impression during the meeting."
+  },
+  {
+    "word": "lucid",
+    "part_of_speech": "adjective",
+    "pronunciation": "/lˈusəd/",
+    "definitions": [
+      "clear and easy to understand"
+    ],
+    "example": "She gave a lucid explanation that everyone could follow."
+  },
+  {
+    "word": "lucrative",
+    "part_of_speech": "adjective",
+    "pronunciation": "/lˈukrətɪv/",
+    "definitions": [
+      "producing a great deal of profit"
+    ],
+    "example": "It was a lucrative choice for the situation."
+  },
+  {
+    "word": "magnanimous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/mæɡnˈænəməs/",
+    "definitions": [
+      "generous and forgiving, especially toward a rival"
+    ],
+    "example": "She remained magnanimous even when the discussion became tense."
+  },
+  {
+    "word": "malleable",
+    "part_of_speech": "adjective",
+    "pronunciation": "/mˈæliəbəl/",
+    "definitions": [
+      "easily influenced or shaped"
+    ],
+    "example": "It was a malleable choice for the situation."
+  },
+  {
+    "word": "mandate",
+    "part_of_speech": "noun",
+    "pronunciation": "/mˈændˌeɪt/",
+    "definitions": [
+      "an official order or requirement"
+    ],
+    "example": "The report revealed a mandate that the team had not anticipated."
+  },
+  {
+    "word": "marginal",
+    "part_of_speech": "adjective",
+    "pronunciation": "/mˈɑrdʒənəl/",
+    "definitions": [
+      "small in importance or effect"
+    ],
+    "example": "It was a marginal choice for the situation."
+  },
+  {
+    "word": "meager",
+    "part_of_speech": "adjective",
+    "pronunciation": "/mˈiɡɚ/",
+    "definitions": [
+      "lacking in quantity or quality"
+    ],
+    "example": "It was a meager choice for the situation."
+  },
+  {
+    "word": "meticulous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/mətˈɪkjələs/",
+    "definitions": [
+      "showing great attention to detail"
+    ],
+    "example": "The team took a meticulous approach and solved the problem efficiently."
+  },
+  {
+    "word": "mitigate",
+    "part_of_speech": "verb",
+    "pronunciation": "/mˈɪtəɡˌeɪt/",
+    "definitions": [
+      "to make less severe or serious"
+    ],
+    "example": "The new process should mitigate delays and improve the final result."
+  },
+  {
+    "word": "modicum",
+    "part_of_speech": "noun",
+    "pronunciation": "/mˈɑdɪkəm/",
+    "definitions": [
+      "a small quantity of something"
+    ],
+    "example": "The article highlighted a modicum in a clear and memorable way."
+  },
+  {
+    "word": "modulate",
+    "part_of_speech": "verb",
+    "pronunciation": "/mˈɔdʒjuleɪt/",
+    "definitions": [
+      "to adjust or regulate in degree or tone"
+    ],
+    "example": "Good leaders know when to modulate rather than react impulsively."
+  },
+  {
+    "word": "mundane",
+    "part_of_speech": "adjective",
+    "pronunciation": "/məndˈeɪn/",
+    "definitions": [
+      "ordinary and lacking excitement"
+    ],
+    "example": "It was a mundane choice for the situation."
+  },
+  {
+    "word": "nebulous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/nˈɛbjələs/",
+    "definitions": [
+      "vague, unclear, or ill-defined"
+    ],
+    "example": "It was a nebulous choice for the situation."
+  },
+  {
+    "word": "nefarious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/nəfˈɛriəs/",
+    "definitions": [
+      "wicked or criminal"
+    ],
+    "example": "It was a nefarious choice for the situation."
+  },
+  {
+    "word": "negligible",
+    "part_of_speech": "adjective",
+    "pronunciation": "/nˈɛɡlədʒəbəl/",
+    "definitions": [
+      "so small as to be unimportant"
+    ],
+    "example": "It was a negligible choice for the situation."
+  },
+  {
+    "word": "nonchalant",
+    "part_of_speech": "adjective",
+    "pronunciation": "/nˌɑnʃəlˈɑnt/",
+    "definitions": [
+      "appearing casually calm and unconcerned"
+    ],
+    "example": "It was a nonchalant choice for the situation."
+  },
+  {
+    "word": "novel",
+    "part_of_speech": "adjective",
+    "pronunciation": "/nˈɑvəl/",
+    "definitions": [
+      "new and original"
+    ],
+    "example": "It was a novel choice for the situation."
+  },
+  {
+    "word": "nuance",
+    "part_of_speech": "noun",
+    "pronunciation": "/nˈuɑns/",
+    "definitions": [
+      "a subtle difference in meaning or expression"
+    ],
+    "example": "The report revealed a nuance that the team had not anticipated."
+  },
+  {
+    "word": "obdurate",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˈɑbdɚət/",
+    "definitions": [
+      "stubbornly refusing to change"
+    ],
+    "example": "It was a obdurate choice for the situation."
+  },
+  {
+    "word": "objective",
+    "part_of_speech": "adjective",
+    "pronunciation": "/əbdʒˈɛktɪv/",
+    "definitions": [
+      "not influenced by personal feelings or opinions"
+    ],
+    "example": "It was a objective choice for the situation."
+  },
+  {
+    "word": "obsolete",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˈɑbsəlˌit/",
+    "definitions": [
+      "no longer produced or used; out of date"
+    ],
+    "example": "It was a obsolete choice for the situation."
+  },
+  {
+    "word": "obstinate",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˈɑbstənət/",
+    "definitions": [
+      "stubborn and difficult to persuade"
+    ],
+    "example": "His obstinate style made collaboration more difficult than it needed to be."
+  },
+  {
+    "word": "obfuscate",
+    "part_of_speech": "verb",
+    "pronunciation": "/ˈɑbfəskˌeɪt/",
+    "definitions": [
+      "to make something unclear or confusing"
+    ],
+    "example": "Good leaders know when to obfuscate rather than react impulsively."
+  },
+  {
+    "word": "oblique",
+    "part_of_speech": "adjective",
+    "pronunciation": "/əblˈik/",
+    "definitions": [
+      "indirect or not expressed plainly"
+    ],
+    "example": "It was a oblique choice for the situation."
+  },
+  {
+    "word": "obsequious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/əbsˈikwiəs/",
+    "definitions": [
+      "excessively eager to please or obey"
+    ],
+    "example": "It was a obsequious choice for the situation."
+  },
+  {
+    "word": "obtuse",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɑbtˈus/",
+    "definitions": [
+      "slow to understand or not sharp"
+    ],
+    "example": "It was a obtuse choice for the situation."
+  },
+  {
+    "word": "ominous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˈɑmənəs/",
+    "definitions": [
+      "suggesting that something bad is likely to happen"
+    ],
+    "example": "It was a ominous choice for the situation."
+  },
+  {
+    "word": "opaque",
+    "part_of_speech": "adjective",
+    "pronunciation": "/oʊpˈeɪk/",
+    "definitions": [
+      "hard to understand; not transparent"
+    ],
+    "example": "It was a opaque choice for the situation."
+  },
+  {
+    "word": "opportune",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɑpɚtˈun/",
+    "definitions": [
+      "well chosen for the circumstances"
+    ],
+    "example": "It was a opportune choice for the situation."
+  },
+  {
+    "word": "ornate",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɔrnˈeɪt/",
+    "definitions": [
+      "elaborately decorated or detailed"
+    ],
+    "example": "It was a ornate choice for the situation."
+  },
+  {
+    "word": "ostensible",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ɑstˈɛnsəbəl/",
+    "definitions": [
+      "appearing to be true but possibly not so"
+    ],
+    "example": "It was a ostensible choice for the situation."
+  },
+  {
+    "word": "ostentatious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/ˌɑstəntˈeɪʃəs/",
+    "definitions": [
+      "showy in a way meant to impress"
+    ],
+    "example": "It was a ostentatious choice for the situation."
+  },
+  {
+    "word": "paradigm",
+    "part_of_speech": "noun",
+    "pronunciation": "/pˈɛrədˌaɪm/",
+    "definitions": [
+      "a typical example or model"
+    ],
+    "example": "The article highlighted a paradigm in a clear and memorable way."
+  },
+  {
+    "word": "paradox",
+    "part_of_speech": "noun",
+    "pronunciation": "/pˈɛrədˌɑks/",
+    "definitions": [
+      "a statement or situation that seems self-contradictory but may be true"
+    ],
+    "example": "The report revealed a paradox that the team had not anticipated."
+  },
+  {
+    "word": "parsimonious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/pˌɑrsəmˈoʊniəs/",
+    "definitions": [
+      "extremely unwilling to spend money or resources"
+    ],
+    "example": "It was a parsimonious choice for the situation."
+  },
+  {
+    "word": "partisan",
+    "part_of_speech": "adjective",
+    "pronunciation": "/pˈɑrtəzən/",
+    "definitions": [
+      "strongly supporting one side or group"
+    ],
+    "example": "It was a partisan choice for the situation."
+  },
+  {
+    "word": "patronize",
+    "part_of_speech": "verb",
+    "pronunciation": "/pˈeɪtrənˌaɪz/",
+    "definitions": [
+      "to treat someone as less intelligent or important"
+    ],
+    "example": "Good leaders know when to patronize rather than react impulsively."
+  },
+  {
+    "word": "pensive",
+    "part_of_speech": "adjective",
+    "pronunciation": "/pˈɛnsɪv/",
+    "definitions": [
+      "deep in serious thought"
+    ],
+    "example": "It was a pensive choice for the situation."
+  },
+  {
+    "word": "perceptive",
+    "part_of_speech": "adjective",
+    "pronunciation": "/pɚsˈɛptɪv/",
+    "definitions": [
+      "quick to notice and understand things"
+    ],
+    "example": "It was a perceptive choice for the situation."
+  },
+  {
+    "word": "perfunctory",
+    "part_of_speech": "adjective",
+    "pronunciation": "/pɚfˈʌŋktɚi/",
+    "definitions": [
+      "done with minimal effort or interest"
+    ],
+    "example": "It was a perfunctory choice for the situation."
+  },
+  {
+    "word": "pernicious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/pɚnˈɪʃəs/",
+    "definitions": [
+      "having a harmful effect in a gradual or subtle way"
+    ],
+    "example": "It was a pernicious choice for the situation."
+  },
+  {
+    "word": "pervasive",
+    "part_of_speech": "adjective",
+    "pronunciation": "/pɚvˈeɪsɪv/",
+    "definitions": [
+      "spread throughout and hard to escape"
+    ],
+    "example": "It was a pervasive choice for the situation."
+  },
+  {
+    "word": "perspicacious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/pɚspəkˈeɪʃəs/",
+    "definitions": [
+      "having keen insight and good judgment"
+    ],
+    "example": "It was a perspicacious choice for the situation."
+  },
+  {
+    "word": "pertinent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/pˈɝtɪnɪnt/",
+    "definitions": [
+      "relevant and to the point"
+    ],
+    "example": "She gave a pertinent explanation that everyone could follow."
+  },
+  {
+    "word": "phlegmatic",
+    "part_of_speech": "adjective",
+    "pronunciation": "/flɛɡmˈætɪk/",
+    "definitions": [
+      "calm and not easily excited"
+    ],
+    "example": "It was a phlegmatic choice for the situation."
+  },
+  {
+    "word": "pithy",
+    "part_of_speech": "adjective",
+    "pronunciation": "/pˈɪθi/",
+    "definitions": [
+      "brief and full of meaning"
+    ],
+    "example": "It was a pithy choice for the situation."
+  },
+  {
+    "word": "placate",
+    "part_of_speech": "verb",
+    "pronunciation": "/plˈeɪkeɪt/",
+    "definitions": [
+      "to calm someone down or make them less angry"
+    ],
+    "example": "A calm response can placate tension before it escalates."
+  },
+  {
+    "word": "plausible",
+    "part_of_speech": "adjective",
+    "pronunciation": "/plˈɔzəbəl/",
+    "definitions": [
+      "seeming reasonable or likely to be true"
+    ],
+    "example": "It was a plausible choice for the situation."
+  },
+  {
+    "word": "plethora",
+    "part_of_speech": "noun",
+    "pronunciation": "/plˈɛθɚə/",
+    "definitions": [
+      "an excess or overabundance"
+    ],
+    "example": "The article highlighted a plethora in a clear and memorable way."
+  },
+  {
+    "word": "poignant",
+    "part_of_speech": "adjective",
+    "pronunciation": "/pˈɔɪnjənt/",
+    "definitions": [
+      "deeply affecting or moving"
+    ],
+    "example": "It was a poignant choice for the situation."
   },
   {
     "word": "pragmatic",
-    "pronunciation": "/præɡˈmætɪk/",
+    "part_of_speech": "adjective",
+    "pronunciation": "/præɡmˈætɪk/",
     "definitions": [
-      "Dealing with things sensibly and realistically in a way that is based on practical considerations.",
-      "Focused on actual results rather than theories or principles."
+      "dealing with things in a practical way"
     ],
-    "example": "He took a pragmatic approach to the project, choosing solutions that worked rather than ones that were theoretically ideal."
+    "example": "The team took a pragmatic approach and solved the problem efficiently."
   },
   {
-    "word": "ubiquitous",
-    "pronunciation": "/juːˈbɪkwɪtəs/",
+    "word": "precarious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/prikˈɛriəs/",
     "definitions": [
-      "Present, appearing, or found everywhere.",
-      "Seemingly omnipresent; constantly encountered."
+      "dangerously unstable or uncertain"
     ],
-    "example": "Smartphones have become so ubiquitous that it's hard to imagine daily life without them."
+    "example": "It was a precarious choice for the situation."
+  },
+  {
+    "word": "preclude",
+    "part_of_speech": "verb",
+    "pronunciation": "/prɪklˈud/",
+    "definitions": [
+      "to prevent something from happening"
+    ],
+    "example": "Good leaders know when to preclude rather than react impulsively."
+  },
+  {
+    "word": "precocious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/prɪkˈoʊʃəs/",
+    "definitions": [
+      "showing unusually early development"
+    ],
+    "example": "It was a precocious choice for the situation."
+  },
+  {
+    "word": "predominant",
+    "part_of_speech": "adjective",
+    "pronunciation": "/prɪdˈɑmənənt/",
+    "definitions": [
+      "most common or influential"
+    ],
+    "example": "It was a predominant choice for the situation."
+  },
+  {
+    "word": "prevalent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/prˈɛvələnt/",
+    "definitions": [
+      "widespread and common"
+    ],
+    "example": "It was a prevalent choice for the situation."
+  },
+  {
+    "word": "pristine",
+    "part_of_speech": "adjective",
+    "pronunciation": "/prˈɪstin/",
+    "definitions": [
+      "in original, clean, or untouched condition"
+    ],
+    "example": "It was a pristine choice for the situation."
+  },
+  {
+    "word": "probity",
+    "part_of_speech": "noun",
+    "pronunciation": "/prˈoʊbəti/",
+    "definitions": [
+      "complete honesty and moral integrity"
+    ],
+    "example": "Her probity made a strong impression during the meeting."
+  },
+  {
+    "word": "prodigious",
+    "part_of_speech": "adjective",
+    "pronunciation": "/prədˈɪdʒəs/",
+    "definitions": [
+      "remarkably great in size, amount, or degree"
+    ],
+    "example": "It was a prodigious choice for the situation."
+  },
+  {
+    "word": "profound",
+    "part_of_speech": "adjective",
+    "pronunciation": "/proʊfˈaʊnd/",
+    "definitions": [
+      "very deep or significant"
+    ],
+    "example": "It was a profound choice for the situation."
+  },
+  {
+    "word": "prolific",
+    "part_of_speech": "adjective",
+    "pronunciation": "/proʊlˈɪfɪk/",
+    "definitions": [
+      "producing much in abundance"
+    ],
+    "example": "It was a prolific choice for the situation."
+  },
+  {
+    "word": "propensity",
+    "part_of_speech": "noun",
+    "pronunciation": "/prəpˈɛnsɪti/",
+    "definitions": [
+      "a natural tendency toward a behavior"
+    ],
+    "example": "The article highlighted a propensity in a clear and memorable way."
+  },
+  {
+    "word": "prosaic",
+    "part_of_speech": "adjective",
+    "pronunciation": "/proʊzˈeɪɪk/",
+    "definitions": [
+      "dull, ordinary, and lacking imagination"
+    ],
+    "example": "It was a prosaic choice for the situation."
+  },
+  {
+    "word": "prudent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/prˈudənt/",
+    "definitions": [
+      "showing care and good sense"
+    ],
+    "example": "It was a prudent choice for the situation."
+  },
+  {
+    "word": "quaint",
+    "part_of_speech": "adjective",
+    "pronunciation": "/kwˈeɪnt/",
+    "definitions": [
+      "attractively old-fashioned"
+    ],
+    "example": "It was a quaint choice for the situation."
+  },
+  {
+    "word": "quell",
+    "part_of_speech": "verb",
+    "pronunciation": "/kwˈɛl/",
+    "definitions": [
+      "to put an end to, especially by calming"
+    ],
+    "example": "A calm response can quell tension before it escalates."
+  },
+  {
+    "word": "querulous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/kwˈɛrələs/",
+    "definitions": [
+      "frequently complaining"
+    ],
+    "example": "His querulous style made collaboration more difficult than it needed to be."
+  },
+  {
+    "word": "quintessential",
+    "part_of_speech": "adjective",
+    "pronunciation": "/kwˌɪntɪsˈɛnʃəl/",
+    "definitions": [
+      "representing the most perfect example of something"
+    ],
+    "example": "It was a quintessential choice for the situation."
+  },
+  {
+    "word": "rational",
+    "part_of_speech": "adjective",
+    "pronunciation": "/rˈæʃənəl/",
+    "definitions": [
+      "based on reason rather than emotion"
+    ],
+    "example": "It was a rational choice for the situation."
+  },
+  {
+    "word": "recalcitrant",
+    "part_of_speech": "adjective",
+    "pronunciation": "/rɪkˈælsɪtrənt/",
+    "definitions": [
+      "stubbornly resistant to authority or control"
+    ],
+    "example": "His recalcitrant style made collaboration more difficult than it needed to be."
+  },
+  {
+    "word": "reconcile",
+    "part_of_speech": "verb",
+    "pronunciation": "/rˈɛkənsˌaɪl/",
+    "definitions": [
+      "to restore friendly relations or make consistent"
+    ],
+    "example": "A calm response can reconcile tension before it escalates."
+  },
+  {
+    "word": "redundant",
+    "part_of_speech": "adjective",
+    "pronunciation": "/rɪdˈʌndənt/",
+    "definitions": [
+      "unnecessarily repetitive or no longer needed"
+    ],
+    "example": "It was a redundant choice for the situation."
+  },
+  {
+    "word": "refine",
+    "part_of_speech": "verb",
+    "pronunciation": "/rəfˈaɪn/",
+    "definitions": [
+      "to improve by making small changes"
+    ],
+    "example": "The new process should refine delays and improve the final result."
+  },
+  {
+    "word": "relegate",
+    "part_of_speech": "verb",
+    "pronunciation": "/rˈɛləɡˌeɪt/",
+    "definitions": [
+      "to assign to a lower or less important position"
+    ],
+    "example": "Good leaders know when to relegate rather than react impulsively."
+  },
+  {
+    "word": "relinquish",
+    "part_of_speech": "verb",
+    "pronunciation": "/rɪlˈɪŋkwɪʃ/",
+    "definitions": [
+      "to give up something willingly or by force"
+    ],
+    "example": "Good leaders know when to relinquish rather than react impulsively."
+  },
+  {
+    "word": "remorse",
+    "part_of_speech": "noun",
+    "pronunciation": "/rɪmˈɔrs/",
+    "definitions": [
+      "deep regret for wrongdoing"
+    ],
+    "example": "The article highlighted a remorse in a clear and memorable way."
+  },
+  {
+    "word": "render",
+    "part_of_speech": "verb",
+    "pronunciation": "/rˈɛndɚ/",
+    "definitions": [
+      "to cause to be or to provide"
+    ],
+    "example": "The speaker used examples to render the main idea."
+  },
+  {
+    "word": "resilient",
+    "part_of_speech": "adjective",
+    "pronunciation": "/rɪzˈɪljənt/",
+    "definitions": [
+      "able to recover quickly from difficulty"
+    ],
+    "example": "The team took a resilient approach and solved the problem efficiently."
+  },
+  {
+    "word": "reticent",
+    "part_of_speech": "adjective",
+    "pronunciation": "/rˈɛtɪsənt/",
+    "definitions": [
+      "reserved and not inclined to speak freely"
+    ],
+    "example": "It was a reticent choice for the situation."
+  },
+  {
+    "word": "rigorous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/rˈɪɡɚəs/",
+    "definitions": [
+      "thorough, accurate, and strict"
+    ],
+    "example": "The team took a rigorous approach and solved the problem efficiently."
+  },
+  {
+    "word": "robust",
+    "part_of_speech": "adjective",
+    "pronunciation": "/roʊbˈʌst/",
+    "definitions": [
+      "strong and effective in all conditions"
+    ],
+    "example": "The team took a robust approach and solved the problem efficiently."
+  },
+  {
+    "word": "rudimentary",
+    "part_of_speech": "adjective",
+    "pronunciation": "/rˌudəmˈɛntɚi/",
+    "definitions": [
+      "basic and not fully developed"
+    ],
+    "example": "It was a rudimentary choice for the situation."
+  },
+  {
+    "word": "sagacious",
+    "part_of_speech": "adjective",
+    "pronunciation": null,
+    "definitions": [
+      "wise and shrewd"
+    ],
+    "example": "It was a sagacious choice for the situation."
+  },
+  {
+    "word": "salient",
+    "part_of_speech": "adjective",
+    "pronunciation": "/sˈeɪliənt/",
+    "definitions": [
+      "most noticeable or important"
+    ],
+    "example": "It was a salient choice for the situation."
+  },
+  {
+    "word": "sanction",
+    "part_of_speech": "noun",
+    "pronunciation": "/sˈæŋkʃən/",
+    "definitions": [
+      "an official approval or penalty, depending on context"
+    ],
+    "example": "The article highlighted a sanction in a clear and memorable way."
+  },
+  {
+    "word": "scrutinize",
+    "part_of_speech": "verb",
+    "pronunciation": "/skrˈutənˌaɪz/",
+    "definitions": [
+      "to examine very closely"
+    ],
+    "example": "Good leaders know when to scrutinize rather than react impulsively."
+  },
+  {
+    "word": "scrupulous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/skrˈupjələs/",
+    "definitions": [
+      "careful, thorough, and principled"
+    ],
+    "example": "It was a scrupulous choice for the situation."
+  },
+  {
+    "word": "serene",
+    "part_of_speech": "adjective",
+    "pronunciation": "/sɚˈin/",
+    "definitions": [
+      "calm, peaceful, and untroubled"
+    ],
+    "example": "She remained serene even when the discussion became tense."
+  },
+  {
+    "word": "serendipity",
+    "part_of_speech": "noun",
+    "pronunciation": "/sˌɛrəndˈɪpɪti/",
+    "definitions": [
+      "the occurrence of beneficial chance discoveries"
+    ],
+    "example": "The report revealed a serendipity that the team had not anticipated."
+  },
+  {
+    "word": "skeptical",
+    "part_of_speech": "adjective",
+    "pronunciation": "/skˈɛptəkəl/",
+    "definitions": [
+      "not easily convinced; questioning"
+    ],
+    "example": "It was a skeptical choice for the situation."
+  },
+  {
+    "word": "solicitous",
+    "part_of_speech": "adjective",
+    "pronunciation": "/səlˈɪsətəs/",
+    "definitions": [
+      "showing concern or care"
+    ],
+    "example": "It was a solicitous choice for the situation."
+  },
+  {
+    "word": "soporific",
+    "part_of_speech": "adjective",
+    "pronunciation": null,
+    "definitions": [
+      "tending to cause sleep or boredom"
+    ],
+    "example": "It was a soporific choice for the situation."
   }
 ]

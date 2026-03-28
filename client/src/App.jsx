@@ -288,15 +288,9 @@ function WodMode({ wod }) {
       <div style={{ display: 'flex', alignItems: 'baseline', gap: 24, marginBottom: 12 }}>
         <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1 }}>{wod.word}</div>
         {wod.pronunciation && <div style={{ fontSize: 28, color: '#7dd3fc', fontStyle: 'italic' }}>{wod.pronunciation}</div>}
+        {wod.partOfSpeech && <div style={{ fontSize: 22, color: '#94a3b8', fontStyle: 'italic' }}>{wod.partOfSpeech}</div>}
       </div>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginBottom: 28 }}>
-        {wod.definitions.map((def, i) => (
-          <div key={i} style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-            <div style={{ fontSize: 20, color: '#7dd3fc', fontWeight: 700, minWidth: 28, marginTop: 3 }}>{i + 1}.</div>
-            <div style={{ fontSize: 30, color: '#d8e2ef', lineHeight: 1.4 }}>{def}</div>
-          </div>
-        ))}
-      </div>
+      <div style={{ fontSize: 32, color: '#d8e2ef', lineHeight: 1.5, marginBottom: 28 }}>{wod.definition}</div>
       {wod.example && (
         <div style={{ borderLeft: '3px solid #7dd3fc44', paddingLeft: 24 }}>
           <div style={{ fontSize: 16, letterSpacing: 3, color: '#7dd3fc', textTransform: 'uppercase', marginBottom: 8 }}>Example</div>

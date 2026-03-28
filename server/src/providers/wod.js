@@ -12,8 +12,9 @@ export async function getWod() {
   const entry = words[Math.floor(Math.random() * words.length)];
   return {
     word: entry.word,
+    partOfSpeech: entry.part_of_speech || null,
     pronunciation: entry.pronunciation || null,
-    definitions: Array.isArray(entry.definitions) ? entry.definitions : [entry.definitions],
+    definition: Array.isArray(entry.definitions) ? entry.definitions[0] : entry.definitions,
     example: entry.example || null
   };
 }
