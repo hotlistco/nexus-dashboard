@@ -132,20 +132,25 @@ function NytHomeMode({ items }) {
   const [lead, ...rest] = items;
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column', gap: 12 }}>
-      <SectionTitle>New York Times</SectionTitle>
-      <div style={{ flex: 1, display: 'grid', gridTemplateRows: '1.4fr 1fr', gap: 12, minHeight: 0 }}>
-        <Card style={{ padding: 0, overflow: 'hidden', position: 'relative', backgroundImage: lead.image ? `linear-gradient(to bottom, rgba(2,6,23,0.15) 0%, rgba(2,6,23,0.85) 100%), url(${lead.image})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <SectionTitle>New York Times - Front Page</SectionTitle>
+      <div style={{ flex: 1, display: 'flex', gap: 12, minHeight: 0 }}>
+        {/* Lead story — square */}
+        <Card style={{ aspectRatio: '1 / 1', height: '100%', flexShrink: 0, padding: 0, overflow: 'hidden', position: 'relative', backgroundImage: lead.image ? `linear-gradient(to bottom, rgba(2,6,23,0.1) 0%, rgba(2,6,23,0.82) 100%), url(${lead.image})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '20px 24px' }}>
-            <div style={{ fontSize: 34, lineHeight: 1.2, fontWeight: 700, maxWidth: '90%' }}>{lead.title}</div>
-            {lead.description && <div style={{ fontSize: 18, color: '#d8e2ef', marginTop: 8, lineHeight: 1.4, maxWidth: '85%', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{lead.description}</div>}
-            {lead.date && <div style={{ fontSize: 14, color: '#7dd3fc', marginTop: 8 }}>{lead.date}</div>}
+            <div style={{ fontSize: 30, lineHeight: 1.2, fontWeight: 700 }}>{lead.title}</div>
+            {lead.description && <div style={{ fontSize: 16, color: '#d8e2ef', marginTop: 8, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{lead.description}</div>}
+            {lead.date && <div style={{ fontSize: 13, color: '#7dd3fc', marginTop: 8 }}>{lead.date}</div>}
           </div>
         </Card>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 12, minHeight: 0 }}>
-          {rest.slice(0, 5).map((item) => (
-            <Card key={item.title} style={{ padding: 16, overflow: 'hidden', position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', backgroundImage: item.image ? `linear-gradient(to bottom, rgba(2,6,23,0.1) 0%, rgba(2,6,23,0.88) 55%), url(${item.image})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div style={{ fontSize: 17, lineHeight: 1.3, fontWeight: 600 }}>{item.title}</div>
-              {item.date && <div style={{ fontSize: 13, color: '#7dd3fc', marginTop: 6 }}>{item.date}</div>}
+        {/* Next 3 stories stacked on the right */}
+        <div style={{ flex: 1, display: 'grid', gridTemplateRows: 'repeat(3, 1fr)', gap: 12, minHeight: 0 }}>
+          {rest.slice(0, 3).map((item) => (
+            <Card key={item.title} style={{ padding: 0, overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'flex-end', backgroundImage: item.image ? `linear-gradient(to bottom, rgba(2,6,23,0.05) 0%, rgba(2,6,23,0.88) 60%), url(${item.image})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <div style={{ padding: '14px 18px' }}>
+                <div style={{ fontSize: 20, lineHeight: 1.3, fontWeight: 600 }}>{item.title}</div>
+                {item.description && <div style={{ fontSize: 15, color: '#d8e2ef', marginTop: 5, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{item.description}</div>}
+                {item.date && <div style={{ fontSize: 13, color: '#7dd3fc', marginTop: 5 }}>{item.date}</div>}
+              </div>
             </Card>
           ))}
         </div>
