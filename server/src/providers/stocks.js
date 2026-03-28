@@ -26,6 +26,9 @@ export async function getStocks(env) {
       price: `$${price.toFixed(2)}`,
       change: `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%`,
       positive: pct >= 0,
+      current: price,
+      low: data.l,
+      high: data.h,
     };
   }));
 

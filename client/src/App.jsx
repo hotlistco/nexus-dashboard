@@ -120,7 +120,17 @@ function StocksMode({ items }) {
             <div style={{ fontSize: 30, fontWeight: 700 }}>{stock.symbol}</div>
             <div style={{ fontSize: 28 }}>{stock.price}</div>
             <div style={{ fontSize: 24, color: stock.positive ? '#86efac' : '#fca5a5' }}>{stock.change}</div>
-            <div style={{ height: 44, borderRadius: 999, background: 'linear-gradient(90deg, rgba(255,255,255,0.04), rgba(125,211,252,0.18), rgba(255,255,255,0.04))' }} />
+            <div style={{ position: 'relative', height: 44, borderRadius: 999, background: 'rgba(255,255,255,0.07)' }}>
+              {stock.high > stock.low && (
+                <div style={{
+                  position: 'absolute', top: '50%', transform: 'translateY(-50%)',
+                  left: `${((stock.current - stock.low) / (stock.high - stock.low)) * 100}%`,
+                  width: 10, height: 28, borderRadius: 4,
+                  background: stock.positive ? '#86efac' : '#f87171',
+                  marginLeft: -5
+                }} />
+              )}
+            </div>
           </Card>
         ))}
       </div>
