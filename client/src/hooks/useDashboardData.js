@@ -2,9 +2,10 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { dashboardApi } from '../lib/api';
 import { initTizenRemoteKeys, isTizenDevice } from '../lib/tizenRemote';
 
-const modes = ['news', 'trends', 'stocks', 'learning', 'tasks'];
+const modes = ['news', 'weather', 'trends', 'stocks', 'learning', 'tasks'];
 const modeDurationsMs = {
   news: 20000,
+  weather: 16000,
   trends: 16000,
   stocks: 16000,
   learning: 18000,
