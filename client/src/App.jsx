@@ -48,6 +48,131 @@ function Card({ children, style = {} }) {
   );
 }
 
+const TRADITIONAL_MOON_NAMES = ['Wolf Moon', 'Snow Moon', 'Worm Moon', 'Pink Moon', 'Flower Moon', 'Strawberry Moon', 'Buck Moon', 'Sturgeon Moon', 'Harvest Moon', 'Hunter\'s Moon', 'Beaver Moon', 'Cold Moon'];
+
+// Total lunar eclipse dates (blood moons) through 2030
+const BLOOD_MOON_DATES = new Set(['2025-03-14', '2025-09-07', '2026-03-03', '2026-08-28', '2028-07-06', '2029-01-01', '2029-06-26', '2030-06-16']);
+
+function getMoonPhase() {
+  const now = new Date();
+  const nowMs = now.getTime();
+
+  // Synodic phase (0=new, 0.5=full, 1=new)
+  const knownNewMoon = new Date('2000-01-06T18:14:00Z').getTime();
+  const synodicMs = 29.53058867 * 24 * 60 * 60 * 1000;
+  const phase = ((nowMs - knownNewMoon) % synodicMs + synodicMs) % synodicMs / synodicMs;
+
+  // Anomalistic phase for super/micro moon (0=perigee, ~0.5=apogee)
+  const knownPerigee = new Date('2019-01-21T05:00:00Z').getTime();
+  const anomalisticMs = 27.554551 * 24 * 60 * 60 * 1000;
+  const perigeePhase = ((nowMs - knownPerigee) % anomalisticMs + anomalisticMs) % anomalisticMs / anomalisticMs;
+
+  const nearFull = phase > 0.45 && phase < 0.55;
+  const nearPerigee = perigeePhase < 0.1 || perigeePhase > 0.9;
+  const nearApogee = perigeePhase > 0.4 && perigeePhase < 0.6;
+  const isSuperMoon = nearFull && nearPerigee;
+  const isMicroMoon = nearFull && nearApogee;
+
+  // Blood moon: today matches a known total lunar eclipse date (local date)
+  const localDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  const isBloodMoon = BLOOD_MOON_DATES.has(localDate);
+
+  // Blue moon: second full moon in the same calendar month
+  let isBlueMonth = false;
+  if (nearFull) {
+    const msSinceFull = (phase >= 0.5 ? phase - 0.5 : phase + 0.5) * synodicMs;
+    const prevFullMs = nowMs - msSinceFull;
+    const prevPrevFullMs = prevFullMs - synodicMs;
+    const prev = new Date(prevPrevFullMs);
+    isBlueMonth = prev.getMonth() === now.getMonth() && prev.getFullYear() === now.getFullYear();
+  }
+
+  // Harvest Moon: full moon nearest the autumnal equinox (~Sep 22)
+  // Hunter's Moon: full moon nearest Oct 22 (one month after equinox)
+  let isHarvestMoon = false, isHuntersMoon = false;
+  if (nearFull) {
+    const equinox = new Date(now.getFullYear(), 8, 22, 12, 0, 0).getTime();
+    const daysFromEquinox = (nowMs - equinox) / (24 * 60 * 60 * 1000);
+    isHarvestMoon = Math.abs(daysFromEquinox) < 14.77;
+    const huntersTarget = new Date(now.getFullYear(), 9, 22, 12, 0, 0).getTime();
+    const daysFromHunters = (nowMs - huntersTarget) / (24 * 60 * 60 * 1000);
+    isHuntersMoon = !isHarvestMoon && Math.abs(daysFromHunters) < 14.77;
+  }
+
+  // Base phase name
+  let phaseName = (() => {
+    if (phase < 0.03 || phase > 0.97) return 'New Moon';
+    if (phase < 0.22) return 'Waxing Crescent';
+    if (phase < 0.28) return 'First Quarter';
+    if (phase < 0.47) return 'Waxing Gibbous';
+    if (phase < 0.53) return 'Full Moon';
+    if (phase < 0.72) return 'Waning Gibbous';
+    if (phase < 0.78) return 'Last Quarter';
+    return 'Waning Crescent';
+  })();
+
+  // Special name overrides (priority order)
+  if (nearFull) {
+    if (isHarvestMoon) phaseName = 'Harvest Moon';
+    else if (isHuntersMoon) phaseName = "Hunter's Moon";
+    if (isMicroMoon) phaseName = 'Micro Moon';
+    if (isSuperMoon) phaseName = isBloodMoon ? 'Super Blood Moon' : 'Super Moon';
+    if (isBloodMoon && !isSuperMoon) phaseName = 'Blood Moon';
+    if (isBlueMonth) phaseName = isSuperMoon ? 'Super Blue Moon' : 'Blue Moon';
+  }
+
+  // Traditional monthly name (shown as subtitle when it's a full moon)
+  const traditionalName = nearFull ? TRADITIONAL_MOON_NAMES[now.getMonth()] : null;
+
+  // Overlay color tint
+  let overlay = null;
+  if (isBloodMoon) overlay = 'rgba(180,40,10,0.38)';
+  else if (isBlueMonth) overlay = 'rgba(40,80,220,0.28)';
+  else if (isHarvestMoon || isHuntersMoon) overlay = 'rgba(210,120,10,0.28)';
+
+  return { phase, phaseName, traditionalName, overlay };
+}
+
+function MoonPhase({ size = 60 }) {
+  const { phase, phaseName, traditionalName, overlay } = getMoonPhase();
+  const r = size / 2;
+
+  const waxing = phase < 0.5;
+  const halfPhase = waxing ? phase * 2 : (phase - 0.5) * 2;
+  const terminatorRx = r * Math.cos(halfPhase * Math.PI);
+  const absRx = Math.abs(terminatorRx);
+
+  let shadowPath = null;
+  if (halfPhase <= 0.01) {
+    shadowPath = `M ${r} 0 A ${r} ${r} 0 1 1 ${r} ${size} A ${r} ${r} 0 1 1 ${r} 0 Z`;
+  } else if (halfPhase < 0.99) {
+    const terminatorSweep = waxing ? (terminatorRx > 0 ? 0 : 1) : (terminatorRx > 0 ? 1 : 0);
+    const outerSweep = waxing ? 0 : 1;
+    shadowPath = `M ${r} 0 A ${r} ${r} 0 1 ${outerSweep} ${r} ${size} A ${absRx} ${r} 0 1 ${terminatorSweep} ${r} 0 Z`;
+  }
+
+  return (
+    <div style={{ display: 'flex', alignItems: 'flex-end', gap: 10 }}>
+      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
+        <defs>
+          <clipPath id="moonCircleClip">
+            <circle cx={r} cy={r} r={r} />
+          </clipPath>
+        </defs>
+        <image href="/fullMoon.png" x={0} y={0} width={size} height={size} clipPath="url(#moonCircleClip)" />
+        {overlay && <circle cx={r} cy={r} r={r} fill={overlay} clipPath="url(#moonCircleClip)" />}
+        {shadowPath && <path d={shadowPath} fill="rgba(0,0,0,0.80)" clipPath="url(#moonCircleClip)" />}
+      </svg>
+      <div>
+        <div style={{ fontSize: 15, color: '#d8e2ef' }}>{phaseName}</div>
+        {traditionalName && traditionalName !== phaseName && (
+          <div style={{ fontSize: 12, color: '#94a3b8', marginTop: 2 }}>{traditionalName}</div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 function WeatherPanel({ weather }) {
   const current = weather?.current;
   return (
@@ -60,6 +185,9 @@ function WeatherPanel({ weather }) {
               <div style={{ fontSize: 48, fontWeight: 700, lineHeight: 1 }}>{current.temp}</div>
               <div style={{ fontSize: 15, color: '#d8e2ef', marginTop: 2, textTransform: 'capitalize' }}>{current.description}</div>
             </div>
+          </div>
+          <div style={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'flex-end' }}>
+            <MoonPhase />
           </div>
           <div style={{ textAlign: 'right', fontSize: 15, color: '#b9c6d8', lineHeight: 1.7 }}>
             <div style={{ fontSize: 17, color: '#d8e2ef' }}>{current.location}</div>

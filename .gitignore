@@ -4,3 +4,4 @@ client_secret*.json
 token.json
 package-lock.json
 convert-dictionary.sh
+.DS_store
