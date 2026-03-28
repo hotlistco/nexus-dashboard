@@ -147,16 +147,40 @@ function formatVolume(v) {
   return `${n.toLocaleString()} searches`;
 }
 
+function timeAgo(timestamp) {
+  if (!timestamp) return null;
+  const diffMs = Date.now() - timestamp * 1000;
+  const mins = Math.floor(diffMs / 60000);
+  if (mins < 60) return `${mins}m ago`;
+  const hrs = Math.floor(mins / 60);
+  return `${hrs}h ago`;
+}
+
 function TrendsMode({ items }) {
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
       <SectionTitle right="Mode B">Trending searches</SectionTitle>
       <div style={{ flex: 1, display: 'grid', gridTemplateRows: `repeat(${items.length}, 1fr)`, gap: 10, minHeight: 0 }}>
         {items.map((item, index) => (
-          <Card key={item.query} style={{ padding: '0 20px', display: 'grid', gridTemplateColumns: '70px 1fr auto', alignItems: 'center' }}>
+          <Card key={item.query} style={{ padding: '8px 20px', display: 'grid', gridTemplateColumns: '70px 1fr auto', alignItems: 'center', gap: 12 }}>
             <div style={{ fontSize: 24, color: '#b9c6d8' }}>#{index + 1}</div>
-            <div style={{ fontSize: 26, fontWeight: 600 }}>{item.query}</div>
-            <div style={{ fontSize: 18, color: '#7dd3fc' }}>{formatVolume(item.volume)}</div>
+            <div>
+              <div style={{ fontSize: 24, fontWeight: 600 }}>{item.query}</div>
+              {item.breakdown?.length > 0 && (
+                <div style={{ fontSize: 13, color: '#94a3b8', marginTop: 2 }}>{item.breakdown.slice(0, 4).join(' · ')}</div>
+              )}
+            </div>
+            <div style={{ textAlign: 'right' }}>
+              {item.increasePercentage != null && (
+                <div style={{ fontSize: 16, color: '#86efac' }}>+{item.increasePercentage}%</div>
+              )}
+              {item.startTimestamp != null && (
+                <div style={{ fontSize: 13, color: '#94a3b8' }}>{timeAgo(item.startTimestamp)}</div>
+              )}
+              {item.volume != null && (
+                <div style={{ fontSize: 14, color: '#7dd3fc' }}>{formatVolume(item.volume)}</div>
+              )}
+            </div>
           </Card>
         ))}
       </div>

@@ -6,7 +6,7 @@ const modes = ['news', 'weather', 'trends', 'stocks', 'wod', 'tasks'];
 const modeDurationsMs = {
   news: 30000,
   weather: 20000,
-  trends: 16000,
+  trends: 60000,
   stocks: 16000,
   wod: 30000,
   tasks: 30000
