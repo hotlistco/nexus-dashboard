@@ -2,9 +2,10 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { dashboardApi } from '../lib/api';
 import { initTizenRemoteKeys, isTizenDevice } from '../lib/tizenRemote';
 
-const modes = ['news', 'weather', 'trends', 'stocks', 'wod', 'tasks'];
+const modes = ['news', 'nythome', 'weather', 'trends', 'stocks', 'wod', 'tasks'];
 const modeDurationsMs = {
   news: 30000,
+  nythome: 30000,
   weather: 20000,
   trends: 60000,
   stocks: 16000,
@@ -67,6 +68,7 @@ export function useDashboardData() {
   const [data, setData] = useState({
     weather: null,
     news: [],
+    nytHome: [],
     trends: [],
     stocks: [],
     tasks: fallbackTasks,
@@ -90,9 +92,10 @@ export function useDashboardData() {
   }, []);
 
   const refresh = useCallback(async () => {
-    const [weatherResult, newsResult, trendsResult, stocksResult, tasksResult, wodResult] = await Promise.allSettled([
+    const [weatherResult, newsResult, nytHomeResult, trendsResult, stocksResult, tasksResult, wodResult] = await Promise.allSettled([
       dashboardApi.getWeather(),
       dashboardApi.getNews(),
+      dashboardApi.getNytHome(),
       dashboardApi.getTrends(),
       dashboardApi.getStocks(),
       dashboardApi.getTasks(),
@@ -109,6 +112,9 @@ export function useDashboardData() {
 
       if (newsResult.status === 'fulfilled') next.news = newsResult.value.items || [];
       else errors.push(`News: ${newsResult.reason?.message || 'failed'}`);
+
+      if (nytHomeResult.status === 'fulfilled') next.nytHome = nytHomeResult.value.items || [];
+      else errors.push(`NYT: ${nytHomeResult.reason?.message || 'failed'}`);
 
       if (trendsResult.status === 'fulfilled') next.trends = trendsResult.value.items || [];
       else errors.push(`Trends: ${trendsResult.reason?.message || 'failed'}`);
@@ -262,7 +268,8 @@ export function useDashboardData() {
       lastRemoteAction,
       remoteSupported: isTizenDevice(),
       activeTaskGroupIndex,
-      wod: data.wod
+      wod: data.wod,
+      nytHome: data.nytHome
     }),
     [data, clock, modeIndex, learningIndex, refresh, rotationPaused, lastRemoteAction, activeTaskGroupIndex]
   );

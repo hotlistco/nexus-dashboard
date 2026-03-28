@@ -123,6 +123,37 @@ function WeatherMode({ weather }) {
   );
 }
 
+function NytHomeMode({ items }) {
+  if (!items?.length) return (
+    <Card style={{ height: '100%', padding: 32, boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div style={{ fontSize: 28, color: '#d8e2ef' }}>Loading NYT headlines…</div>
+    </Card>
+  );
+  const [lead, ...rest] = items;
+  return (
+    <div style={{ height: '100%', display: 'flex', flexDirection: 'column', gap: 12 }}>
+      <SectionTitle>New York Times</SectionTitle>
+      <div style={{ flex: 1, display: 'grid', gridTemplateRows: '1.4fr 1fr', gap: 12, minHeight: 0 }}>
+        <Card style={{ padding: 0, overflow: 'hidden', position: 'relative', backgroundImage: lead.image ? `linear-gradient(to bottom, rgba(2,6,23,0.15) 0%, rgba(2,6,23,0.85) 100%), url(${lead.image})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '20px 24px' }}>
+            <div style={{ fontSize: 34, lineHeight: 1.2, fontWeight: 700, maxWidth: '90%' }}>{lead.title}</div>
+            {lead.description && <div style={{ fontSize: 18, color: '#d8e2ef', marginTop: 8, lineHeight: 1.4, maxWidth: '85%', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{lead.description}</div>}
+            {lead.date && <div style={{ fontSize: 14, color: '#7dd3fc', marginTop: 8 }}>{lead.date}</div>}
+          </div>
+        </Card>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 12, minHeight: 0 }}>
+          {rest.slice(0, 5).map((item) => (
+            <Card key={item.title} style={{ padding: 16, overflow: 'hidden', position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', backgroundImage: item.image ? `linear-gradient(to bottom, rgba(2,6,23,0.1) 0%, rgba(2,6,23,0.88) 55%), url(${item.image})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <div style={{ fontSize: 17, lineHeight: 1.3, fontWeight: 600 }}>{item.title}</div>
+              {item.date && <div style={{ fontSize: 13, color: '#7dd3fc', marginTop: 6 }}>{item.date}</div>}
+            </Card>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function NewsMode({ items }) {
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
@@ -369,6 +400,7 @@ function MainZone(props) {
     case 'wod': return <WodMode wod={props.wod} />;
     case 'learning': return <LearningMode learning={props.learning} />;
     case 'tasks': return <FullScreenTasksMode tasks={props.tasks} activeTaskGroupIndex={props.activeTaskGroupIndex} tasksSourceLabel={props.tasksSourceLabel} />;
+    case 'nythome': return <Card style={style}><NytHomeMode items={props.nytHome} /></Card>;
     case 'news':
     default:
       return <Card style={style}><NewsMode items={props.news} /></Card>;
@@ -376,7 +408,7 @@ function MainZone(props) {
 }
 
 export default function App() {
-  const { timeText, dateText, weather, news, trends, stocks, tasks, wod, learning, currentMode, error, updatedAt, rotationPaused, lastRemoteAction, remoteSupported, activeTaskGroupIndex } = useDashboardData();
+  const { timeText, dateText, weather, news, nytHome, trends, stocks, tasks, wod, learning, currentMode, error, updatedAt, rotationPaused, lastRemoteAction, remoteSupported, activeTaskGroupIndex } = useDashboardData();
 
   const tasksSourceLabel = tasks?.configured ? (tasks?.listName || 'Google Tasks') : 'Sample tasks';
 
@@ -413,7 +445,7 @@ export default function App() {
 
         {/* Main zone */}
         <div style={{ position: 'relative', minHeight: 0, overflow: 'hidden' }}>
-          <MainZone mode={currentMode} weather={weather} news={news} trends={trends} stocks={stocks} tasks={tasks} wod={wod} learning={learning} activeTaskGroupIndex={activeTaskGroupIndex} tasksSourceLabel={tasksSourceLabel} />
+          <MainZone mode={currentMode} weather={weather} news={news} nytHome={nytHome} trends={trends} stocks={stocks} tasks={tasks} wod={wod} learning={learning} activeTaskGroupIndex={activeTaskGroupIndex} tasksSourceLabel={tasksSourceLabel} />
           {lastRemoteAction ? (
             <div style={{ position: 'absolute', top: 16, right: 16, padding: '10px 16px', borderRadius: 12, background: 'rgba(2,6,23,0.82)', border: '1px solid rgba(125,211,252,0.3)', color: '#e2e8f0', fontSize: 18, backdropFilter: 'blur(8px)', visibility: 'hidden' }}>
               {lastRemoteAction}
