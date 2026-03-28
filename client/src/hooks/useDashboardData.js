@@ -4,12 +4,12 @@ import { initTizenRemoteKeys, isTizenDevice } from '../lib/tizenRemote';
 
 const modes = ['news', 'weather', 'trends', 'stocks', 'wod', 'tasks'];
 const modeDurationsMs = {
-  news: 20000,
-  weather: 16000,
+  news: 30000,
+  weather: 20000,
   trends: 16000,
   stocks: 16000,
-  wod: 20000,
-  tasks: 20000
+  wod: 30000,
+  tasks: 30000
 };
 
 const fallbackTasks = {
@@ -188,7 +188,7 @@ export function useDashboardData() {
 
     const intervalId = window.setInterval(() => {
       setActiveTaskGroupIndex((current) => (current + 1) % groups.length);
-    }, 2600);
+    }, 8000);
 
     return () => window.clearInterval(intervalId);
   }, [modeIndex, data.tasks]);

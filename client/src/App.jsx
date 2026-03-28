@@ -225,21 +225,14 @@ function TaskRow({ task, accentColor = '#ffffff', dimmed = false }) {
 function FullScreenTasksMode({ tasks, activeTaskGroupIndex, tasksSourceLabel }) {
   const groups = useMemo(() => {
     const taskGroups = tasks?.groups || {};
+    const completed = taskGroups.completed || [];
     return [
       { key: 'open', title: 'Open', accent: '#7dd3fc', items: taskGroups.open || [] },
-      { key: 'completed', title: 'Completed', accent: '#86efac', items: taskGroups.completed || [] }
-    ].filter((group) => group.items.length > 0);
+      ...(completed.length > 0 ? [{ key: 'completed', title: 'Completed', accent: '#86efac', items: completed }] : [])
+    ];
   }, [tasks]);
 
-  const activeGroup = groups[activeTaskGroupIndex] || groups[0] || null;
-
-  if (!activeGroup) {
-    return (
-      <Card style={{ height: '100%', padding: 32, boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <div style={{ fontSize: 28, color: '#d8e2ef' }}>No tasks available.</div>
-      </Card>
-    );
-  }
+  const activeGroup = groups[activeTaskGroupIndex] || groups[0];
 
   return (
     <Card style={{ height: '100%', padding: 28, boxSizing: 'border-box', background: 'linear-gradient(145deg, rgba(15,23,42,0.95), rgba(30,41,59,0.72))', display: 'flex', flexDirection: 'column' }}>
@@ -253,10 +246,13 @@ function FullScreenTasksMode({ tasks, activeTaskGroupIndex, tasksSourceLabel }) 
             </div>
             <div style={{ fontSize: 16, color: '#b9c6d8' }}>{tasksSourceLabel}</div>
           </div>
-          <div style={{ flex: 1, display: 'grid', gridTemplateRows: `repeat(${Math.min(activeGroup.items.length, 6)}, 1fr)`, gap: 10, minHeight: 0, animation: 'fadeSlide 600ms ease' }} key={activeGroup.key}>
-            {activeGroup.items.slice(0, 6).map((task) => (
-              <TaskRow key={task.id} task={task} accentColor={activeGroup.accent} dimmed={activeGroup.key === 'completed'} />
-            ))}
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 10, minHeight: 0, justifyContent: activeGroup.items.length === 0 ? 'center' : 'flex-start', alignItems: activeGroup.items.length === 0 ? 'center' : 'stretch', animation: 'fadeSlide 600ms ease' }} key={activeGroup.key}>
+            {activeGroup.items.length === 0
+              ? <div style={{ fontSize: 26, color: '#b9c6d8' }}>No {activeGroup.title} Tasks</div>
+              : activeGroup.items.slice(0, 6).map((task) => (
+                  <TaskRow key={task.id} task={task} accentColor={activeGroup.accent} dimmed={activeGroup.key === 'completed'} />
+                ))
+            }
           </div>
         </div>
         <div style={{ display: 'grid', gap: 14, alignContent: 'start' }}>
