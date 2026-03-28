@@ -3,7 +3,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DICTIONARY_PATH = join(__dirname, '../../dictionary.json');
+const DICTIONARY_PATH = join(__dirname, '../../data/dictionary.json');
 
 export async function getWod() {
   const raw = await readFile(DICTIONARY_PATH, 'utf8');
