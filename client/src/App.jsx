@@ -94,18 +94,27 @@ function WeatherMode({ weather }) {
               <div>Feels like {current.feelsLike}</div>
               {current.wind ? <div>Wind {current.wind}</div> : null}
               <div>Humidity {current.humidity}</div>
-              <div>🌅 {current.sunrise} &nbsp; 🌇 {current.sunset}</div>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: 8 }}>
+                <img src="/weather-icons/sunrise.svg" style={{ width: 24, height: 24 }} alt="Sunrise" />
+                {current.sunrise}
+                <img src="/weather-icons/sunset.svg" style={{ width: 24, height: 24, marginLeft: 8 }} alt="Sunset" />
+                {current.sunset}
+              </div>
             </div>
           </div>
           <div style={{ flex: 1, display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: 14, minHeight: 0 }}>
             {forecast.map((day) => (
-              <div key={day.day} style={{ background: 'rgba(255,255,255,0.07)', borderRadius: 18, padding: '16px 12px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between' }}>
-                <div style={{ fontSize: 26, fontWeight: 600, color: '#d8e2ef' }}>{day.day}</div>
-                <img src={weatherIcon(day.iconCode)} alt={day.description} style={{ width: 80, height: 80 }} />
-                <div style={{ fontSize: 18, color: '#94a3b8', textTransform: 'capitalize', minHeight: 44, display: 'flex', alignItems: 'center', textAlign: 'center' }}>{day.description}</div>
-                <div style={{ fontSize: 32, fontWeight: 700 }}>{day.high} <span style={{ fontSize: 24, color: '#94a3b8', fontWeight: 400 }}>{day.low}</span></div>
-                <div style={{ fontSize: 18, color: '#7dd3fc' }}>💧 {day.pop}{day.precip ? ` · ${day.precip}` : ''}</div>
-                {day.wind ? <div style={{ fontSize: 17, color: '#b9c6d8' }}>🌬️ {day.wind}</div> : null}
+              <div key={day.day} style={{ background: 'rgba(255,255,255,0.07)', borderRadius: 18, padding: '12px 10px', textAlign: 'center', display: 'flex', flexDirection: 'column', alignItems: 'center', minHeight: 0, overflow: 'hidden' }}>
+                <div style={{ fontSize: 24, fontWeight: 600, color: '#d8e2ef' }}>{day.day}</div>
+                <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 0, width: '100%' }}>
+                  <img src={weatherIcon(day.iconCode)} alt={day.description} style={{ width: '100%', height: '100%', minWidth: 80, minHeight: 0, objectFit: 'contain' }} />
+                </div>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
+                  <div style={{ fontSize: 22, color: '#94a3b8', textTransform: 'capitalize', lineHeight: 1.2 }}>{day.description}</div>
+                  <div style={{ fontSize: 34, fontWeight: 700, lineHeight: 1 }}>{day.high} <span style={{ fontSize: 26, color: '#94a3b8', fontWeight: 400 }}>{day.low}</span></div>
+                  <div style={{ fontSize: 16, color: '#7dd3fc' }}>💧 {day.pop}{day.precip ? ` · ${day.precip}` : ''}</div>
+                  {day.wind ? <div style={{ fontSize: 15, color: '#b9c6d8' }}>🌬️ {day.wind}</div> : null}
+                </div>
               </div>
             ))}
           </div>
