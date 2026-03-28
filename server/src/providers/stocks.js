@@ -1,39 +1,31 @@
 const DEFAULT_TICKERS = ['AAPL', 'MSFT', 'NVDA', 'AMZN', 'GOOGL', 'TSLA'];
 
-function parseAlphaVantageSeries(payload) {
-  const key = Object.keys(payload).find((name) => name.startsWith('Time Series'));
-  return key ? payload[key] : null;
-}
-
 export async function getStocks(env) {
-  const symbols = (env.STOCK_SYMBOLS || DEFAULT_TICKERS.join(',')).split(',').map((item) => item.trim()).filter(Boolean).slice(0, 6);
+  const symbols = (env.STOCK_SYMBOLS || DEFAULT_TICKERS.join(','))
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean)
+    .slice(0, 6);
 
   const items = await Promise.all(symbols.map(async (symbol) => {
-    const url = new URL('https://www.alphavantage.co/query');
-    url.searchParams.set('function', 'TIME_SERIES_INTRADAY');
+    const url = new URL('https://finnhub.io/api/v1/quote');
     url.searchParams.set('symbol', symbol);
-    url.searchParams.set('interval', '5min');
-    url.searchParams.set('outputsize', 'compact');
-    url.searchParams.set('apikey', env.ALPHAVANTAGE_API_KEY);
+    url.searchParams.set('token', env.FINNHUB_API_KEY);
 
     const response = await fetch(url);
-    if (!response.ok) throw new Error(`Stocks API failed for ${symbol}: ${response.status}`);
-    const payload = await response.json();
-    const series = parseAlphaVantageSeries(payload);
-    if (!series) {
-      const note = payload.Note || payload['Error Message'] || 'Unexpected Alpha Vantage response';
-      throw new Error(`${symbol}: ${note}`);
-    }
-    const points = Object.entries(series).slice(0, 2);
-    const latest = Number(points[0]?.[1]?.['4. close'] || 0);
-    const previous = Number(points[1]?.[1]?.['4. close'] || latest);
-    const delta = latest - previous;
-    const pct = previous ? (delta / previous) * 100 : 0;
+    if (!response.ok) throw new Error(`Finnhub request failed for ${symbol}: ${response.status}`);
+    const data = await response.json();
+
+    if (data.c == null || data.c === 0) throw new Error(`${symbol}: No data returned from Finnhub`);
+
+    const price = data.c;
+    const pct = data.dp;
+
     return {
       symbol,
-      price: `$${latest.toFixed(2)}`,
+      price: `$${price.toFixed(2)}`,
       change: `${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%`,
-      positive: pct >= 0
+      positive: pct >= 0,
     };
   }));
 

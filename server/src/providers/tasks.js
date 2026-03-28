@@ -1,18 +1,5 @@
 import { google } from 'googleapis';
 
-function dueLabel(task) {
-  if (!task.due) return 'No due date';
-  const due = new Date(task.due);
-  const now = new Date();
-  const dayStart = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  const dueDay = new Date(due.getFullYear(), due.getMonth(), due.getDate());
-  const diffDays = Math.round((dueDay - dayStart) / 86400000);
-  if (diffDays < 0) return 'Overdue';
-  if (diffDays === 0) return 'Today';
-  if (diffDays === 1) return 'Tomorrow';
-  return due.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-}
-
 export async function getTasks(env) {
   const oauth2Client = new google.auth.OAuth2(
     env.GOOGLE_CLIENT_ID,
@@ -25,23 +12,30 @@ export async function getTasks(env) {
   const tasksApi = google.tasks({ version: 'v1', auth: oauth2Client });
   const taskLists = await tasksApi.tasklists.list({ maxResults: 100 });
   const targetList = (taskLists.data.items || []).find((list) => list.title === (env.GOOGLE_TASKS_LIST || 'My Tasks')) || taskLists.data.items?.[0];
-  if (!targetList?.id) return { items: [] };
+  if (!targetList?.id) return { configured: false, listName: null, items: [], groups: { open: [], completed: [] } };
 
   const tasks = await tasksApi.tasks.list({
     tasklist: targetList.id,
-    maxResults: 10,
+    maxResults: 100,
     showCompleted: true,
-    showHidden: false,
+    showHidden: true,
     showDeleted: false
   });
 
+  const items = (tasks.data.items || []).map((task) => ({
+    id: task.id,
+    title: task.title,
+    status: task.status,
+    completed: task.status === 'completed'
+  }));
+
   return {
-    items: (tasks.data.items || []).slice(0, 7).map((task) => ({
-      id: task.id,
-      title: task.title,
-      status: task.status,
-      dueLabel: dueLabel(task),
-      overdue: !!task.due && task.status !== 'completed' && new Date(task.due) < new Date()
-    }))
+    configured: true,
+    listName: targetList.title,
+    items,
+    groups: {
+      open: items.filter((t) => !t.completed),
+      completed: items.filter((t) => t.completed)
+    }
   };
 }

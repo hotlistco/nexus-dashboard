@@ -85,6 +85,14 @@ function NewsMode({ items }) {
   );
 }
 
+function formatVolume(v) {
+  const n = typeof v === 'string' ? parseFloat(v.replace(/,/g, '')) : v;
+  if (isNaN(n) || n === 0) return typeof v === 'string' && v ? v : 'Trending';
+  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1).replace(/\.0$/, '')}M searches`;
+  if (n >= 1_000) return `${(n / 1_000).toFixed(0)}K searches`;
+  return `${n.toLocaleString()} searches`;
+}
+
 function TrendsMode({ items }) {
   return (
     <div>
@@ -94,7 +102,7 @@ function TrendsMode({ items }) {
           <Card key={item.query} style={{ padding: '20px 24px', display: 'grid', gridTemplateColumns: '90px 1fr 140px', alignItems: 'center' }}>
             <div style={{ fontSize: 30, color: '#b9c6d8' }}>#{index + 1}</div>
             <div style={{ fontSize: 32, fontWeight: 600 }}>{item.query}</div>
-            <div style={{ fontSize: 24, color: '#7dd3fc', textAlign: 'right' }}>{item.volume}</div>
+            <div style={{ fontSize: 24, color: '#7dd3fc', textAlign: 'right' }}>{formatVolume(item.volume)}</div>
           </Card>
         ))}
       </div>
@@ -135,7 +143,7 @@ function TaskRow({ task, accentColor = '#ffffff', dimmed = false }) {
     <div style={{
       padding: '22px 24px',
       display: 'grid',
-      gridTemplateColumns: '48px 1fr 180px',
+      gridTemplateColumns: '48px 1fr',
       gap: 18,
       alignItems: 'center',
       borderRadius: 22,
@@ -147,7 +155,6 @@ function TaskRow({ task, accentColor = '#ffffff', dimmed = false }) {
         {task.completed ? '✓' : ''}
       </div>
       <div style={{ fontSize: 30, color: task.completed ? '#94a3b8' : '#fff', textDecoration: task.completed ? 'line-through' : 'none' }}>{task.title}</div>
-      <div style={{ textAlign: 'right', fontSize: 22, color: task.due ? accentColor : '#b9c6d8' }}>{task.due ? new Date(task.due).toLocaleDateString([], { month: 'short', day: 'numeric' }) : 'No due date'}</div>
     </div>
   );
 }
@@ -156,10 +163,8 @@ function FullScreenTasksMode({ tasks, activeTaskGroupIndex, tasksSourceLabel }) 
   const groups = useMemo(() => {
     const taskGroups = tasks?.groups || {};
     return [
-      { key: 'overdue', title: 'Overdue', accent: '#f87171', items: taskGroups.overdue || [] },
-      { key: 'today', title: 'Today', accent: '#ffffff', items: taskGroups.today || [] },
-      { key: 'upcoming', title: 'Upcoming', accent: '#94a3b8', items: taskGroups.upcoming || [] },
-      { key: 'completed', title: 'Completed', accent: '#64748b', items: taskGroups.completed || [] }
+      { key: 'open', title: 'Open', accent: '#7dd3fc', items: taskGroups.open || [] },
+      { key: 'completed', title: 'Completed', accent: '#86efac', items: taskGroups.completed || [] }
     ].filter((group) => group.items.length > 0);
   }, [tasks]);
 

@@ -16,18 +16,17 @@ const fallbackTasks = {
   configured: false,
   listName: 'Sample Tasks',
   items: [
-    { id: '1', title: 'Schedule dentist appointment', completed: false, status: 'needsAction', due: null },
-    { id: '2', title: 'Call mom', completed: false, status: 'needsAction', due: null },
-    { id: '3', title: 'Prep Monday priorities', completed: false, status: 'needsAction', due: null },
-    { id: '4', title: 'Order household supplies', completed: true, status: 'completed', due: null }
+    { id: '1', title: 'Unable to fetch actual tasks', completed: false, status: 'needsAction' },
+    { id: '2', title: 'Break task api call', completed: true, status: 'completed' }
   ],
   groups: {
-    overdue: [{ id: '1', title: 'Schedule dentist appointment', completed: false, status: 'needsAction', due: null }],
-    today: [{ id: '2', title: 'Call mom', completed: false, status: 'needsAction', due: null }],
-    upcoming: [{ id: '3', title: 'Prep Monday priorities', completed: false, status: 'needsAction', due: null }],
-    completed: [{ id: '4', title: 'Order household supplies', completed: true, status: 'completed', due: null }]
-  },
-  summary: { total: 4, overdue: 1, today: 1, upcoming: 1, completed: 1 }
+    open: [
+      { id: '1', title: 'Unable to fetch actual tasks', completed: false, status: 'needsAction' },
+    ],
+    completed: [
+      { id: '2', title: 'Break task api call', completed: true, status: 'completed' }
+    ]
+  }
 };
 
 const learningPool = [
@@ -43,8 +42,8 @@ const learningPool = [
   },
   {
     type: 'Fact',
-    title: 'Forecast cadence',
-    body: 'OpenWeather recommends periodic refreshes and local caching so your display stays current without over-polling.'
+    title: 'Canned Data',
+    body: 'This is canned data, not fresh.'
   }
 ];
 
@@ -162,9 +161,7 @@ export function useDashboardData() {
     if (modes[modeIndex] !== 'tasks') return undefined;
 
     const groups = [
-      ...(data.tasks?.groups?.overdue || []).length ? ['overdue'] : [],
-      ...(data.tasks?.groups?.today || []).length ? ['today'] : [],
-      ...(data.tasks?.groups?.upcoming || []).length ? ['upcoming'] : [],
+      ...(data.tasks?.groups?.open || []).length ? ['open'] : [],
       ...(data.tasks?.groups?.completed || []).length ? ['completed'] : []
     ];
 

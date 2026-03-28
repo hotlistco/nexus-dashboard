@@ -1,0 +1,5 @@
+.env
+*.zip
+client_secret*.json
+token.json
+package-lock.json
