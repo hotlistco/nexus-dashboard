@@ -27,11 +27,10 @@ function weatherIcon(code) {
   return `/weather-icons/${name}.svg`;
 }
 
-function SectionTitle({ children, right }) {
+function SectionTitle({ children }) {
   return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 16 }}>
+    <div style={{ marginBottom: 16 }}>
       <div style={{ fontSize: 16, letterSpacing: 4, color: '#b9c6d8', textTransform: 'uppercase' }}>{children}</div>
-      {right ? <div style={{ color: '#7dd3fc', fontSize: 14 }}>{right}</div> : null}
     </div>
   );
 }
@@ -79,7 +78,7 @@ function WeatherMode({ weather }) {
   const forecast = weather?.forecast || [];
   return (
     <Card style={{ height: '100%', padding: 28, boxSizing: 'border-box', background: 'linear-gradient(135deg, rgba(14,165,233,0.18), rgba(255,255,255,0.04))', display: 'flex', flexDirection: 'column' }}>
-      <SectionTitle right="Mode B">5-Day Forecast</SectionTitle>
+      <SectionTitle>5-Day Forecast</SectionTitle>
       {current ? (
         <>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 20 }}>
@@ -127,7 +126,7 @@ function WeatherMode({ weather }) {
 function NewsMode({ items }) {
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <SectionTitle right="Mode A">News headlines</SectionTitle>
+      <SectionTitle>News headlines</SectionTitle>
       <div style={{ flex: 1, display: 'grid', gridTemplateRows: '1.3fr 1fr', gap: 14, minHeight: 0 }}>
         {items[0] ? (
           <Card style={{ padding: 24, overflow: 'hidden', backgroundImage: `linear-gradient(rgba(2,6,23,0.35), rgba(2,6,23,0.65)), url(${items[0].image || ''})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -168,7 +167,7 @@ function timeAgo(timestamp) {
 function TrendsMode({ items }) {
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <SectionTitle right="Mode B">Trending searches</SectionTitle>
+      <SectionTitle>Trending searches</SectionTitle>
       <div style={{ flex: 1, display: 'grid', gridTemplateRows: `repeat(${items.length}, 1fr)`, gap: 10, minHeight: 0 }}>
         {items.map((item, index) => (
           <Card key={item.query} style={{ padding: '8px 20px', display: 'grid', gridTemplateColumns: '70px 1fr auto', alignItems: 'center', gap: 12 }}>
@@ -200,7 +199,7 @@ function TrendsMode({ items }) {
 function StocksMode({ items }) {
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <SectionTitle right="Mode C">Detailed stocks</SectionTitle>
+      <SectionTitle>Detailed stocks</SectionTitle>
       <div style={{ flex: 1, display: 'grid', gridTemplateRows: `repeat(${items.length}, 1fr)`, gap: 10, minHeight: 0 }}>
         {items.map((stock) => (
           <Card key={stock.symbol} style={{ padding: '0 20px', display: 'grid', gridTemplateColumns: '140px 160px 140px 1fr', alignItems: 'center', gap: 12 }}>
@@ -228,7 +227,7 @@ function StocksMode({ items }) {
 function LearningMode({ learning }) {
   return (
     <Card style={{ padding: 32, height: '100%', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-      <SectionTitle right="Mode D">{learning.type}</SectionTitle>
+      <SectionTitle>{learning.type}</SectionTitle>
       <div style={{ fontSize: 52, lineHeight: 1.12, fontWeight: 650, maxWidth: '88%' }}>{learning.title}</div>
       <div style={{ marginTop: 24, fontSize: 28, lineHeight: 1.4, color: '#d8e2ef', maxWidth: '86%' }}>{learning.body}</div>
     </Card>
@@ -269,7 +268,7 @@ function FullScreenTasksMode({ tasks, activeTaskGroupIndex, tasksSourceLabel }) 
 
   return (
     <Card style={{ height: '100%', padding: 28, boxSizing: 'border-box', background: 'linear-gradient(145deg, rgba(15,23,42,0.95), rgba(30,41,59,0.72))', display: 'flex', flexDirection: 'column' }}>
-      <SectionTitle right="Mode E">Google Tasks</SectionTitle>
+      <SectionTitle>Google Tasks</SectionTitle>
       <div style={{ flex: 1, display: 'grid', gridTemplateColumns: '1.25fr 0.38fr', gap: 20, minHeight: 0 }}>
         <div style={{ borderRadius: 20, border: `1px solid ${activeGroup.accent}33`, background: 'rgba(255,255,255,0.03)', padding: 22, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
@@ -416,7 +415,7 @@ export default function App() {
         <div style={{ position: 'relative', minHeight: 0, overflow: 'hidden' }}>
           <MainZone mode={currentMode} weather={weather} news={news} trends={trends} stocks={stocks} tasks={tasks} wod={wod} learning={learning} activeTaskGroupIndex={activeTaskGroupIndex} tasksSourceLabel={tasksSourceLabel} />
           {lastRemoteAction ? (
-            <div style={{ position: 'absolute', top: 16, right: 16, padding: '10px 16px', borderRadius: 12, background: 'rgba(2,6,23,0.82)', border: '1px solid rgba(125,211,252,0.3)', color: '#e2e8f0', fontSize: 18, backdropFilter: 'blur(8px)' }}>
+            <div style={{ position: 'absolute', top: 16, right: 16, padding: '10px 16px', borderRadius: 12, background: 'rgba(2,6,23,0.82)', border: '1px solid rgba(125,211,252,0.3)', color: '#e2e8f0', fontSize: 18, backdropFilter: 'blur(8px)', visibility: 'hidden' }}>
               {lastRemoteAction}
             </div>
           ) : null}
