@@ -8,6 +8,10 @@ export default defineConfig({
     host: '0.0.0.0'
   },
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    assetsInlineLimit: 0  // never inline assets as base64 — TV file system handles them fine
+  },
+  resolve: {
+    preserveSymlinks: false  // resolve symlinks so weather-icons copies correctly
   }
 });

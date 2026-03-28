@@ -24,7 +24,7 @@ const OW_TO_BASMILIUS = {
 
 function weatherIcon(code) {
   const name = OW_TO_BASMILIUS[code] || 'cloudy';
-  return `/weather-icons/${name}.svg`;
+  return `/images/weather-icons/${name}.svg`;
 }
 
 function SectionTitle({ children }) {
@@ -159,7 +159,7 @@ function MoonPhase({ size = 60 }) {
             <circle cx={r} cy={r} r={r} />
           </clipPath>
         </defs>
-        <image href="/fullMoon.png" x={0} y={0} width={size} height={size} clipPath="url(#moonCircleClip)" />
+        <image href="/images/fullMoon.png" x={0} y={0} width={size} height={size} clipPath="url(#moonCircleClip)" />
         {overlay && <circle cx={r} cy={r} r={r} fill={overlay} clipPath="url(#moonCircleClip)" />}
         {shadowPath && <path d={shadowPath} fill="rgba(0,0,0,0.80)" clipPath="url(#moonCircleClip)" />}
       </svg>
@@ -222,9 +222,9 @@ function WeatherMode({ weather }) {
               {current.wind ? <div>Wind {current.wind}</div> : null}
               <div>Humidity {current.humidity}</div>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: 8 }}>
-                <img src="/weather-icons/sunrise.svg" style={{ width: 24, height: 24 }} alt="Sunrise" />
+                <img src="/images/weather-icons/sunrise.svg" style={{ width: 24, height: 24 }} alt="Sunrise" />
                 {current.sunrise}
-                <img src="/weather-icons/sunset.svg" style={{ width: 24, height: 24, marginLeft: 8 }} alt="Sunset" />
+                <img src="/images/weather-icons/sunset.svg" style={{ width: 24, height: 24, marginLeft: 8 }} alt="Sunset" />
                 {current.sunset}
               </div>
             </div>

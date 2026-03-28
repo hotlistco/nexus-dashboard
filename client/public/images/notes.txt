@@ -1,0 +1,6 @@
+weather icons are from another repo, but symlinks won't get resolved when packaging for tv, so had to copy them directly here
+cp -r /Users/basement/projects/hotlistco/weather-icons/production/fill/svg weather-icons
+
+to update them, go to ~/projects/hotlistco/weather-icons and pull latest, then copy again to update
+
+

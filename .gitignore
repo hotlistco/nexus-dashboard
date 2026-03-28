@@ -1,7 +1,18 @@
 .env
+.env.local
 *.zip
 client_secret*.json
 token.json
 package-lock.json
 convert-dictionary.sh
-.DS_store
+.DS_Store
+dist/
+client/dist/
+node_modules/
+server/node_modules/
+client/node_modules/
+
+# build:tv output copied to project root
+/index.html
+/assets/
+/images/

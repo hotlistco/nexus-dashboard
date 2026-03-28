@@ -314,3 +314,165 @@ I can help you:
 Just tell me 👍
 
 
+
+
+
+
+
+#From claude after building v2.1
+
+Here's a full review and deployment guide.                                                                                         
+                                                                                                                                                                                                            
+  ---                                                                                                                                                                                                       
+  Issues to fix before building                                                                                                                                                                             
+                                                                                                                                                                                                            
+  1. Create client/.env.local with your server's LAN IP                                                                                                                                                     
+                                                                                                                                                                                                            
+  The app defaults to localhost:8787 which the TV can't reach:                                                                                                                                              
+                                                                                                                                                                                                            
+  echo "VITE_API_BASE_URL=http://YOUR_SERVER_LAN_IP:8787/api" > client/.env.local                                                                                                                           
+                                                                                                                                                                                                            
+  Replace YOUR_SERVER_LAN_IP with your machine's local IP (e.g. 192.168.1.42).                                                                                                                              
+                                                                                                                                                                                                            
+  2. Resolve the weather icons symlink                                                                                                                                                                      
+                                                            
+  Vite copies symlinks as-is, which breaks on the TV. Convert it to a real directory:                                                                                                                       
+  
+  Read 2 files (ctrl+o to expand)                                                                                                                                                                           
+                                                                                                                              
+⏺ Bash(readlink -f /Users/basement/projects/hotlistco/nexus-dashboard/client/public/weather-icons)
+  ⎿  /Users/basement/projects/hotlistco/weather-icons/production/fill/svg                                                                                                                                   
+                                                                                          
+  Read 2 files (ctrl+o to expand)                                                                                                                                                                           
+                                                                                                                                                                                                            
+⏺ Good — the icons exist. The symlink target resolves correctly on your machine but won't on the TV. Fix it now:                                                                                            
+                                                                                                                                                                                                            
+  cd /Users/basement/projects/hotlistco/nexus-dashboard/client/public                                                                                                                                       
+  rm weather-icons                                                                                                                                                                                          
+  cp -r /Users/basement/projects/hotlistco/weather-icons/production/fill/svg weather-icons                                                                                                                  
+                                                                                                                                                                                                            
+  3. Add an icon.png                                                                                                                                                                                        
+                                                                                                                                                                                                            
+  config.xml references icon.png but it doesn't exist. Tizen Studio will warn or fail without it. Add a 512×512 PNG named icon.png to the project root. A simple placeholder works fine for sideloading — it
+   only matters for the app store.
+                                                                                                                                                                                                            
+  4. Update vite.config.js to follow symlinks and set the correct base                                                                                                                                      
+  
+  Read 1 file (ctrl+o to expand)                                                                                                                                                                            
+                                                            
+⏺ Update(client/vite.config.js)       
+  ⎿  Added 5 lines, removed 1 line                                                        
+       8      host: '0.0.0.0'                                                             
+       9    },                                                                                                                                                                                              
+      10    build: {                                                                                                                                                                                        
+      11 -    outDir: 'dist'                                                                                                                                                                                
+      11 +    outDir: 'dist',                                                                                                                                                                               
+      12 +    assetsInlineLimit: 0  // never inline assets as base64 — TV file system handles them fine                                                                                                     
+      13 +  },                                                                                                                                                                                              
+      14 +  resolve: {                                                                                                                                                                                      
+      15 +    preserveSymlinks: false  // resolve symlinks so weather-icons copies correctly                                                                                                         
+      16    }
+      17  });
+
+⏺ 5. Add a build script to automate the dist→root copy
+                                                                                          
+  Read 1 file (ctrl+o to expand)       
+                                                                                                                                                                                                            
+⏺ Update(client/package.json)          
+  ⎿  Added 1 line                                                                                                                                                                                           
+       6    "scripts": {                                                                  
+       7      "dev": "vite",                                                                                                                                                                                
+       8      "build": "vite build",                                                                                                                                                                        
+       9 +    "build:tv": "vite build && cp -r dist/* ..",                                                                                                                                                  
+      10      "preview": "vite preview"                                                                                                                                                                     
+      11    },                                              
+      12    "dependencies": {                                                                                                                                                                               
+                                                            
+⏺ ---                                  
+  Certificate question                                                                    
+                      
+  Yes, you can reuse the same author certificate for multiple apps. A Tizen author certificate identifies you as the developer, not a specific app. Each app has its own unique Package ID (uYj8h9Nexus in  
+  your config.xml) which is what distinguishes them. No conflict. Just select the same author certificate profile in Tizen Studio when building this app.                                                   
+                                                                                                                                                                                                            
+  ---                                                                                                                                                                                                       
+  Step-by-step deployment guide                             
+                                                                                                                                                                                                            
+  Step 1 — Resolve the weather icons symlink
+                                                                                                                                                                                                            
+  cd /Users/basement/projects/hotlistco/nexus-dashboard/client/public
+  rm weather-icons                                                                                                                                                                                          
+  cp -r /Users/basement/projects/hotlistco/weather-icons/production/fill/svg weather-icons                                                                                                                  
+                                                                                                                                                                                                            
+  Step 2 — Set the server IP                                                                                                                                                                                
+                                                                                                                                                                                                            
+  echo "VITE_API_BASE_URL=http://YOUR_LAN_IP:8787/api" > /Users/basement/projects/hotlistco/nexus-dashboard/client/.env.local                                                                               
+                                                                                                                                                                                                            
+  Step 3 — Add icon.png
+                                                                                                                                                                                                            
+  Drop any 512×512 PNG as icon.png in the project root (/Users/basement/projects/hotlistco/nexus-dashboard/icon.png).                                                                                       
+  
+  Step 4 — Build and copy to project root                                                                                                                                                                   
+                                                            
+  cd /Users/basement/projects/hotlistco/nexus-dashboard/client                                                                                                                                              
+  npm run build:tv                                          
+  After this, your project root should contain index.html, assets/, weather-icons/, fullMoon.png, and config.xml all side by side.
+                                                                                                                                                                                                            
+  Step 5 — Connect your TV in Tizen Studio
+                                                                                                                                                                                                            
+  1. Open Tizen Studio → Device Manager                     
+  2. Click the remote device icon → Add Device                                                                                                                                                              
+  3. Enter your TV's IP address, port 26101                                                                                                                                                                 
+  4. Click Connect — the TV should ask to allow the connection, accept it on the TV                                                                                                                         
+                                                                                                                                                                                                            
+  Step 6 — Import the project                                                                                                                                                                               
+                                                                                                                                                                                                            
+  1. File → Import → Tizen → Tizen Project                                                                                                                                                                  
+  2. Navigate to /Users/basement/projects/hotlistco/nexus-dashboard
+  3. Tizen Studio will detect config.xml and import it as a TV Web project                                                                                                                                  
+                                                                                                                                                                                                            
+  Step 7 — Set signing profile                                                                                                                                                                              
+                                                                                                                                                                                                            
+  1. Right-click the project → Properties → Tizen Studio → Package → Signing                                                                                                                                
+  2. Select your existing author certificate profile        
+  3. Click OK                                                                                                                                                                                               
+  
+  Step 8 — Run on TV                                                                                                                                                                                        
+                                                            
+  1. Make sure your TV appears as connected in Device Manager                                                                                                                                               
+  2. Right-click the project → Run As → Tizen Web Application
+  3. Select your TV from the device list                                                                                                                                                                    
+  4. Tizen Studio packages, signs, and installs it — the app launches automatically
+                                                                                                                                                                                                            
+  Step 9 — Keep your server running                                                                                                                                                                         
+                                                                                                                                                                                                            
+  The TV app connects back to your machine at port 8787. Make sure the Express server is running whenever you want the dashboard to work:                                                                   
+  cd /Users/basement/projects/hotlistco/nexus-dashboard/server
+  npm start                                                                                                                                                                                                 
+  Consider setting it up as a launchd service or using pm2 so it starts automatically when your Mac boots.
+
+  ---                                                                                                                                                                                                       
+  After deployment
+                                                                                                                                                                                                            
+  ┌───────────────┬──────────────────────────────┐          
+  │ Remote button │            Action            │
+  ├───────────────┼──────────────────────────────┤                                                                                                                                                          
+  │ Left / Right  │ Cycle modes                  │
+  ├───────────────┼──────────────────────────────┤                                                                                                                                                          
+  │ Enter / Play  │ Pause / resume auto-rotation │          
+  ├───────────────┼──────────────────────────────┤                                                                                                                                                          
+  │ Up / Red      │ Refresh all data             │
+  ├───────────────┼──────────────────────────────┤                                                                                                                                                          
+  │ Yellow        │ Jump to Stocks               │          
+  ├───────────────┼──────────────────────────────┤                                                                                                                                                          
+  │ Down / Blue   │ Jump to Tasks                │          
+  └───────────────┴──────────────────────────────┘                     
+
+
+
+
+
+
+
+
+
+

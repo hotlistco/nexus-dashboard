@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets"
         xmlns:tizen="http://tizen.org/ns/widgets"
-        id="http://rickboles.example/nexus"
+        id="http://hotlistco.com/nexus-dashboard
         version="1.0.0"
         viewmodes="maximized">
-    <tizen:application id="uYj8h9Nexus.Nexus" package="uYj8h9Nexus" required_version="6.0" />
+    <tizen:application id="BingWallpr.NexusDashboard" package="BingWallpr" required_version="6.0" />
+    <!-- package is BingWallpr because reusing the certificate that was created, and it has to match - lazy -->
+    <description>Nexus Dashboard - pulls together all your relevant up-to-date information live</description>
     <content src="index.html" />
     <icon src="icon.png" />
-    <name>Nexus</name>
+    <name>NexusDashboard</name>
     <feature name="http://tizen.org/feature/screen.size.all" />
     <feature name="http://tizen.org/feature/tv.inputdevice" />
     <tizen:privilege name="http://tizen.org/privilege/internet" />
