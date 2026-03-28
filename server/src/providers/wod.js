@@ -3,7 +3,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const DICTIONARY_PATH = join(__dirname, '../../data/dictionary.json');
+const DICTIONARY_PATH = join(__dirname, '../../data/dictionary-improved.json');
 
 export async function getWod() {
   const raw = await readFile(DICTIONARY_PATH, 'utf8');
@@ -12,9 +12,8 @@ export async function getWod() {
   const entry = words[Math.floor(Math.random() * words.length)];
   return {
     word: entry.word,
-    partOfSpeech: entry.part_of_speech || null,
     pronunciation: entry.pronunciation || null,
-    definition: Array.isArray(entry.definitions) ? entry.definitions[0] : entry.definitions,
+    meanings: entry.meanings || [],
     example: entry.example || null
   };
 }

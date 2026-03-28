@@ -2248,5 +2248,455 @@
       "tending to cause sleep or boredom"
     ],
     "example": "It was a soporific choice for the situation."
+  },
+  {
+    "word": "specious",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "superficially plausible but actually wrong"
+    ],
+    "example": "The argument seemed convincing at first, but on reflection it was entirely specious."
+  },
+  {
+    "word": "spendthrift",
+    "part_of_speech": "noun",
+    "pronunciation": "",
+    "definitions": [
+      "a person who spends money in an extravagant and irresponsible way"
+    ],
+    "example": "The spendthrift heir quickly depleted the family fortune on frivolous purchases."
+  },
+  {
+    "word": "spurious",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "not genuine or authentic; based on false reasoning"
+    ],
+    "example": "The report was filled with spurious claims that collapsed under scrutiny."
+  },
+  {
+    "word": "stentorian",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "loud and powerful in sound"
+    ],
+    "example": "His stentorian voice commanded attention in any room without effort."
+  },
+  {
+    "word": "stoic",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "enduring pain or hardship without complaint or visible emotion"
+    ],
+    "example": "She remained stoic throughout the long and difficult ordeal."
+  },
+  {
+    "word": "strident",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "presenting a point of view in an excessively forceful or harsh way"
+    ],
+    "example": "His strident demands alienated even his closest allies."
+  },
+  {
+    "word": "sublime",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "of such excellence or beauty as to inspire awe"
+    ],
+    "example": "The view from the summit at dawn was nothing short of sublime."
+  },
+  {
+    "word": "succinct",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "briefly and clearly expressed"
+    ],
+    "example": "Her succinct explanation resolved the confusion in under a minute."
+  },
+  {
+    "word": "sycophant",
+    "part_of_speech": "noun",
+    "pronunciation": "",
+    "definitions": [
+      "a person who acts obsequiously toward someone important in order to gain advantage"
+    ],
+    "example": "The manager surrounded himself with sycophants who never challenged his decisions."
+  },
+  {
+    "word": "symbiotic",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "involving interaction between two organisms or entities to the advantage of both"
+    ],
+    "example": "The two companies formed a symbiotic relationship that strengthened both brands."
+  },
+  {
+    "word": "synergy",
+    "part_of_speech": "noun",
+    "pronunciation": "",
+    "definitions": [
+      "the combined effect of two or more elements that is greater than the sum of their parts"
+    ],
+    "example": "The merger created genuine synergy between the two product lines."
+  },
+  {
+    "word": "tacit",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "understood or implied without being stated directly"
+    ],
+    "example": "There was a tacit understanding between them that certain topics were off-limits."
+  },
+  {
+    "word": "taciturn",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "reserved and saying little; not fond of talking"
+    ],
+    "example": "The taciturn engineer rarely spoke at meetings but always listened carefully."
+  },
+  {
+    "word": "tangential",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "diverging from a previous course; only slightly relevant"
+    ],
+    "example": "The discussion became too tangential to be productive."
+  },
+  {
+    "word": "tenacious",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "holding firmly to a purpose, belief, or course of action"
+    ],
+    "example": "Her tenacious pursuit of the truth eventually uncovered the scandal."
+  },
+  {
+    "word": "terse",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "sparing in the use of words; abrupt to the point of rudeness"
+    ],
+    "example": "His terse reply made clear he had no interest in further discussion."
+  },
+  {
+    "word": "tirade",
+    "part_of_speech": "noun",
+    "pronunciation": "",
+    "definitions": [
+      "a long, angry speech of criticism or accusation"
+    ],
+    "example": "The coach launched into a tirade after the team gave away a late lead."
+  },
+  {
+    "word": "torpid",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "mentally or physically inactive; sluggish"
+    ],
+    "example": "The oppressive heat left everyone torpid and disinclined to work."
+  },
+  {
+    "word": "tractable",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "easy to deal with, manage, or control"
+    ],
+    "example": "The new system proved far more tractable than the one it replaced."
+  },
+  {
+    "word": "transient",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "lasting only for a short time; impermanent"
+    ],
+    "example": "The discomfort was transient, fading within minutes of the procedure."
+  },
+  {
+    "word": "trepidation",
+    "part_of_speech": "noun",
+    "pronunciation": "",
+    "definitions": [
+      "a feeling of fear or anxiety about something that may happen"
+    ],
+    "example": "She approached the interview with a mixture of excitement and trepidation."
+  },
+  {
+    "word": "trite",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "overused and consequently lacking impact; not original"
+    ],
+    "example": "The speech was full of trite phrases that failed to inspire anyone."
+  },
+  {
+    "word": "truculent",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "eager or quick to argue or fight; aggressively defiant"
+    ],
+    "example": "The truculent witness refused to cooperate with either side."
+  },
+  {
+    "word": "turbulent",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "characterized by conflict, disorder, or confusion; not calm"
+    ],
+    "example": "It was among the most turbulent periods in the company's history."
+  },
+  {
+    "word": "umbrage",
+    "part_of_speech": "noun",
+    "pronunciation": "",
+    "definitions": [
+      "offense or annoyance at something perceived as a slight"
+    ],
+    "example": "He took umbrage at the suggestion that his work needed improvement."
+  },
+  {
+    "word": "unassailable",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "unable to be attacked, questioned, or defeated"
+    ],
+    "example": "She built an unassailable case that left the opposing counsel speechless."
+  },
+  {
+    "word": "unequivocal",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "leaving no doubt; unambiguous"
+    ],
+    "example": "The forensic evidence against him was unequivocal."
+  },
+  {
+    "word": "untenable",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "not able to be maintained or defended against attack or objection"
+    ],
+    "example": "Her position became untenable once the full facts came to light."
+  },
+  {
+    "word": "urbane",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "suave, courteous, and refined in manner"
+    ],
+    "example": "He was an urbane and cultured host who put every guest at ease."
+  },
+  {
+    "word": "vacuous",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "having or showing a lack of thought or intelligence; empty"
+    ],
+    "example": "The conversation was pleasant but entirely vacuous."
+  },
+  {
+    "word": "vapid",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "offering nothing that is stimulating or challenging; dull"
+    ],
+    "example": "The vapid small talk at the reception left him drained."
+  },
+  {
+    "word": "vehement",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "showing strong feeling; forceful, passionate, or intense"
+    ],
+    "example": "She was vehement in her opposition to the proposed changes."
+  },
+  {
+    "word": "venerate",
+    "part_of_speech": "verb",
+    "pronunciation": "",
+    "definitions": [
+      "regard with great respect and reverence"
+    ],
+    "example": "The community deeply venerated the founder's legacy."
+  },
+  {
+    "word": "verbose",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "using or expressed in more words than are needed"
+    ],
+    "example": "His verbose writing style frustrated editors who valued brevity."
+  },
+  {
+    "word": "verdant",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "green with grass or other rich vegetation"
+    ],
+    "example": "The verdant hills stretched as far as the eye could see."
+  },
+  {
+    "word": "veritable",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "used for emphasis, often to qualify a metaphor; genuine or actual"
+    ],
+    "example": "The discovery was a veritable breakthrough for the entire field."
+  },
+  {
+    "word": "vicarious",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "experienced in the imagination through the feelings or actions of another person"
+    ],
+    "example": "She lived vicariously through her friend's travel stories."
+  },
+  {
+    "word": "vigilant",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "keeping careful watch for possible danger or difficulties"
+    ],
+    "example": "Security staff remained vigilant throughout the duration of the event."
+  },
+  {
+    "word": "vindicate",
+    "part_of_speech": "verb",
+    "pronunciation": "",
+    "definitions": [
+      "clear someone of blame or suspicion; show to be right or justified"
+    ],
+    "example": "The new evidence fully vindicated the accused and led to the charges being dropped."
+  },
+  {
+    "word": "vitriolic",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "filled with bitter criticism or malice"
+    ],
+    "example": "The review was so vitriolic it bordered on a personal attack."
+  },
+  {
+    "word": "vociferous",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "expressing or characterized by vehement opinions; loud and forceful"
+    ],
+    "example": "The vociferous crowd made it nearly impossible to hear the speaker."
+  },
+  {
+    "word": "wanton",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "deliberate and unprovoked; showing no care for consequences"
+    ],
+    "example": "The wanton destruction of the historic building shocked the entire community."
+  },
+  {
+    "word": "wary",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "feeling or showing caution about possible dangers or problems"
+    ],
+    "example": "Investors remained wary despite the positive earnings report."
+  },
+  {
+    "word": "winsome",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "attractive or appealing in a fresh, innocent way"
+    ],
+    "example": "Her winsome manner made her an exceptionally effective negotiator."
+  },
+  {
+    "word": "wistful",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "having or showing a feeling of vague or regretful longing"
+    ],
+    "example": "She gave a wistful smile as she leafed through the old photographs."
+  },
+  {
+    "word": "wizened",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "shriveled or wrinkled with age"
+    ],
+    "example": "The wizened craftsman still worked with remarkable speed and precision."
+  },
+  {
+    "word": "yeoman",
+    "part_of_speech": "noun",
+    "pronunciation": "",
+    "definitions": [
+      "a person who performs reliable and hard work, especially in a supporting role"
+    ],
+    "example": "He did yeoman work behind the scenes to make the event a success."
+  },
+  {
+    "word": "zealous",
+    "part_of_speech": "adjective",
+    "pronunciation": "",
+    "definitions": [
+      "having or showing great energy or enthusiasm in pursuit of a cause or objective"
+    ],
+    "example": "The zealous reformer pushed tirelessly for change despite repeated setbacks."
+  },
+  {
+    "word": "zenith",
+    "part_of_speech": "noun",
+    "pronunciation": "",
+    "definitions": [
+      "the highest point reached by a celestial body; the time at which something is most powerful"
+    ],
+    "example": "At the zenith of her career she had few rivals in the field."
+  },
+  {
+    "word": "zephyr",
+    "part_of_speech": "noun",
+    "pronunciation": "",
+    "definitions": [
+      "a soft gentle breeze"
+    ],
+    "example": "A cool zephyr drifted through the open window and eased the afternoon heat."
   }
 ]

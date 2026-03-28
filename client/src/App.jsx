@@ -283,20 +283,51 @@ function WodMode({ wod }) {
     </Card>
   );
   return (
-    <Card style={{ height: '100%', padding: 36, boxSizing: 'border-box', display: 'flex', flexDirection: 'column', justifyContent: 'center', background: 'linear-gradient(145deg, rgba(15,23,42,0.95), rgba(30,41,59,0.72))' }}>
+    <Card style={{ height: '100%', padding: 36, boxSizing: 'border-box', display: 'flex', flexDirection: 'column', overflow: 'hidden', background: 'linear-gradient(145deg, rgba(15,23,42,0.95), rgba(30,41,59,0.72))' }}>
       <SectionTitle>Word of the Day</SectionTitle>
-      <div style={{ display: 'flex', alignItems: 'baseline', gap: 24, marginBottom: 12 }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', gap: 24, marginBottom: 20 }}>
         <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1 }}>{wod.word}</div>
-        {wod.pronunciation && <div style={{ fontSize: 28, color: '#7dd3fc', fontStyle: 'italic' }}>{wod.pronunciation}</div>}
-        {wod.partOfSpeech && <div style={{ fontSize: 22, color: '#94a3b8', fontStyle: 'italic' }}>{wod.partOfSpeech}</div>}
+        {wod.pronunciation && <div style={{ fontSize: 26, color: '#7dd3fc', fontStyle: 'italic' }}>{wod.pronunciation}</div>}
       </div>
-      <div style={{ fontSize: 32, color: '#d8e2ef', lineHeight: 1.5, marginBottom: 28 }}>{wod.definition}</div>
-      {wod.example && (
-        <div style={{ borderLeft: '3px solid #7dd3fc44', paddingLeft: 24 }}>
-          <div style={{ fontSize: 16, letterSpacing: 3, color: '#7dd3fc', textTransform: 'uppercase', marginBottom: 8 }}>Example</div>
-          <div style={{ fontSize: 26, color: '#94a3b8', fontStyle: 'italic', lineHeight: 1.5 }}>{wod.example}</div>
-        </div>
-      )}
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 20, minHeight: 0, overflow: 'hidden' }}>
+        {wod.meanings.map((meaning, i) => (
+          <div key={i}>
+            <div style={{ fontSize: 16, letterSpacing: 3, color: '#94a3b8', textTransform: 'uppercase', fontStyle: 'italic', marginBottom: 10 }}>{meaning.partOfSpeech}</div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginBottom: 10 }}>
+              {meaning.definitions.map((def, j) => (
+                <div key={j} style={{ display: 'flex', gap: 12, alignItems: 'flex-start' }}>
+                  {meaning.definitions.length > 1 && <div style={{ fontSize: 18, color: '#7dd3fc', minWidth: 22, marginTop: 4 }}>{j + 1}.</div>}
+                  <div style={{ fontSize: 28, color: '#d8e2ef', lineHeight: 1.4 }}>{def}</div>
+                </div>
+              ))}
+            </div>
+            <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
+              {meaning.synonyms.length > 0 && (
+                <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
+                  <span style={{ fontSize: 14, letterSpacing: 2, color: '#7dd3fc', textTransform: 'uppercase' }}>Synonyms</span>
+                  {meaning.synonyms.slice(0, 5).map((s) => (
+                    <span key={s} style={{ fontSize: 18, color: '#b9c6d8', background: 'rgba(125,211,252,0.08)', padding: '3px 12px', borderRadius: 999, border: '1px solid rgba(125,211,252,0.2)' }}>{s}</span>
+                  ))}
+                </div>
+              )}
+              {meaning.antonyms.length > 0 && (
+                <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
+                  <span style={{ fontSize: 14, letterSpacing: 2, color: '#f87171', textTransform: 'uppercase' }}>Antonyms</span>
+                  {meaning.antonyms.slice(0, 5).map((a) => (
+                    <span key={a} style={{ fontSize: 18, color: '#b9c6d8', background: 'rgba(248,113,113,0.08)', padding: '3px 12px', borderRadius: 999, border: '1px solid rgba(248,113,113,0.2)' }}>{a}</span>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+        {wod.example && (
+          <div style={{ borderLeft: '3px solid rgba(125,211,252,0.3)', paddingLeft: 22, marginTop: 'auto' }}>
+            <div style={{ fontSize: 14, letterSpacing: 3, color: '#7dd3fc', textTransform: 'uppercase', marginBottom: 6 }}>Example</div>
+            <div style={{ fontSize: 24, color: '#94a3b8', fontStyle: 'italic', lineHeight: 1.5 }}>{wod.example}</div>
+          </div>
+        )}
+      </div>
     </Card>
   );
 }
