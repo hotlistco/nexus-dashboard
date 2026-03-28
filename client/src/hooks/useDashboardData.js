@@ -2,10 +2,11 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { dashboardApi } from '../lib/api';
 import { initTizenRemoteKeys, isTizenDevice } from '../lib/tizenRemote';
 
-const modes = ['news', 'nythome', 'weather', 'trends', 'stocks', 'wod', 'tasks'];
+const modes = ['news', 'nythome', 'nyttech', 'weather', 'trends', 'stocks', 'wod', 'tasks'];
 const modeDurationsMs = {
   news: 30000,
-  nythome: 30000,
+  nythome: 60000,
+  nyttech: 60000,
   weather: 20000,
   trends: 60000,
   stocks: 16000,
@@ -69,6 +70,7 @@ export function useDashboardData() {
     weather: null,
     news: [],
     nytHome: [],
+    nytTech: [],
     trends: [],
     stocks: [],
     tasks: fallbackTasks,
@@ -92,10 +94,11 @@ export function useDashboardData() {
   }, []);
 
   const refresh = useCallback(async () => {
-    const [weatherResult, newsResult, nytHomeResult, trendsResult, stocksResult, tasksResult, wodResult] = await Promise.allSettled([
+    const [weatherResult, newsResult, nytHomeResult, nytTechResult, trendsResult, stocksResult, tasksResult, wodResult] = await Promise.allSettled([
       dashboardApi.getWeather(),
       dashboardApi.getNews(),
       dashboardApi.getNytHome(),
+      dashboardApi.getNytTech(),
       dashboardApi.getTrends(),
       dashboardApi.getStocks(),
       dashboardApi.getTasks(),
@@ -114,7 +117,10 @@ export function useDashboardData() {
       else errors.push(`News: ${newsResult.reason?.message || 'failed'}`);
 
       if (nytHomeResult.status === 'fulfilled') next.nytHome = nytHomeResult.value.items || [];
-      else errors.push(`NYT: ${nytHomeResult.reason?.message || 'failed'}`);
+      else errors.push(`NYT Home: ${nytHomeResult.reason?.message || 'failed'}`);
+
+      if (nytTechResult.status === 'fulfilled') next.nytTech = nytTechResult.value.items || [];
+      else errors.push(`NYT Tech: ${nytTechResult.reason?.message || 'failed'}`);
 
       if (trendsResult.status === 'fulfilled') next.trends = trendsResult.value.items || [];
       else errors.push(`Trends: ${trendsResult.reason?.message || 'failed'}`);
@@ -269,7 +275,8 @@ export function useDashboardData() {
       remoteSupported: isTizenDevice(),
       activeTaskGroupIndex,
       wod: data.wod,
-      nytHome: data.nytHome
+      nytHome: data.nytHome,
+      nytTech: data.nytTech
     }),
     [data, clock, modeIndex, learningIndex, refresh, rotationPaused, lastRemoteAction, activeTaskGroupIndex]
   );
