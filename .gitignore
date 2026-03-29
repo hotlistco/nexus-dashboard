@@ -1,6 +1,7 @@
 .env
 .env.local
 *.zip
+*.wgt
 client_secret*.json
 token.json
 package-lock.json
@@ -12,7 +13,8 @@ node_modules/
 server/node_modules/
 client/node_modules/
 
-# build:tv output copied to project root
-/index.html
-/assets/
-/images/
+
+# build:tv output inside deploy/ (config.xml, .tproject, icon.png are tracked)
+/deploy/index.html
+/deploy/assets/
+/deploy/images/

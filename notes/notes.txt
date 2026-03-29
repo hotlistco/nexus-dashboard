@@ -1,0 +1,10 @@
+ ✗ openssl pkcs12 -legacy -in /Users/basement/SamsungCertificate/hotlistco/author.p12 -nokeys -clcerts | openssl x509 -noout -subject
+Enter Import Password:
+subject=C=US, ST=, L=, O=Hotlist LLC, OU=, CN=Adam Lindholm
+
+
+openssl pkcs12 -legacy -in /Users/basement/SamsungCertificate/hotlistco/distributor.p12 -nokeys -clcerts | openssl x509 -noout -subject
+Enter Import Password:
+subject=CN=TizenSDK, OU=, O=, L=, ST=, C=, emailAddress=a.lindholm@hotlistco.com
+
+

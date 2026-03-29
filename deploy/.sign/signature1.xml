@@ -1,0 +1,1304 @@
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="DistributorSignature">
+<SignedInfo>
+<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></CanonicalizationMethod>
+<SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"></SignatureMethod>
+<Reference URI="assets%2Findex-BkJ7FlE8.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>loDEPkzJnriTMlrs8wKwDcMMEAfSRrGxniz8DSjbbfBG5uFxKWskmneF7N2QUbflsCfSGAH0VK65
+lit9WhlOig==</DigestValue>
+</Reference>
+<Reference URI="assets%2Findex-DrnwvS5r.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Ggg/bbPGhOPhQ8TTGVzCrD4l3cgJx/gSj83Bd1lC0s/7t+VMYQ1YbsBE5j0rwFajWa2r64Bva+Fw
+AgXezSGxjw==</DigestValue>
+</Reference>
+<Reference URI="author-signature.xml">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>V8u2OJrqsgjhEFOS3U3PcIgi3kZTEZBb/xmVX3Z0n98pTavbcVbBpYW0zsEm1xXi4XpR8ODTiYBu
+7nZu5nTeEw==</DigestValue>
+</Reference>
+<Reference URI="config.xml">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>u61Y3Segz92vQp1lrZNnPZyGRq4qLODkoIZFWIvan4Rzmwtyyhkg/XsXXf3gTfnuXPSxunCyweWe
+u8TDc3udcQ==</DigestValue>
+</Reference>
+<Reference URI="css%2Fstyle.css">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>q+GcTxV5qgOUAIY9FT3+p666YT+uLUtQ/R0uWQpFhDIFwK1HtgttkjpUfrtSgWQ0QN6ok2mleREl
+vmpb5yX/5w==</DigestValue>
+</Reference>
+<Reference URI="icon.png">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>iau3NsVmhQd+lxpsDclqnd2d0ie7Jl44dzocqIEPuDZuTaih6PxE0LRTl9HFhXcSxAGHWhciFNBr
+9TNy+6LVjA==</DigestValue>
+</Reference>
+<Reference URI="images%2FfullMoon.png">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>ByhY3MiYyLa9idurwEU4C3bZgS38KUrvka3r0J+GKzllEAIfPLy8tpaQN+T/CFo0S0f9QPBexRrQ
+voJBt73p4w==</DigestValue>
+</Reference>
+<Reference URI="images%2Fnotes.txt">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>IZhqaM6g88+iihD2NhZV8E/mpGEKZqOuYJU0ObPmGrZ0x7MQoqQs+c1P4QfWgAM4dKfmNGVvDKjH
+psYhJB9u9g==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Falert-avalanche-danger.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>24uskf9stIxyge+kYzPhNnSflikUVphpP+JPlUc89lNSMmaSgKhI/5exnJ345DjgOuu31WycIIqW
+uivvzAzi4Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Falert-falling-rocks.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>cwrWkYhni4uR0uxblnp19/jbq+QDM29yXLFuhn3GGVbLj0tl2mAJWm1XQ23Sa9ZGz7n4z98dpk7q
+1GXIMW18ew==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fbarometer.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>vTCNOOpWXvNHfdQMiOVdSjNL7TI9ugU3ddSUE4kjP0qLKxNsxFbaBXZjDmbL/f0UVpAsJVRMzu4T
+5Mt+E6g3YQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fbeanie.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>3M3a3IwRfBIWD9+JSUfpQ8bfif1fELRUN+D487WwjXTqnBvFGKId2yUlXvgdlXdVwgMhi4x3++IG
+iptceLayVA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fcelsius.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Tg2cHRpw0arlBDi0gIR5VnaNgLmXM3W+hWtF6RWQwNQo0hf78M0tCjowGCZJjCwkp2Z5dydhHucm
+04zkeI+a/A==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fclear-day.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>7j2c5BK8tGeC7GUOxIyoc1Bmn5stIxTUY1MOlNsMOtirfc6ZaNja+kjKef/koztKlp0gj2Z0JC97
+bhFP74DFgA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fclear-night.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>fz2SuPKmlRH3hxuUkK/dtt4P+XH+0QtDWsSBDtg8uVe2SfForSUwtFlC1FL3ZwpBcxoCopYe/Wo5
+Eds17KB1Rw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fcloud-down.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>9NW1MFi3arLtppy3gcQmjXWZjUO25Os1hvHaUkAxZPZsTj7QZ5+d9Li6lTIPbDP0Y8atsZD9ji3c
+h7W92qLVOg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fcloud-up.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>GywH6P43PTEVsOhzygjooG4bukaX0DaE8wmrgkjSuWgNWynvFH5QgY1PhZWGddieVx6E0VJsIJiO
+u9ptccLlug==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fcloudy.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>gxWc7AXoytLGOretu3pj2mw5uhUdSRgLxHUTuhEKBPBXmYN3pHYJOrAaKwBx4ut0rRiGJCotGBzi
+5beiDMwUtg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fcode-green.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>tFqKkzswh1UmC/rGAsacxRVxW7HfElMBR0xoCNDuo8Qmd8YvDePMvccAG8cQlqsAEQLN4USo55GG
+CsAma2GfTA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fcode-orange.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>DFpsq2LBQhNtQH1w3dlg9KJ8LaDjLnx7+yB4ZRADPXUmtCyZF/TfeiaiNXJWWTcQsvGJ9IwJ60dj
+OzvvTKUdxA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fcode-red.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>PKJV4eE+ItzZjIsBFoeTr2WP4u3qOSianfuVPbLAEJBUvNUU5+8Lo7MWLhMqK9Bv6c4SyyBFU7XP
+RRL8s9fP6A==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fcode-yellow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>T9FAcJQ56+1lyp8ozWXfEV/9jDdhQjaIz0SSkh4+RDtuwoCax1OP0StvvchcoMoeWTw0nmv6OyJY
+CzKY9n8xmw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fcompass.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>6A9OnRwUurbBgGVLtfQwlWXDytG3Ca8OdIYJt1SfhTW1ZCgrBAcbtnUHjEBeiOz4Gyl4Kd0/D6sR
+L8/s8b/d8Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fdrizzle.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>NNXTEO1iTgbbmNwu4KvcTZACxxatKlscnGFYXYTxu7PcNkZNqfp94lQlXD9laUgFuzvDp9C0P9AH
+7LqmnyVNOg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fdust-day.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>N1cVUKsmf5iXxTt6jypv0vpupobXCRCTnsSdE3K3Xsj5+m9PSyZU6pJSQY78hP2CXAw/d+KPY52c
+N4CETxQ5BA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fdust-night.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>lT1bnIvjk54m0JrLbmrfER5HsqnAn872qZc122IJh0lepZaObxDMUqacDWYAm/eAHFRlubthgEBC
+jFAMp1+XIw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fdust-wind.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>CxYCn/GxLJtPprk1jFNBRZtT/WcDUgImIDWLHSpDKj2Nqx4SXa259j4BLC7AxxKx7EStqFpuGWPa
+O9VCMOTHag==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fdust.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>YnAe9HnXyJbjxVUzJypVF16a5b3lrX7yno+jBJovsDmlIkwRtgiZIFLgA5P5IORpMYec6UZxEzZ1
+6C3FlKJTUA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-day-drizzle.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Atf+f3cIBXUawP7c8TOkoN39aIE1tvpiYTPFpC+6S/GHwb3zeRZDINctH6ydHH0/IGAFHDVL+Vff
+csSge/BS9g==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-day-fog.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>ZuCMmF1/g+aeN/E14nsnU4oyD6FrjyQzUu/GDF2+/B9RsVyx+JEt37dVo4NwLY8LYWFvm5w5T7/C
+/wWUinZbfg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-day-hail.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>rDvZ7auK99SnxBQ5Y44dMPo6/aD0U2kyoyLZwuOMZQQTHGp190bv4pyhZyRiGBV3hrTaJ8iG8SYg
+6eBRajQOPw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-day-haze.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>OukVixVGSUEBPgmBg4RmNdLiGehBUuxcouADd4IrUWms6Hv8rZ9MVqwydd/y0QMVyfWtEA3NKwac
+t5LQCxDUiw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-day-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>65mShJrltKdqWPueNagjZINYUIFFkpOVkAhndjQm3kgHXIqkoKr7AcU08tAYGL+XqY1uBzGHbggr
+CRZI5U16gA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-day-sleet.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>uTi7qcwoNlJES3/BPtYzYLSYn3vGjsJsA92M0oad82vNrP1QFU/+qpEyigfNSP9UhwkvuyE2O70e
+wpf+Mo4rHw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-day-smoke.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Pm/EesoBbNIXH+lMXo+ycZTTMIRVY1pyx7YGxT/XE7ycGzttlepe8+/ZBIwxtr65H1OyL8MabWLN
+7vmFrkRO7Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-day-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>v1Nkg32bfcefVgfl6K18xIEVqqWkA2ORWTIiCzxj5GITi7LgAx6VamUuOGZS+g9luw2P9q2cpN2q
+oTpOYzAxJg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-day.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>OoQSXZcxLk6eI/Mu/7oMYTSutXW3dXEh/QSpxYbNnDgHYyJHjhbygLps9zjF95L+BIdC2wkzlX1O
+ppY/BzkWZw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-drizzle.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>ELEGzXbCO/LtjfVXx10d4rD2BEqOou2eKkKoZfeHUYJsIZJM69wVfSl2luQOHMfKJ6QjOnTGERsN
+N0ltcVTNmw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-fog.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>7tsLDgkgoDECidDQN8h8yJ2KGheOWz6On9Si6vIEgdrfq7mOmJ7rRhIDTtB1OMg1txue5Miw0leo
+eYaJ3cJggw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-hail.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>l91EmLwIwXSBMqfsA71YE9M06D2gUeYt1leb6T9G0YtamGfwKWu/Nte2SGv16LIOb0IBnu+jH7zY
+84WNDSn//Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-haze.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>F0zb3z+MEpYQhwjAvY8PSfT5B+0sxbnxinmjTU/ZzosPKhEBZ8Sb00gmO3WlMNPv4EM6FegiFY8y
+AeAgr0KIBg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-night-drizzle.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>QACvoo16pgWWeHqRZzqgYUA89NCPi4fMYiJU/hsi4aD1MVe+yhdUI2Z0pVF4TDdt6b/SyZg71QdT
+zoOEvPFIwQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-night-fog.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>NaBtlS3CQ9VpmScOPcgwST+oxdK9EPSatZ3iVO5PvNVvBJpvtvpowfupqZG/G21AR2sn0dIxC7cd
+yKitLL0ZJQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-night-hail.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>kLfsmUIDFPgsfhwsA0ULRHYTjywHLDsdOjxma2wa54TXQhVa08gVm2CH+6Wr1IcWs2uV+trfV5NG
+xyRfo2dXXw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-night-haze.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Hf5E9pRVIBFNoEgP+sNdbKTXx4/ChztkmhnELlwOLeoqWVWUUFc6pPgkNCufRzSg43MLAnHqcoqQ
+oqjmFrFS5Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-night-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>4nAUJY779cGNae7bUSklnzZzMIZTQMLJI/tae+oM71Ewm6jmP9fYclxb4JJLb6FAYVnA5+aBPCM3
+SBJcHMy9AA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-night-sleet.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>6bLlkYM6mgmXXVLhNEza1grxHPLKFXBOUIHEw2uE6B+5HUN2Nrnaj5CgQ8VDKWXyRrzyokiKG+58
+e0feeVw6XA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-night-smoke.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>h6Xnz3urX47KdZYljBbRf2g0Ni+GVazbLuLaU7ViMZSQeHFsD9Hyu6ujeJIU1dpS7K8UFCcu9N8j
+ZCuuojG85A==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-night-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>mcAajzZLtKnF9SlYBBqaPRg5WTp4Jczlgpm5y+ZfX2Mgnls1TtUd4WSHTmQyJNq/avaTskHA1UMD
+C6vL0IRr/A==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-night.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>YkID8lHIw4JSEm6LZpHwThrwssl+H3s9v99RFoQTqcb+hRC+/cxqGOkZz5L3pjrjnP1/vG1Nzh3f
+GtUkQFnpgQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>JgIEUJP2n7ElshRdkkej6gQBBY/jtCc8Rx7zsIc0OQivOIhft3kkkMhOaSLeklvtcHQgAzotMmGN
+0SbHwKOSrw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-sleet.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>uIEkSEDNdf4yHLSYjhxQ1kWpuxdA/aUAnP1JsyiqrDEUwRDunNpSfYu3qt/X6JqMnJXeNc8q9eVC
+xS2V+lCstA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-smoke.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>8qFR1m1eq9JfZHhyfO9V9J6PngOMB4ax2Ex/TkPTdY4g7f4ZDSmMpaYWwWa1qmC0yUTOh+Aw2jga
+49PHLXwPHw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>bmvOSwYl7YJmBanTWuaIA7XlSTQQ4zTn1x69b5u/XPv0XUbRXZt46k/t4wMrLX7ikWOtAE5sF5Lg
+wUdVj5HaTg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fextreme.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>WvxxSbWd5ocwdwaE3Ha7j/8cddZxhY40dq8ColEWslQzVvK7DBRYsokTdtnFSriosbcZ8DQsHSFL
+6V/45lxI7Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ffahrenheit.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>lScBvl2x2ZkPO6aTDs6FlpcdphGNSeVg+9G25RoIZRj1kp4TwaWJ51YouK3qYW8PZOmlvSiyq6iK
+RHOr7cAWSA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ffalling-stars.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>3OcIXrJkECBQSShiybCKUavZRYLvVSV7G7tUMtHnY9afhnSMuzJ+iqTKPqaqHMBInVVzYy7jMx8R
+OchDYmrj4g==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fflag-gale-warning.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>YsP8LfpXAGFvDzWA/kb8qo/RSGG7+Q5g+VPmwW8OKJlMXwHL+8vA6o3bVwgPEAqvTjrm7S6AHcQZ
+oobT1jWkYg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fflag-hurricane-warning.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>rF8VWP/akQEjfyTmB6rrSrkl8m5acsMplIqWp+muWqlIKrd5NUMKdnNyKAV/NoUxYK7n9m5pHFLf
+sO9Ib5j3Dg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fflag-small-craft-advisory.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>4bh9Ho4q2xZSgR0YkcW4Kf3Ixl61SYIDZxLofc+BdUKxPdZc9yVWs7U7F8zP5Fpemw0Tdw5aOIIz
+5y2lkWpbLw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fflag-storm-warning.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>72OnCCNXIzVEXbtFKZhBTYcWMg+7Upo/mMNWAp5OYuRp2spBZ4m6nah6kw7VLJG6dJeboY2Ap83J
+ssH7Jghzkw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ffog-day.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>qp+rbMIdKyxk9FNpaAStYcjiVga1FbJBH/T+PnLbgoJHukfTjy+kfkfNipLdntrybKGHjpgktM04
+BRecf+51zw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ffog-night.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>0rl6EwIrLUkDJpXIPNqB6NN7Eh4G3iA9sjfBGM4WcLlIP3uRf/+pnpUzus0fVQiupp5OgOj14rSn
+kYFrPA00Ew==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ffog.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>N3FtCFmm43JgO2YMujfa45vkCuPKKoVq9bin+aFgbtjcrsljpaNalqB8pOpARMy8vZb8koI07iL8
+un46CSboVA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fglove.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>IRg+8HmUuBSZZY06P2vHQoQtRR4uJht5u/LMtC4e3aOXAidZRUwo+9VaVgKhA8hsG9S1snKLPMwA
+GO12ZBqzEQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fhail.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>cMRn64F7uFchC3VgXoE4Y80W/Dgicy7Ps1UTmjwGb97xe79WdqCCZYbDOvAVznSjL0cSWK6c8QFw
+cWxElbmDSw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fhaze-day.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>YxbB89hLGWQX8JMFxmbY+bKpMVeVqmg4JzbI5/aTxSLrrsvlaS9df6nF7HLYDYvPbGAoP56ZHrxj
+hdpz0brCQQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fhaze-night.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>MaLUVOSU/iNqwYERHstnfbjgbXjAhCphy7Cf/hXCNF5+CSDr6vB2nOddNtQf1Zv2rhoZvjlgdrR7
+IalUN2RKeg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fhaze.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>U4P4lMkRcCMssSWnmiliuKAoW+7AW5BDIBAr6LpY8YetUM9uLN5qlVgEHTu2pTGtti5l6oQRalUd
+ET59OLVP2Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fhorizon.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>fFTVpMeRlPJSU6DOSapbdKfhrcsodsD5zUPsE2KJYgSqR5VoXR8QLLPR2WXZQw8sHDZfdWK6vkLO
+qv8xGAMlDQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fhumidity.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>4BufQhlzYvuDBotR2i5afPd0n2r/pI4kmVSlA2ll1bcFbhYy0ThwEK/3acUOyJ+a0UK/wADOT45n
+Jw/var8rbg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fhurricane.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>JkyxgzLgK+o4mvkzx/tUaZ6dKknNJA+Qt47GHY0sHdzxOdT7T+/u8AqaHzL0nUr3vqJelkY6FhyX
+k+W9wnJuRw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Flightning-bolt.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>H6gR/WGeZLDPnM3gkUKgKw5RyyJWpv+WgEOLEGvXBx8i8jOX9W87OG1LE7xw6ckLkuOUw9FQQ9Fl
+UltfMZyF4w==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fmist.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>HyU9tlq9Gxyxz+/HA8mKQEbZSHtMYADHeG2OSMrFOtzqy8hQ0QzH74NhpV1U3+Sp0BpmIw0jjz6V
+Jq67qc9fMg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fmoon-first-quarter.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>YiHv6N0eLZURuDorFEpFt3roZEjTJ/gFoGRW5UT5bV/0Tuk3Tr3USHmBosGqJpA5dBBQX1A640Nc
+gTh3zLQP0w==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fmoon-full.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>vofoA+OGDoK5ESN37cWtyy6WAAZzpKflgq8ZW5E1eJL9zhfIR10sxO2ED2qWISu+gPYf61jqw5A6
+z4KIOhDLgA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fmoon-last-quarter.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>GIY3sN+2gx+F+m9z6qTlZAaVxPVEiHPSbXZ2m68e7L/KfmZawP2x9TmmKheWqkdHmihIgBh/Us+u
+blxvNvx14Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fmoon-new.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>UYg9jL+wBRbB6U9Ypgg3pLxTgMRikaL5d04aOAClXfn69tx8lM90qZz8+mPG/48NPxCsuqKbyo0n
+krlliwXhhg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fmoon-waning-crescent.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>SFKIHqIgGm/0E0wxodQ3IFbb21nBvGCfAk1RgyWhuRZT9rIfxnUDCk7INOmjUjP/3YyvZmnLMaCC
+3CUSClovBA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fmoon-waning-gibbous.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>/B2l91UNiayWV1CRUE1ahIQg6qD25vwtYaHZCgPEmGyhe8HMY5s0VqhRwRtWkShuFSc9OL6IqWCt
+Ic114HE7Zg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fmoon-waxing-crescent.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>+14bXXQJXooQgo0LJmp1jNRiTlm9FmSBXIajT1/Bbd5Iwo6c9IpljyKHNPEzYoy67FY6nndMybFE
+RJrrAYBgng==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fmoon-waxing-gibbous.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>sdYgNDKz/ROY4NYAwzNDlLNj/YMhCDZCpcQqiyKYH+8wFojCHjL4vgz2dpeIY8sUg7LLhQe5cISC
+D9rBwK/cgg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fmoonrise.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>ffSU/gaqwriwxhciQKNog0ujn7l/p5U4m6RRUwIjzx8vZvbsi1hRW0VjqrTJLY8Ym6oHOrTA9lrF
+rXmoW1C9FA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fmoonset.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>JJ2G/pjcWqyRi4fas5dE/dGeG7nOrRZF62FLxLTlEuge82jCiwUHFzTQyp/dvunHs9LbZqsdfDJk
+JUxUmAQuvw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fnot-available.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>v4k++XXG6cml4bKTxu3HB908C9t9SmqJRu/S5MfA6h4WYx6O9b/U0mpJ8L81N1m/wvku3mRK1ei4
+JNqrEFcZEg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-day-drizzle.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>sDtNqmb37Cyr25eypR1z8kbi7R9lChcYsgkGnmrZUZ4hR6xpW0vlZP8MMRAakfF9pjR1wnA4V9Oa
+iaE7zDsaeg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-day-fog.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>WFkBX7SNaCDdgqz6aTErvXLjVLzFJxODgPZnBmLelroJFyUdSdVWeasyIf8HK5JVUwGGJpMJHyAO
+Q+NJwVasrA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-day-hail.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>39XhzQAjU7V+FKo1wt3KSLAq9i4gKXBQtJwRXYJA6MZDf1XY0yEg6RhJPzmQ3U7n8TdYFNTOJlji
+kvAaHbu+Hw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-day-haze.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Uvrtc/CI3qY5ytKIEIcDDQAUkGHvcf5uD3jm3WeVggjyYl1San4wNCSmiZBoy88db3dCTWmvWHen
+ZaYZG6+ugA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-day-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>i59mqa6DJSKeslfUt7L5GjpKpClwhkSl/chVgmY5RcFytHmI7oNs7vXBprrgOgKO0A9aUrNNVygr
+ZxcKib96pA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-day-sleet.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>xuQqqY9U699llMfFraGJCYHYFnfVVlcjiX9mFokn89pEa6baFIXDxnsHRw1anT/hFba5MiuNfdxt
+v7pZGlH13Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-day-smoke.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>z70EyLemCu0cO+/clKh1BreXB+0hmXi4V7DF/Xb71+uFqSqY7oRTo2x5MDaJG+lXWGUgi/3w6dkO
+ejlJm1JNuw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-day-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>r9QQWyA5JS0CgCflKh8iFDEy6hhLFUNAYo9Getukd/NXPbOrRLSdAU7Jj/l8VMwh8nRe4VHTTtR5
+aWNpeLATLA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-day.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>KFeu+D80bjtUUD/mPBXqe9pg5SStdttmQBm+ljKrJXCoxVfb8TxdwJgYi9kggsWj6MzNh3KoMHhq
+Mc+HK4C9zQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-drizzle.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Li9oprm4K/ceDz5UGqnD9s6gUVZrT61pIGI6ZnpgKt4j+5FQ8LNGUElRHkjYrRxmt3TfZSx46ARC
+u46hEBF/Rg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-fog.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>pdb0gEy8KK3etoI9egqYmCrkwVnL7GG1f1L8Hnoxi8BJ+npx8iF6qSEQJWMOGFGeSfUgcOY6CjsM
+iCnBmtcRiw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-hail.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>8Hwt5cbkJVVagbmibuGZakj7VVfOeaRIOqgNqP2N+25xIOmXDq4yV7JJRYtoggdok/LGrAhnoVLz
+2X/21WIJfQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-haze.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>BSlM6l4wtXK/GUzF2mAEKh1gdz99VLijXL029d7xW/1K1pWjfYcYjo1mUDqmWDwuztyH/gXhDGnQ
+5Kr6Sdd3Cg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-night-drizzle.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>nohA3iIttRMKcqNNQzuG+czLs9ZN8hvgO0e1T3SEzvOCLVklI9/y/A05mb1282Zw0jeWvV9HiaA1
+6MCPKw2NJA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-night-fog.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>zrSxM1Mfs+gjEIY6C5PysOMf2zeCj2QXZboBV/yIPHedWYvEYi+dcfOfkgUNyum+IeQlbN7kSpQK
+SMhilbmGFg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-night-hail.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>lxiN5t6Ksgz0x3mF6TwO3qd7qZSets/kNFoCyeq86hWyIBv8SqnHm1ZO8XjyGP4K+rQsrEKR1kkF
+rZyLFggZFg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-night-haze.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>0ZiuATNmgBf/ahl0PWCXUAEd4yWVhQTRAKCDyfjM1mONlDR2pzdXeP6ed6oCwlIsmYM7FbgcmFu8
+jIHD292HeA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-night-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Ocz/ERbEf6hC1CUUpco+KuZL48If72nmi6w2UGCUPWltonKwIOzbIr8uuaY3rtJZT+6CNdzYW4uV
+Jb9vOZ0PYw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-night-sleet.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>NycdeqXM8gn+YyC/MC8BYgeEbK5NdO401jtYFlf+NHPhheo4ilv/xepxhSQID4rN++ZMBEBml61Y
+yAOhZPJbJw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-night-smoke.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>r+nXzzXwDIJknEP8dp/DCGNjlq+uy+qyuSRv9nr8Huv2AxHnsf5GoKrodGIVbf/XB83BwfoCfirx
+ILhtvmlKsg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-night-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>3wWQsZBdX12HWpD0M7s+ndecyhmTeZfjOQK42SYwP9TvilNDP1nsYhvIPcj9C/VJd1G5hnEnk7EL
+7tFZd64qYw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-night.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>kyyZ02TIbyve1Pgu2DoUJKpA9suNKwnL2VRSJLn3UwQmBF3fbn3Coh68A6s8yz+cGwIFVjaA+ZkF
+Jl9bPTx59A==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>yKYLTHtYsoZtmELhgDwcG5crHoeiPEYJ1fkyEFUONHaLi/4EmWjVqOFt8jcd/1+WxJ03EtLZVYyu
+eTinONUq6g==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-sleet.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>mAeeq9nI61GCAEBJXFbrRfMXCFm9j+QFtppkwebEHZ/7JE2llD8SxvTO+K6G9bRTjRCts/3k/c7z
+LNRfMFXvMw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-smoke.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>AqfhdF3YQ7mgQ4rboZcQE1xPxxzaQ6LR+d8yVwziJ2lys4/cCXJ/CILRLoHgmsblDrO0FLjlnSDO
+IXNw7mCwsA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>IJip+Gus5mQf7FvamrXCAfvSG4qDC0FgXadrIGxE7ZGONlCdtDB5nvkmZNuCYynR2cwRZUN2Nz4u
+7WjZU1gmSg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fovercast.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>tUqjxRUjMIOwgE1MoI5lR0u0NLeo1Cz20ZQnaj7SHkieiq1JjMHlIwjXjOK057UXhKdxFjg5FwWZ
+GPsYPnHtfQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-day-drizzle.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Y1h4ELcluBlx6s/gzlaZdms3zFRccBfju0KjVrPVe2vhYTVgQRpyEWQczz3DLKAz7XJYDYs66Tmm
+PLix6gZbyQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-day-fog.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>mq3BLnVt+Lv3CnSVvTY39GbM3PCFTWciUyeymCsuQmL3R5vNkz0OF6zKN3U7H9glQzNRhV2VTz2w
+VZZMpRWmag==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-day-hail.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>gpaP4ZtBlZahx5jKj9Xs8pA6KTa0HQtcN6MDYHVg1zTx2eHo72cREQhTp3HyTf/vCEb4sLpdPBDn
+Xm4VfIPBbw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-day-haze.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>uZ0Vmf4zr6m7kvhMhcBPlKbIUsLuo9zuYSCb91GkkLLGFKGFP5xtMny4vvV1dAWe0F1tKwj/2tYd
+w8z7mbH2rA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-day-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>0BIbojzo22XFwd+cwqD1JAGztoEJ61owLSVGIDgDS0sLhDAJHXsrFHLwHxNJrb6StftIh9qSg5uO
+3CqZdV7nZQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-day-sleet.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>YpkKMNfgEFTy9FjiIBDjpx7NSL/20xhyxzVH2OMIOnn+KD2xNs3UqR7lWDk7/Z/nNbCeYJFdW0Uw
+E6JbZDJpBA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-day-smoke.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>wS/Pv3kyjRbbkOrSt0ze3zqhRT8ncqtwce7cQj2/T++llAbmI97xMiwPfgaVFBQbCUbLRwpsxS68
+Zus65gDQzQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-day-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Z1NJLdcFCJwkaUBTj05gyYRINT2YTEdYN6nDPKZskS/JzdAWTkCSOMpTYc4euqTD8Y3um33IYvcw
+KWzC2C0k5g==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-day.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>9bbH87gj14DrOpRa+yi2a8T3djLwYmYQ25wUMte4BiSrLUcf9GgZLvX78R2exuEK7xnDvZSka83d
+Etpujct0ZA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-night-drizzle.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>OcqqJRvce9iGP824IMniaKFuGosM1Y3tcQB/mdt3NVTAPiEHzgSBWwzxJzWdwRepqNq4GiX9TMQS
+sLFYmGr3nQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-night-fog.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>fuWAzEZRcrl7FTd1uuNct0kTLulpwRFOFb2V5UmM9qtO/OEiYLoBDeIyAjayQrxDtutLKYMre8xf
+Azz+kI8okg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-night-hail.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>AttaJIyzoO+i+Y3gYfOM/N64STv/KyN5FUkqcUWxud2unaa2Tmn/wELvFvMG9tYSd8yyspsFGUcY
+LgUIg7jJ9w==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-night-haze.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>aewWyjVI2D+VW/JoN7GFvfIWZDoyNFgBEQFFebqdHmqRspCMwfCipqXNLwM5wCqFov9VJhdnYCmO
+iXiZwr9WYg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-night-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>PC9NvqekK5cSb/rj4GQkSl2VmaMiQfx8P3Gjtid55MNfF1IOxEx7nmIsks5iVj0X9ZWcRPHn//ZV
+tO2C+B//wA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-night-sleet.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>DQDaAbFjX8S1czPv8h+cUDRBEKCQ8c3/GnHE3ZKexRkeuXi+nDDuQJmg93vEKPtHCS14JxN85N4I
+SX3ps9C5+Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-night-smoke.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>C9uX6cb+Ljt7iZOEXREOQ+uevY2U0Fo03DgN7V2XImQF9j0TTIDkmK5BuPKoQDxetqZ/dqZrKo4p
+iK2IgYc3zQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-night-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>vyKltSStnyGNP7hvrQcDyQ8cCIgPyQei1G2N0S9hjFDs9fcd5HT8PWHtTqUzJU6zFykC6M8sxnpt
++dtVRu4EQA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpartly-cloudy-night.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>e2Df5Xc5+I31Oq+W23XdUcRC6uZVUI1yR1wFUzQ51nK80NTDrIdbHF/ncBYhJINltVlXE/HnUvJN
+F6pbkwTZEg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpollen-flower.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>iupndfEHVBOGNJ/2aSXaCDN7zK6j5eR/1ZL2jm4JtMSovmkclVMQk81Vkh5lnYc0EdFUrdGBi635
+qkdsC8IAwQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpollen-grass.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>R/XopBCJM/GI0C5+Qt1EBNQCGi0onm/Kh8wiA6ngN0DUTlI1SUnuCdQdjyjkEzCa8TIBY1ExD4gK
+2QCPpKkNQg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpollen-tree.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>IJJmCiHEM3vIdY6dpJYx/F4U7egwEybsGGC8QrozV/wbdKULt0Jl3K6IbzB4iqmrGJ/m/ujm4yyd
+chNe40L9rw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpollen.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Pqg0L4+ik/QWYgsDWdC/UY8OkqpsybTvUrMFK2K2S2dlOh7D8msgCN3KWFiL76jJ0e7RXgSJ+26s
+vjTvwoJx4w==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpressure-high-alt.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>T5F2u8AtY6j0FwwW32jXGSxdqw6Zj7UX20adLIbcd2bH8EL8cIrSytdfrezA9KDqpJKbzHA1cNse
+/YfJvD82RQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpressure-high.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>jTVD5PZOsSoeQ2rFNEGyD+Def8616xQolj8IF7uT0mJDPFNIyDmwU+vYLd2CBlO1bnxnIE+Xi6ZF
+xnwehOZQZA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpressure-low-alt.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>tzM0kXyc3Ho2XQctbzeER/SNvBY+c08qqqlgzZHWpASG82TwS6XMRgdSi60qAMVuxrv6cNmhCaFe
+yIY6J0Sb1Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fpressure-low.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>x4Hx3v3vp80RcEom8igyCrpfFiebB+1lpFvE0zZXLqDnWQRs4slXxznK0oKlnBLK+8H4Y4TtK9r4
+dAADM37oqg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Frain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>s6cJkGMUFTj6WbNcchjveWLVFlwifLqi1LI2dRgJYe/TPBPKkiDv+oppQT0mQEzCiEwRHw3s2RRi
+/n58A9Jq7A==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Frainbow-clear.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>V9CsC4xlXqdOMbsO/Eb8/iIBdTx4sYW0Zxs1ALP8YcSB8XEyq45EVxVHjBMzAQ4tsJKCpPk3AH50
+WXLqU5ID8Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Frainbow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>vsQjxJniplGDAP4ygaqbPw4wAtIlotFCrdEZ5WxwCqSgfqmsxFZ0KDsdpF1ZLJhmjXbsI2U6OtP2
+grXVbmnwng==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fraindrop-measure.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>vGssVoIGNjl+ftpBlFp7ypuyBbFDoDCWLhmBoCa7Dk/1+GetTuhXeTrN7sF8ecPU4BZvjBaAjPSl
+nuaJ1m92pg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fraindrop.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>TVg/yFoGvTqRf87sPKHrsJMu/7eoxy9HblG9/Kojd70075ETXM0u/OPtc1YTfY6wwJBEDPoNFTiq
+GGeAtPTzMw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fraindrops.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>NZUbsbJ2cVQEYpoiC0Js9pwf4TDWruczrKFeNYKznbGTEy+JbaUdbC6UUzYgTesu3uJf93widOhF
+BBpMW6SJLQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fsleet.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>oiIxFJWytoxYAAoyYOkpufEmpRjwgodWx4Byita4FM5I+GViUexRL7nMXbbb8KsaEuV0g+9ZC7FM
+9nqzRGqqAQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fsmoke-particles.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>y0ZLTjGtnBN+UkEFNDAc8oIbGGvwHesixfF/wTm82jUhqJF7gK0LTkZxaUjvmbM85OvE4NmFY6Ix
+uh0YB50sww==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fsmoke.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>+DjFKkt+BbFAurQLMhcuyslsxKhO/byi7Q9655JtgSDdU88Xh8q44DDe3mjjmqbrWBVWprcotQ4e
+Ee80PumaNg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fsnow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>1OBzSqrBum7drCRaGerUcGeEkdsC12Sjr/hdFHZV6uqO1o+0ZPAaiVKpKzPqc6rU4TS1RYrkKhcy
+4pPuvjAQSQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fsnowflake.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Pg48V6I4hGPf2omxKY71CBkd8jxdYqsLsGBmIn9rIKtvUcV/uh9UG7Wuwn+FleJ6G/UAalemCtfM
+PNb1Dj2ULw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fsnowman.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>ULj0sXEiTiAw0VR6pnU60BIiTsWLWdy1Qi7oGegwPubtwoMHIqDW1BJqKXlnIi60lDSHoTtI+HVo
+8Stpfg8wNQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fsolar-eclipse.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>H/1x6TtU8xBYx/NIxU7TOecHENVL0FgjGWOKlBEHoPXOT4aZq6PLL0N1HN3IbHL//F+E/NJifJMl
+UOCmiTr9Hg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fstar.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>wynn1yT5ac7vzLpjRLxhovlWDxm1kt5/aSvwuP6J1kQrvJbfXIP4mKJZCxCrD8LI7RFB/KOj4EZB
+ysa0DmYWCA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fstarry-night.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>/14ZgHR8W/OtcovLCKq9gq7mZMKccw1gcHgzo2McA0YmPbx7hXEpeO1g3p5y/uHOaM+gQ3MvfCYG
+T5c3mltfXQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fsun-hot.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>AOflZjtqGF+8k9YRS2nhuEBnIY5xRuk9+DG/D1CCYqwY22IU88UgDvmjEpCR7wA7TbedhjugiNE4
+fiLd67mnCQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fsunrise.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>H0NxComZLvVk6t4FNOp7AG8Iesbcv4cyMOLsUHLyje5z+DsuaKmo/PqcthyV1pVpF7uTGgbJ2vxy
+Z5Zlu0ip2w==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fsunset.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>EQ6+/nhaproR0zHMs4hJKg6Baw8GhTkTDh4xuQV4zdkm9yWWeTYvM/agd7tsKsqn72wXwsrm4WcV
+I1JblS9icA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer-celsius.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>ajLU2dcwutN7SpPU6HQaugFpRPiKCns9aWFed5Y/Ufj9nYyGgGdt6izNNlOs/pF3qraNsbANjC2X
+rUES1QYH3Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer-colder.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Vp2xYyUO1V51sghDnXyNqbP8zg2a7RsIQWq/CtzID6SO8D06uOb+WXJ+4V7vByj44YXa7IG/SCpJ
+FOLPfDvYOg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer-fahrenheit.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>SZJDQUUY+H/dI051Zb9pf6S2bVi88BAg7mxNS9hEATpDtddGYnO5/vTq73/QPamvDwqzK+wqicnE
+kMn4BjK2lw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer-glass-celsius.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>0Tbwewzq+VQWe8qzLA9ukEHo2F4CoLgbPVjFvWoTwWVPdIbbcsjWYax57RpvsajtvvP7OTJ3w7Gk
+E2SFqQ0R9Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer-glass-fahrenheit.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>ztG0ZlHOzC3Zltdj/KHws0hHkLrnXFxmDnv+MO9JB7srd+n6EkkEn17mVpvPVsscbJM0UkLh/z/S
+3MRDthLGWQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer-glass.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>GoFefPLfj/YREP6ArFqNiIZ1T2SsxNRgZywqGQNIcMRMKHTQB5rxexSIJgGSlCsnmN8E9Z4zpAwr
+czenwHUxpA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer-mercury-cold.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>uaxyX3SCBMggWF6CZHztba1UMgHHGaCpyUwyehTIeUd0NSFP6WiNFGCBOMXzCnBZgEBOAAt6djer
+RFtxZ9l1Rw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer-mercury.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>40URYS3w3c7dQjJs38vszbl33ma2kiQHt/tcEfr5hpZzKhAP0xM+VmIz7OMpMHhUmlAc0kJ+pbwY
+PNrIVEB4Ag==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer-moon.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>4zYKevul9WlK+8V6rEyykRkI3TruUHzl/gD8yTS9ZhR5gCBoGbxDxcFubGHDaktrvec1ZGcT0SSY
+wqQ4FBiNaA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer-raindrop.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>vLNoLdOnR3+1IRIsefrYyxSrk4aQ2NZpZw3BBlMYvq2GXeT/IM/VP+Aug9Ob1UTYlOYbnrIBQN0E
+gsc/wTk0vg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>hycg1jfZUNTSS0ng+jcvy0QuIwKBOv/Z7888Acr+NEpYx+PmOqg/x0OOyU4sPZaaTBr5XEoUr0tB
+NCjqX+fQcg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer-sun.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>peNw26aXdSxdDA/bLx3XtdGjD6WNn/iaaX2Uup097Kp0ByxustEopyziu9A72ndejjzZWlyRH871
+467IyfCYQg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer-warmer.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>jyCtcSJoxdkJ+7DoTvM8r6ouIoGFNfF9NFAQpGyJU/7BFSMk31Z03NVdaz8sOlYhUEvwCZgJS2Po
+mOz63HqV7g==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer-water.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>VR2a0VefE38JloGtQRoEzwnuMmHNaj/SDnwg8AhTNpPGvwoUkM65w5ARk3nwcBDH2+AuTY/HsqSk
+UZ/brPwCrg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthermometer.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>axT7+IRNZRPFe3JZVvqQdHB/BEFlpVrLim85PaUUQojNigDehhiX8lmxrcvipzHdtQEz6VCx1jlv
+/0wCWTwFZg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-day-extreme-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>f0TduQVaw6GAXp95eOBdY6rvHYwiG0w/e2qXdsDAUtg3T7BvmfNm213EUakfu+ElQy817hyrSm96
+R6Z0gdiepA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-day-extreme-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>t9y2eodzZ7EQiiNI9ENb3XqHcXOMNGpvRVB9apQJMWuhpUHAxDjMRmCTEzyySYoC+scMxvl9t3C/
+HAiPLHpA1g==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-day-extreme.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>JCrtiyGN4TEVY3yHtVD2nc8KMEmYzrlIem7OogKye8tQuHiVNSkK1NhYYcF1cM0nSH91E/kCo6VC
++WRc+HqpmQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-day-overcast-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>G1vI8K0S1T/2uhjgiO1hsWVoFoHJm2gjuUwdSXrYFUhjpaZhYgbyH7HxDn8OsrlJFfciqE1TCn5D
+BCkCIOlOgA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-day-overcast-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>kSjiteZF6p9O/W7XOGPBsl6OVwYGsIjHpYEDYVe0vHsgmZlDvhympjZUrxy4S2HzSqeHw/ZbZcAS
+qjhvvWeT8Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-day-overcast.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>9aRWWz1c9Tedk81GlqcQwyyPbu+lWhxGQrnpYN0FQivkrIxPYnbGVo9F+utNvWAEkiJThqjnOY5H
+HvydEoQbDQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-day-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Mi5DsFQbP9ZGlMtt22axMpK/CohN0PVSTZxTTGpxRbZV0SBpRMrLC6vg1dtMTGIZKxWgF7O2qwkF
+ghkSYJMvLg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-day-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>HLelLwD5mg5kcKEdoDjmuP4bgzAtUST9CrC3lkbge4sjQbL7QOKMrzib7VBx3+Iwqj2ninvxb55A
+tBmDHg736w==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-day.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>19Em0iAzXM1o2lO20pnOGp3AMXkQBE6AGHT9QbPwiFMQ8hGCuW52rv4FEsw8nR2TW7qRLfrsYO33
+ygFs1xE5Nw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-extreme-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>0/3Fl1af4Mow8RJvNu1rslqkfN22vNj1vOFa3GEcGSZZ0x8ENItWBqv6yysLA0TAP2irHVGkLNww
+oF9KJ55Umw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-extreme-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>KqHdWtW56PYFlL64xb5qEBOgnEulm1PPYGy1X69a8hm+/1/Dzs9PpmlgBxH8Od45DX8MGV3VLyBE
+y86x89rQwQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-extreme.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>lkPs+ZBmpRfvzRXtAUyaCSV2ee/GAhKCJjeNHp4egZSd4FgYDsPSn3cqkbnXwaIvL9LeL2Fee7mn
+l8rs/bJu1A==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-night-extreme-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>9ARtQhRoy2wRt9V78VFttsv0TU8qUfFDeEoTaX2y02PehO0kVJljn52BlbthJUKzLMXADcPBZpoF
+T33Ev8/9PQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-night-extreme-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>NX3I7oUZ3Ingx0SE1ynrrWgPK7M/BTYy0oeRodk7rwNA6TZFCIdM6VSp6aj+LvB3Ps+3pbkr8JWw
+qFdsWgDzwg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-night-extreme.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>0jMKIHXa9NkPuY2ykowbIIc/rXHPAJCGEciFcP2RdzNfannzu4eqj9/otfvRLKZ7hsVtatpVxPxA
+ptCfOoJTrA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-night-overcast-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>1DXH3kvAPnlsMKIufVBUnD3caPXNO0nC+aZ6nCl1gDfv+FYxqCfv3FS+r54UffaoTWDjg4Ar/I64
+bASHrOfioA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-night-overcast-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>wosnaEGmyOMczBHRbzgER+i4f/1Q2dusvLEcPBL73gImCLnSgxAhzgjoqG2FCyTfJafYm5xAFOJ9
+8it5xERu7w==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-night-overcast.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>nuZ4AXrqFMcQHSlFO8Lpmgepp7osdYtJKdbzKo7DiMyox2qFfwBbVOlzs5yQiY8s59pSC05YbbQ9
+up2w9/tYGA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-night-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>bXSyvS9GpeMMTdcA1eE5ErAYQNeqYE9ZU5PvG8GXTli7SPDabeg+bBs2BxsdRaCtk6JxmSlaKgJC
+CbnbHEvMcg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-night-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>m4PaSl6ZHGwlu/gBZAVx7IyqfNH2ZBDJzkOwH2FM6O/bMk0nI5o1YU31RDkXGYCCn0VYGeYrgqEQ
+rPV84gbg7g==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-night.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>yYje0U6uj0cfxlZai+Irv6h6r1j/Wl4FFFhgPe6W0J8JJjtMxNBag4GrYuY9P6nTwkeVy+oSyDge
+Waq+Y0QeCg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-overcast-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>m+gxJJ45zITlPRz0FWtXiELxSx4syzqRrhUXDR//sYvmL64z+ohRmwwPyIo2xoR0/aNCGm5C3a4F
+n2Gi48LAOQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-overcast-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>NqAONanHaPfVDbfy+j90gdWM5nsQwdlLTWT+EoF7rLeUaQ74pHL0zl+j2oYKKRIqWq0/eNmDLBKR
+SQkpbB8NyA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-overcast.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>PiICeUkDW9XjmTNMnP1Z3vCL71MLD/4ZSCxGihLJaeHk7ub1A91fDDeB7DzrqvotCSz2vBuJ7HOn
+kPnq8XlOQA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-rain.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>9MvXmRxZmz4AN+s7H3QD5dX61vPXBovPyPROD6zNyJztygEUzXFU7LmVOA9Z+R19808rCtC6ATqO
+VhQV9bF3XQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>hGsaNiaDRz+KIoF/GvrKObFB01Q8ZNJ4j3fW3Z8lgizBSEAy2qHpTQ4TdQO2H1Y02CpknpNksWC2
+tSnX3Ly0Cg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fthunderstorms.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>A38IIN+HA8BtjwYeFoQEVb6twFGGOFe+2saJYAorVwL4r1bxkbw8EjaOjFQPkQDZQDRUFQyrFSHL
+fgGYwd1enA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ftide-high.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>/6a2+V1ULHe1jr24/fgPesEWUbyipVD64LdUhBx4Eaa4Jxd7eL6oH3zUynxidOuZmz+VcwguwLnd
+7iFdDrnLxw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ftide-low.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>uWk5vDNt+80Fww9ZyHFKuzfqeW729v8TDLP228WX2gFgFj/ChI0aIMKig8xK+GJ6uJw173/R58lB
+o5s/9b6jtw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ftime-afternoon.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>BLcaE/sPuXiM3gq32fTQKBI4xf2/0v3jbYGaq5SdGj93JM1iaTSxIMC38saU3S95rzE7m2cyfvUE
+Z+AzxTwcfA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ftime-evening.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>AaduHgtn7br3wNfEvfX+dS/K60eJxKP16hClAOAcqPu8wjcp1O5BeomHE8gROFyEuc/RcKTa9R/1
+sV/n38ZYTg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ftime-late-afternoon.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>ZcJGXz0BJlrcIjoauIzwm6Fu2DLD1Nw7jY1P6o3JIDgPT2y1dgzLmz7GajPedIClMMqLDVrIV8nv
+M7NtGt84HQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ftime-late-evening.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>5x5roJe1nfvfORuBzQ2pFqPHtFCvBy3oZWoUZFaX6q/yYCxZsOYIYa6/yMWcG7ee25497L07/ZZk
+x3kh8Xly4A==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ftime-late-morning.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>b8bZF6AysoH36vkUCea1/X8CATBQ0WII9kE5oXAnu6ySIh63KBcNF9cjCEBB+5O5cQdH7hImcbAe
+zW8z0vlV7w==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ftime-late-night.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Teb9kZQ5f0nZJ3lXPOKIvoh3Blsi1aeT47Ty6Rj54+gWuMUhPWIXW7M+a88QISa2VbcsWYfoTmIZ
+nEDH25P9iw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ftime-morning.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>TSS1t4twwDIy3VTEIxBP6gQ9I5EpIZLeKbzXrpJzADJD6KEMWCyK94nBSt5aB+2BT33n+7D0m+KA
+b0EMuFheaA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ftime-night.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>ztTkwNFjL7nmvqKKCEZMESuqOiuujhqP97JGRDLe1d7DCuRb5mfTGdlKOIW9kH9qauuGCZ8KQ3vV
+rYvRw8CGUw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Ftornado.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>ERRO5wdUTsoRtTR2naRTfe8l2hMIrDJNXAeFy8Y5tjRbY/6tQylkzrfnbYP9qYLQhO3dqPrkRT/V
+0etnjpdgBg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fumbrella-wind-alt.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>iMhgrK5cX+WKvg3tRGEyYD0WuBNoVNX6pEj/YZKb3x4ZZgXx2+HPwA3+2Ms3ZKp82AYDdbRJWyjV
+hkIM6HuQJA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fumbrella-wind.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>KqJTisdctdK8GAhgYBAs93IXrB6GeSIFeDtk4nN5n0HalLvByvq2B9s8oZJc2wgqCePZjuFr7fNL
+/wzM5X8UCw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fumbrella.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>vU8k/lYTFcGMfkll9LWNvmtm3eDJs6DF9a4kG84u1qaJ4EqOE9lHN7RMUtW1KrPM4UH3+eEuqyk5
+1LCrOte6kA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fuv-index-1.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>gnsW1Rt4yYFWB0v3QzZbYPfWFFFLkrES7QiVX4gx8lsr+4ehNpACuuYdZNTkC1ug3ky61uoqRrzJ
+Xu+BJ8vi6A==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fuv-index-10.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>mN9CgEESyZLpWukTiEwB5npgzdn/tpW2860bYypSZozSt9YnfvS5jhDbdiMfPNd0VMKnSeLaM/Xk
+xQvDTLzBeg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fuv-index-11.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>3Mun6cv9vlcbDic9O8Z9QuW6wqgAL6wPpuDM4T9SRkdD1RT96hxoRT9NKpUA6VvRC2b0ikWCYpcb
+ih4YhMQM1A==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fuv-index-2.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>qrRjE/nbDfTUAJn10Tz7o1rliVAPnQ0PgzhRt3HCDe/2pn4FVb/n9VGXOJHOwV56xpebxCQAWxf4
+AJzrJk7ZIA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fuv-index-3.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>z0LgPxCcFJsgMZNhKnyrFsLK61I+jherIIsAkFXI1z/s9HeV9n4MuXqaX5P2aZk95r9pxOBClq5M
+vWirFq/ToQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fuv-index-4.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>AegvwLxJlSRRYbtRSkRwMhXfFPZdb6iK76uPEZRAEEaGgI2DgxU6sSR+WWT9NuneYNVffCLd80u3
+M7840cLPgg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fuv-index-5.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>+daGaTS2vB4kWPsuCGyX2w5Gc/k4KFmrPyhQMjNA/vRvJx395qCG1B/jzWOX89zqLMwBOYoFBuuj
+hhutuMNLgw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fuv-index-6.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>UtPzif37V6WPdde2lowBJE37GbHLrMBQikuHRYUQG6HZr6P3QtGYXCf+wlamwhDRZjYIBHNuFgsN
+8R3iacuGRA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fuv-index-7.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Mq4W8z8XvEvdDYqIrLzDxeSJOF/flRc83uziUy2zEvxwt2LT6yKsoYoLWNUU38yqa7ex3Ex29BkF
+LidjpwZmFA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fuv-index-8.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Abebq4lc8gvLr5SP24NO8fG7ZUx3BKa4H3xEyg5+XXMHKzuubXxk4kTtMA4jPuffZZgFRLpuznuB
+SnZXR1JY2A==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fuv-index-9.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>XwvDJ+cre5rz9VYOStDuUYWozx4jMhxxhWnUZix4pRtIE4fez/7HPPcpmouo2bADGOYx0h9xJdP2
+qBn925aA+Q==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fuv-index.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>bdBjJqrUz7ILn/+BFEuce66vCYBiIYEjlkEdJrHhjDLGKRL0KiU5usS6HXUma/KTtM/ZbW0DnxMA
+bfAIc8nKSQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-alert.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>nL9YTke4vlnxONHLHQv7o4iiyNB0SE1FhFNvsYcwXlXzcYAhGh5TfAMdYIZWmPGZR0xqTk3+maft
+uWimcDV4DQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-beaufort-0.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>14wMqPIjtwHzZN7JpB0UdjJnpwUgtJqqGThOyMocSRiNiQF9em9/Tb9ipdCamIdguMUy60jsWR9y
+2nZ7RgHwGQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-beaufort-1.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>J9A/3aRGdq57eilNUZbIC+hJ/VtoaxJTr+XsADlvsNt7+0PS34kQaWFNIvC3TbxHVZIGWCnytyUa
+FQ9c2Vep7w==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-beaufort-10.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>9Hem2gYx3pou36tmbQHNDyHUQW4fM3IGRiUbPNMN3r1KE5qACI17Jivsb634NMdIcq/g79HcB974
+mSA0KXX1lA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-beaufort-11.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>j1ygph+SybGOV/rgW6C1Stz8DhK+nOniX/g5cUBlR1vHHYbo7O/ypiPf8wGBbdAuMgBfts/pa4vW
+WX29hGxDtA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-beaufort-12.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>zqbzBA9G/0LaHHN4FeHkAbqAOKhJUHHi3Ppzd3PoptXCs3AP8C+QM7fhmq1oQ4P6mXzSxEcrD4sS
+z27e/bc6qg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-beaufort-2.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>zAqawe/c3z+kazqO/qQJm9c0TsFEDqTlbOb7j3mMwoqKi4NQd0te/er9u6xy/JuFFKKKECXNqupX
+t8HxBZxOnQ==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-beaufort-3.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>tJ/irMbj2z6FMOG4J0X42RoH1zD/kVHSzpb7dYI94U0lj8nhTGve2gg3e3IvK/AX36SyJGYg5+wA
+16BPQOH8Sg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-beaufort-4.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>VmrciNNCkqawbPM3pRpBwGYUaYneTsAJtPOqrTFCe4d1rOXU+kn7d+oSPHLjZ5crWXjMZAS0Sd8t
+Jem29j9Nkg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-beaufort-5.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>y7I4Jgj6xp/DQdQGojhk9Ab0BTaVBy4G3DYXemEfd8kZMvXEnNUUzn+EvySfKfNzBs44aNJva1dm
+LTz9/+rmxg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-beaufort-6.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>LVfuxjIVAHnD/wWMmt/QT1GIQJ5xIdv1g+/mHaEzNgonDQ0kNROPUEOmoUuLLKMMPZTPWZg3xQgV
+LTGrWZAg3g==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-beaufort-7.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>EjjQNP2ix0gxggzd2dLdJQhZfz7iaobWnSNLN2XCA8rDPtLhnGsKcVAG7fW4/l0lM8cetpwFDHZA
+zfre1ZhmBw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-beaufort-8.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>J4sbXcL1OH6FK2X3tbQuAnQBIJeDAQ6pl0aQ55cnH1AG/CuliUOunNgxzGC3eCZgENTZWEbjzL5y
+c1B3kIEhJw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-beaufort-9.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>bl2GIHhxEIwROdb3xk6yfmMAY+zzbkJT2ejlRu2FhmDZySynclGpZNWGdieJAN4yH/SL5tUeoy1Z
+9ikAQNj6jA==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-offshore.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>vxrZCtgLk1jJuJtF3djJajA9IYtGHN8aOz+ONeI1T5edhqEv3sq3nrUdlJk93syLJUAjMy391q9U
+spKZy8Er3g==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-onshore.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>Zwoyh6aCk8YqLXWNyYqnYthAyoDLqQe4ID0TLp2/oNkKK3wS50xrSSFybT1TkFJHLfYmbAW9I5t6
+lxlSBCB86A==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind-snow.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>KO3HiYyRvPIXdSF26R0TDb35D4+Fbiq+Yp9+BHlnW4TXE3dQmSjwSYKAJjFJhwXgEZkrAajrI8LO
+DZkr1n167w==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwind.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>6cifzLzUKs2HHCdm9eVXMxBoVsa4MDfHxvzRATt9aw9kveS5I6yPDgiroFmmumbTx/1uSEq7NSsM
+xw8iSkSAHw==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwindsock-weak.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>ubMmjjDdt+W9c0LtB5Sig85lSiBYiC2mtOzoPY2LtUmyP7rSFR9tQcmTfzHHj/HWh7MDtAg8Z/kz
+veodJ3S1zg==</DigestValue>
+</Reference>
+<Reference URI="images%2Fweather-icons%2Fwindsock.svg">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>MnqUQsrCYzz9hET1fXXvyGSiRw5vNBk10btMDjozAstMq+9V6yKoTkIQo7S9kgbroLZhwRG714BG
+/IMxMLFSUw==</DigestValue>
+</Reference>
+<Reference URI="index.html">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>TK3/Pj4yltXUhy7g2gi47P4XIDLjyVXDnSRkz5JNTxAPVKTnGR3dc8iWQUlJMiS3YpfaeyxiVcv+
+vNa7VSma6A==</DigestValue>
+</Reference>
+<Reference URI="js%2Fmain.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>NRq74AGhCVcqZCmu3BwkIFCc5FAX2ZWpEIKXKLUe1OL9g2ByGlW/lnCTAUD5rNE9Kp7+sz/YTZHd
+Iyu7EIHf9g==</DigestValue>
+</Reference>
+<Reference URI="#prop">
+<Transforms>
+<Transform Algorithm="http://www.w3.org/2006/12/xml-c14n11"></Transform>
+</Transforms>
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"></DigestMethod>
+<DigestValue>/r5npk2VVA46QFJnejgONBEh4BWtjrtu9x/IFeLksjWyGmB/cMWKSJWQl7aU3YRQRZ3AesG8gF7q
+GyvKX9Snig==</DigestValue>
+</Reference>
+</SignedInfo>
+<SignatureValue>
+a5Knj3t59TItnnWG2wYTCT4LJPBbPsLK+NLH6pLPd7/mqOi1/RLkHbjyyzs4OLc2/ftnwV8ay7/1
+EuztsDHu+KYrOJFyAe85dTWT85QaqjSxNOtNhICHuMwFHhznCGZ7Y1/AEQQLOkk6xstPnpQWZM1i
+muSnzawMlqhmwzul73dNnnXXbtVf4aG4S2uFY2rYIelAJQTOw0EATewS9X5Oyh/SM1ALLlvv10P5
+bK2Tile08ScfLYYmlSJnZanfYtTHLoPeCIu8f/5zGjDvQdSVbT1s1eTTWmE5mMaR4HSJKLS7Kxo4
+lzSjGmjChZSC2OlSxgDw3MFO0jp84L7VNtvgUw==
+</SignatureValue>
+<KeyInfo>
+<X509Data>
+<X509Certificate>
+MIIEyjCCArKgAwIBAgIIIe/3+8PKQgQwDQYJKoZIhvcNAQELBQAwgY8xCzAJBgNVBAYTAktSMRQw
+EgYDVQQIDAtTb3V0aCBLb3JlYTEOMAwGA1UEBwwFU3V3b24xJjAkBgNVBAoMHVNhbXN1bmcgRWxl
+Y3Ryb25pY3MgQ28uLCBMdGQuMQswCQYDVQQLDAJWRDElMCMGA1UEAwwcVkQgREVWRUxPUEVSIFB1
+YmxpYyBDQSBDbGFzczAeFw0yNjAzMjkwNTAzNDZaFw0yNzAzMjkwNTAzNDZaMHMxETAPBgNVBAMM
+CFRpemVuU0RLMQkwBwYDVQQLDAAxCTAHBgNVBAoMADEJMAcGA1UEBwwAMQkwBwYDVQQIDAAxCTAH
+BgNVBAYTADEnMCUGCSqGSIb3DQEJARYYYS5saW5kaG9sbUBob3RsaXN0Y28uY29tMIIBIjANBgkq
+hkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAius3lnqe+2ubWJDhC1Ni47TgLdkRd0Su1Z1JGGIT41W6
+b2gZ1vhITzGM3Ok9CSk09GJueLNJSs4g4Ll4jQ04YsBsiq2BAiCyxAFprFrjH/L2CNxXZstWlRGp
+0FsSyqsQYKm3SPjE6hOerh6U23yNwMy6StGPwq+oxSsQIVqrh+pRhpmXO/csDfEL51wWGa/jG/HX
+rYqTmfrvbBKBPod1uAJJZcO04iFPVUo6X1Zc1VqDYCqimZl82hc7aTqP3vBh00NncTvb55dX1wwj
+o2NpQwb3J3DpZ45PRi3XdbtNi2RMiVZKK6K747714Wib/TQqKusvygDlrwtew04OnWChgQIDAQAB
+o0UwQzBBBgNVHREEOjA4hhRVUk46dGl6ZW46cGFja2FnZWlkPYYgVVJOOnRpemVuOmRldmljZWlk
+PVhUQ0RYTjdBNVE2Rk0wDQYJKoZIhvcNAQELBQADggIBAMBPltW/wz5tYt22s4/sNAg7tnXotTDP
+QJB4gvXyZdRkOeYYSUul2Kn9UBBGLqM1SwJA1ZRcDmqEsXnxOASHTA3tuN1AkMcOLwhOLrBCzfb9
+rte1yneI34l8gg12uzLDbEnwSQO5vfwloVYEedzGbymqiOaxQemW4nHQvMcfnV6qUfYjnvlRLwO8
+HpayYQTruPaVM9EInw0F0iSojyKmJk1b6hMjdbbHtacHIOtdTclbJmO0JaC/BzeCiMEFr9+VyGDN
+N/R0Y8tRIHW9FofPOtRSk8ynawdcTUhi3UXYvemtqP0gPeVLMYxwwhCj3hSiVx0yPx1kQaitwVCL
+FH3I5acnebO49R4m29EeN/pbEQxnJjY4ZANKIFN5bpx50/ky0VTKieoE45q8bEOB+29w4zN9Jr+e
+3DHto8FojuAal1d0P2tjG5QRlOqzmgfA9Hvo9QBEmfPRfjYYsKys8gQuBURTW+K7E3wZVWG4doy7
+Krdn25qP+AUz3bvStFwzleXZYzLhv8wZAdu0Mk3rNR3Fx9jtvEV8tO8zd4oO0CV//FT/Eadst61z
+/C9Ld7++Zo9m5ssgerbY3UxQXwT0sdZQ+N7wCde4J8F2SDV+ziqfYn+AgrIt4Hag/hJyKxsC3+cd
++meRqFhBrfyXtuT83NjXvkVVrVgIKfGqmOEVUr7/xpWy
+</X509Certificate>
+<X509Certificate>
+MIIEvDCCA6SgAwIBAgIQEFcJZvLWjnZy2s9RsDWhmTANBgkqhkiG9w0BAQ0FADCBkTELMAkGA1UE
+BhMCS1IxFDASBgNVBAgMC1NvdXRoIEtvcmVhMQ4wDAYDVQQHDAVTdXdvbjEmMCQGA1UECgwdU2Ft
+c3VuZyBFbGVjdHJvbmljcyBDby4sIEx0ZC4xCzAJBgNVBAsMAlZEMScwJQYDVQQDDB5WRCBERVZF
+TE9QRVIgUHVibGljIFJvb3QgQ2xhc3MwHhcNMjUwNjE3MTAyMDEyWhcNMjkwNjE2MjEwMDAwWjCB
+jzELMAkGA1UEBhMCS1IxFDASBgNVBAgMC1NvdXRoIEtvcmVhMQ4wDAYDVQQHDAVTdXdvbjEmMCQG
+A1UECgwdU2Ftc3VuZyBFbGVjdHJvbmljcyBDby4sIEx0ZC4xCzAJBgNVBAsMAlZEMSUwIwYDVQQD
+DBxWRCBERVZFTE9QRVIgUHVibGljIENBIENsYXNzMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIIC
+CgKCAgEAymA8xOpycAu11WBrw4n2+mIdXfA9jzgEI3wYdn7o2o4H5o22jihR8aEpsrhW+GTgi+90
+GxUGwO+o/Nwp5IFp2alNyunF251uVmsj1WtHBdWy31ex811H6dR0EfJeK5Ksb0XoOLbQP0+K6UM6
+ojXpYk1Q0aWBoIYDImgu4zsB75Q30KGVlYqvvUtr0KVNao9LhPLWda3hqe2qwFZSwd1d9N+hHO6x
+PrtnjO2cx63kPeWJ3GLmO/0phb+UdMQcGJ2KBpApb/WhN+uDjucvAOwbMFOU3NymS7BWZzS6/Rca
+8WEJkY0XBGndUaniYiqOUisQ5aP8I5HIP9EoM/wtk/ldy1CVckX1DyI1o/ZUQWPXzPsb0/cmKOB1
+N33CFvejvsrJDipIMUW8TgB5qw/WHbiOlyxPDc+G8LjJ2ww1wFw9dGVIYpAslcXGyk7r0gHW939m
+JhUIwP9xZYwGdPKSgjHgjAZrWWrE4D1KqEayHVLRhLdhYisHPuqmtuEdbXg32yxCeONdSEz0Z7I2
+CYn9RKIwBzkuWGjwtCyrvocp0AKANve64h0AV1ttlt4hwLbbnLrFtlF1RMFv6mcnz8pg6sLHLcKo
+qVJ50X9ZvMCCj22rlO0FUZ36M1CiV9HJIxH/WoPjftHHuwF+CuJv2kNZuwjTB8dtYpg5PK2sEimB
+4oJomS8CAwEAAaMQMA4wDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQ0FAAOCAQEADtwJOvOAbqqg
+iLzR9cD6HQ2Fofjcoyj69XjduhL5syzx82ASu2GeZDYOApG9Uwmb1w1hXl/UHUFHp0Ob/6SV2wXJ
+TZbBMQlOaYEYwB1crToTfSMTJ5t6LuR+mRQvdBHLFM94fRQjQz3ZZOtMsq2WvcWN7ZEUDK1KMh+R
+P5e7z1GlHCJ00lGqNMrqVf0AMRm3iYfT+46/+CL3IY3iWbn2g3e8mPr0U4ZBpAdWawfHRX21oTCU
+3b5rJ/s1G7dcvkqkvu74HrY4f0dpiRCctgdcVuQnWOPFIlLJEkYOiQV1c5Ro/cWUMCo0oR4icvHX
+b4dPFy+35NUwLfcmza3lFdLgrQ==
+</X509Certificate>
+</X509Data>
+</KeyInfo>
+<Object Id="prop"><SignatureProperties xmlns:dsp="http://www.w3.org/2009/xmldsig-properties"><SignatureProperty Id="profile" Target="#DistributorSignature"><dsp:Profile URI="http://www.w3.org/ns/widgets-digsig#profile"></dsp:Profile></SignatureProperty><SignatureProperty Id="role" Target="#DistributorSignature"><dsp:Role URI="http://www.w3.org/ns/widgets-digsig#role-distributor"></dsp:Role></SignatureProperty><SignatureProperty Id="identifier" Target="#DistributorSignature"><dsp:Identifier></dsp:Identifier></SignatureProperty></SignatureProperties></Object>
+</Signature>
