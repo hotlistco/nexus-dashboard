@@ -98,9 +98,10 @@ OPENWEATHER_UNITS=imperial
 SERPAPI_KEY=your_key_here
 SERPAPI_GEO=US-NY         # region code, e.g. US-NY for New York
 
-# Alpha Vantage (stocks) — https://www.alphavantage.co/support/#api-key (free tier)
-ALPHA_VANTAGE_API_KEY=your_key_here
-STOCK_SYMBOLS=AAPL,MSFT,GOOGL,AMZN,NVDA,TSLA
+# Twelve Data (stocks + 6-month history) — https://twelvedata.com (800 free credits/day)
+TWELVE_DATA_API_KEY=your_key_here
+# ETF proxies for indices: QQQ=NASDAQ 100, SPY=S&P 500, DIA=Dow Jones
+STOCK_SYMBOLS=AAPL,MSFT,NVDA,QQQ,SPY,DIA
 
 # Google Tasks OAuth — see setup below
 GOOGLE_CLIENT_ID=your_client_id
@@ -155,11 +156,12 @@ Open `http://localhost:5173` in a browser. The dashboard auto-rotates through pa
 3. Set `SERPAPI_KEY` in `server/.env`.
 4. Set `SERPAPI_GEO` to a region code like `US-NY`, `US-CA`, or `US` for national. Find codes at https://serpapi.com/google-trends-api under the `geo` parameter.
 
-### Alpha Vantage (stocks)
+### Twelve Data (stocks)
 
-1. Go to https://www.alphavantage.co/support/#api-key and claim a free key.
-2. Set `ALPHA_VANTAGE_API_KEY` in `server/.env`.
-3. Set `STOCK_SYMBOLS` to a comma-separated list of up to ~6 tickers (free tier is rate-limited; more symbols means slower refresh).
+1. Go to https://twelvedata.com and create a free account (800 credits/day free).
+2. Copy your API key from the dashboard.
+3. Set `TWELVE_DATA_API_KEY` in `server/.env`.
+4. Set `STOCK_SYMBOLS` to a comma-separated list of up to 8 tickers. Use ETF proxies for indices: `QQQ` (NASDAQ 100), `SPY` (S&P 500), `DIA` (Dow Jones). The server caches quotes for 15 minutes and history for 4 hours to stay within free tier limits.
 
 ### Google Tasks OAuth
 

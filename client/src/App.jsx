@@ -367,29 +367,73 @@ function TrendsMode({ items }) {
   );
 }
 
+function Sparkline({ history, positive }) {
+  if (!history?.length) return null;
+  const W = 300; const H = 52; const pad = 2;
+  const min = Math.min(...history);
+  const max = Math.max(...history);
+  const range = max - min || 1;
+  const pts = history.map((v, i) => {
+    const x = (pad + (i / (history.length - 1)) * (W - pad * 2)).toFixed(1);
+    const y = (H - pad - ((v - min) / range) * (H - pad * 2)).toFixed(1);
+    return `${x},${y}`;
+  });
+  const color = positive ? '#86efac' : '#f87171';
+  const areaPoints = `${pad},${H} ${pts.join(' ')} ${W - pad},${H}`;
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: '100%', height: '100%' }} preserveAspectRatio="none">
+      <polygon points={areaPoints} fill={color} fillOpacity={0.12} />
+      <polyline points={pts.join(' ')} fill="none" stroke={color} strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 function StocksMode({ items }) {
   return (
     <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
-      <SectionTitle>Detailed stocks</SectionTitle>
-      <div style={{ flex: 1, display: 'grid', gridTemplateRows: `repeat(${items.length}, 1fr)`, gap: 10, minHeight: 0 }}>
-        {items.map((stock) => (
-          <Card key={stock.symbol} style={{ padding: '0 20px', display: 'grid', gridTemplateColumns: '140px 160px 140px 1fr', alignItems: 'center', gap: 12 }}>
-            <div style={{ fontSize: 26, fontWeight: 700 }}>{stock.symbol}</div>
-            <div style={{ fontSize: 24 }}>{stock.price}</div>
-            <div style={{ fontSize: 22, color: stock.positive ? '#86efac' : '#fca5a5' }}>{stock.change}</div>
-            <div style={{ position: 'relative', height: 36, borderRadius: 999, background: 'rgba(255,255,255,0.07)' }}>
-              {stock.high > stock.low && (
-                <div style={{
-                  position: 'absolute', top: '50%', transform: 'translateY(-50%)',
-                  left: `${((stock.current - stock.low) / (stock.high - stock.low)) * 100}%`,
-                  width: 10, height: 24, borderRadius: 4,
-                  background: stock.positive ? '#86efac' : '#f87171',
-                  marginLeft: -5
-                }} />
-              )}
-            </div>
-          </Card>
-        ))}
+      <SectionTitle>Stocks &amp; indices - 6 Months</SectionTitle>
+      <div style={{ flex: 1, display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gridTemplateRows: 'repeat(2, 1fr)', gap: 10, minHeight: 0 }}>
+        {items.map((stock) => {
+          const h = stock.history || [];
+          const startPrice   = h.length ? h[0] : null;
+          const periodHigh   = h.length ? Math.max(...h) : null;
+          const periodLow    = h.length ? Math.min(...h) : null;
+          const periodChange = startPrice ? ((stock.current - startPrice) / startPrice * 100) : null;
+          const fmt = (n) => n != null ? `$${n.toFixed(2)}` : '—';
+          const fmtPct = (n) => n != null ? `${n >= 0 ? '+' : ''}${n.toFixed(1)}%` : '—';
+          return (
+            <Card key={stock.symbol} style={{ padding: '12px 16px', display: 'flex', flexDirection: 'column', gap: 6 }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                <div>
+                  <div style={{ fontSize: 26, fontWeight: 700, lineHeight: 1 }}>{stock.symbol}</div>
+                  {stock.name && stock.name !== stock.symbol && (
+                    <div style={{ fontSize: 12, color: '#94a3b8', marginTop: 2, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', maxWidth: 160 }}>{stock.name}</div>
+                  )}
+                </div>
+                <div style={{ textAlign: 'right' }}>
+                  <div style={{ fontSize: 24, fontWeight: 600, lineHeight: 1 }}>{stock.price}</div>
+                  <div style={{ fontSize: 15, color: stock.positive ? '#86efac' : '#fca5a5', marginTop: 2 }}>{stock.change} today</div>
+                </div>
+              </div>
+              <div style={{ flex: 1, minHeight: 0 }}>
+                <Sparkline history={h} positive={periodChange >= 0} />
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 4 }}>
+                {[
+                  { label: 'Start', value: fmt(startPrice) },
+                  { label: '6mo', value: fmtPct(periodChange), color: periodChange >= 0 ? '#86efac' : '#fca5a5' },
+                  { label: 'High', value: fmt(periodHigh), color: '#86efac' },
+                  { label: 'Low',  value: fmt(periodLow),  color: '#fca5a5' },
+                ].map(({ label, value, color }) => (
+                  <div key={label} style={{ background: 'rgba(255,255,255,0.05)', borderRadius: 8, padding: '4px 8px' }}>
+                    <div style={{ fontSize: 11, color: '#64748b', textTransform: 'uppercase', letterSpacing: 1 }}>{label}</div>
+                    <div style={{ fontSize: 15, color: color || '#d8e2ef', fontWeight: 600, marginTop: 1 }}>{value}</div>
+                  </div>
+                ))}
+              </div>
+            </Card>
+          );
+        })}
       </div>
     </div>
   );

@@ -6,9 +6,9 @@ const modes = ['nythome', 'nyttech', 'weather', 'trends', 'stocks', 'wod', 'task
 const modeDurationsMs = {
   nythome: 60000,
   nyttech: 60000,
-  weather: 20000,
+  weather: 30000,
   trends: 60000,
-  stocks: 16000,
+  stocks: 60000,
   wod: 30000,
   tasks: 30000
 };
