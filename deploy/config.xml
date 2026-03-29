@@ -15,6 +15,7 @@
     <tizen:metadata key="http://tizen.org/metadata/app_ui_type/base_screen_resolution" value="extensive"/>
     <feature name="http://tizen.org/feature/tv.inputdevice" />
     <tizen:privilege name="http://tizen.org/privilege/internet" />
+    <tizen:privilege name="http://tizen.org/privilege/power" />
     <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice" />
     <access origin="*" subdomains="true" />
     <tizen:profile name="tv-samsung" />

@@ -265,8 +265,8 @@ function NytHomeMode({ items }) {
         {/* Lead story — square */}
         <Card style={{ aspectRatio: '1 / 1', height: '100%', flexShrink: 0, padding: 0, overflow: 'hidden', position: 'relative', backgroundImage: lead.image ? `linear-gradient(to bottom, rgba(2,6,23,0.1) 0%, rgba(2,6,23,0.82) 100%), url(${lead.image})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '20px 24px' }}>
-            <div style={{ fontSize: 30, lineHeight: 1.2, fontWeight: 700 }}>{lead.title}</div>
-            {lead.description && <div style={{ fontSize: 16, color: '#d8e2ef', marginTop: 8, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{lead.description}</div>}
+            <div style={{ fontSize: 38, lineHeight: 1.2, fontWeight: 700 }}>{lead.title}</div>
+            {lead.description && <div style={{ fontSize: 22, color: '#d8e2ef', marginTop: 8, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{lead.description}</div>}
             {lead.date && <div style={{ fontSize: 13, color: '#7dd3fc', marginTop: 8 }}>{lead.date}</div>}
           </div>
         </Card>
@@ -275,8 +275,8 @@ function NytHomeMode({ items }) {
           {rest.slice(0, 3).map((item) => (
             <Card key={item.title} style={{ padding: 0, overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'flex-end', backgroundImage: item.image ? `linear-gradient(to bottom, rgba(2,6,23,0.05) 0%, rgba(2,6,23,0.88) 60%), url(${item.image})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
               <div style={{ padding: '14px 18px' }}>
-                <div style={{ fontSize: 20, lineHeight: 1.3, fontWeight: 600 }}>{item.title}</div>
-                {item.description && <div style={{ fontSize: 15, color: '#d8e2ef', marginTop: 5, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{item.description}</div>}
+                <div style={{ fontSize: 26, lineHeight: 1.3, fontWeight: 600 }}>{item.title}</div>
+                {item.description && <div style={{ fontSize: 19, color: '#d8e2ef', marginTop: 5, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{item.description}</div>}
                 {item.date && <div style={{ fontSize: 13, color: '#7dd3fc', marginTop: 5 }}>{item.date}</div>}
               </div>
             </Card>
@@ -300,8 +300,8 @@ function NytTechMode({ items }) {
       <div style={{ flex: 1, display: 'flex', gap: 12, minHeight: 0 }}>
         <Card style={{ aspectRatio: '1 / 1', height: '100%', flexShrink: 0, padding: 0, overflow: 'hidden', position: 'relative', backgroundImage: lead.image ? `linear-gradient(to bottom, rgba(2,6,23,0.1) 0%, rgba(2,6,23,0.82) 100%), url(${lead.image})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '20px 24px' }}>
-            <div style={{ fontSize: 30, lineHeight: 1.2, fontWeight: 700 }}>{lead.title}</div>
-            {lead.description && <div style={{ fontSize: 16, color: '#d8e2ef', marginTop: 8, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{lead.description}</div>}
+            <div style={{ fontSize: 38, lineHeight: 1.2, fontWeight: 700 }}>{lead.title}</div>
+            {lead.description && <div style={{ fontSize: 22, color: '#d8e2ef', marginTop: 8, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{lead.description}</div>}
             {lead.date && <div style={{ fontSize: 13, color: '#7dd3fc', marginTop: 8 }}>{lead.date}</div>}
           </div>
         </Card>
@@ -309,8 +309,8 @@ function NytTechMode({ items }) {
           {rest.slice(0, 3).map((item) => (
             <Card key={item.title} style={{ padding: 0, overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'flex-end', backgroundImage: item.image ? `linear-gradient(to bottom, rgba(2,6,23,0.05) 0%, rgba(2,6,23,0.88) 60%), url(${item.image})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
               <div style={{ padding: '14px 18px' }}>
-                <div style={{ fontSize: 20, lineHeight: 1.3, fontWeight: 600 }}>{item.title}</div>
-                {item.description && <div style={{ fontSize: 15, color: '#d8e2ef', marginTop: 5, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{item.description}</div>}
+                <div style={{ fontSize: 26, lineHeight: 1.3, fontWeight: 600 }}>{item.title}</div>
+                {item.description && <div style={{ fontSize: 19, color: '#d8e2ef', marginTop: 5, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{item.description}</div>}
                 {item.date && <div style={{ fontSize: 13, color: '#7dd3fc', marginTop: 5 }}>{item.date}</div>}
               </div>
             </Card>
@@ -344,24 +344,21 @@ function TrendsMode({ items }) {
       <SectionTitle>Trending searches</SectionTitle>
       <div style={{ flex: 1, display: 'grid', gridTemplateRows: `repeat(${items.length}, 1fr)`, gap: 10, minHeight: 0 }}>
         {items.map((item, index) => (
-          <Card key={item.query} style={{ padding: '8px 20px', display: 'grid', gridTemplateColumns: '70px 1fr auto', alignItems: 'center', gap: 12 }}>
-            <div style={{ fontSize: 24, color: '#b9c6d8' }}>#{index + 1}</div>
-            <div>
-              <div style={{ fontSize: 24, fontWeight: 600 }}>{item.query}</div>
+          <Card key={item.query} style={{ padding: '8px 20px', display: 'grid', gridTemplateColumns: '70px 1fr', alignItems: 'center', gap: 16 }}>
+            <div style={{ fontSize: 28, color: '#b9c6d8' }}>#{index + 1}</div>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 20, minWidth: 0 }}>
+              <div style={{ fontSize: 30, fontWeight: 600, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', flexShrink: 0 }}>{item.query}</div>
               {item.breakdown?.length > 0 && (
-                <div style={{ fontSize: 13, color: '#94a3b8', marginTop: 2 }}>{item.breakdown.slice(0, 4).join(' · ')}</div>
+                <div style={{ fontSize: 17, color: '#94a3b8', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{item.breakdown.slice(0, 4).join(' · ')}</div>
               )}
-            </div>
-            <div style={{ textAlign: 'right' }}>
-              {item.increasePercentage != null && (
-                <div style={{ fontSize: 16, color: '#86efac' }}>+{item.increasePercentage}%</div>
-              )}
-              {item.startTimestamp != null && (
-                <div style={{ fontSize: 13, color: '#94a3b8' }}>{timeAgo(item.startTimestamp)}</div>
-              )}
-              {item.volume != null && (
-                <div style={{ fontSize: 14, color: '#7dd3fc' }}>{formatVolume(item.volume)}</div>
-              )}
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: 16, marginLeft: 'auto', flexShrink: 0 }}>
+                {item.volume != null && (
+                  <div style={{ fontSize: 20, color: '#7dd3fc' }}>{formatVolume(item.volume)}</div>
+                )}
+                {item.startTimestamp != null && (
+                  <div style={{ fontSize: 17, color: '#86efac' }}>{timeAgo(item.startTimestamp)}</div>
+                )}
+              </div>
             </div>
           </Card>
         ))}

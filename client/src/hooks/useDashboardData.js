@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { dashboardApi } from '../lib/api';
-import { initTizenRemoteKeys, isTizenDevice } from '../lib/tizenRemote';
+import { initTizenPower, initTizenRemoteKeys, isTizenDevice } from '../lib/tizenRemote';
 
 const modes = ['nythome', 'nyttech', 'weather', 'trends', 'stocks', 'wod', 'tasks'];
 const modeDurationsMs = {
@@ -200,6 +200,7 @@ export function useDashboardData() {
   }, [modeIndex, data.tasks]);
 
   useEffect(() => {
+    initTizenPower();
     initTizenRemoteKeys();
 
     const onKeyDown = (event) => {

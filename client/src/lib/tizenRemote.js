@@ -8,6 +8,14 @@ const OPTIONAL_KEYS = [
   'ColorF3Blue'
 ];
 
+export function initTizenPower() {
+  try {
+    globalThis?.tizen?.power?.request('SCREEN', 'SCREEN_NORMAL');
+  } catch (error) {
+    console.warn('tizen.power.request failed', error);
+  }
+}
+
 export function initTizenRemoteKeys() {
   const tvInput = globalThis?.tizen?.tvinputdevice;
   if (!tvInput) return;
