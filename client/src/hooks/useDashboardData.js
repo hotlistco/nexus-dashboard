@@ -77,6 +77,8 @@ export function useDashboardData() {
     updatedAt: null
   });
   const [modeIndex, setModeIndex] = useState(0);
+  const [direction, setDirection] = useState('forward');
+  const [transitionKey, setTransitionKey] = useState(0);
   const [learningIndex, setLearningIndex] = useState(0);
   const [rotationPaused, setRotationPaused] = useState(false);
   const [lastRemoteAction, setLastRemoteAction] = useState('');
@@ -137,16 +139,24 @@ export function useDashboardData() {
   }, []);
 
   const nextMode = useCallback(() => {
+    setDirection('forward');
+    setTransitionKey((k) => k + 1);
     setModeIndex((current) => (current + 1) % modes.length);
   }, []);
 
   const previousMode = useCallback(() => {
+    setDirection('backward');
+    setTransitionKey((k) => k + 1);
     setModeIndex((current) => (current - 1 + modes.length) % modes.length);
   }, []);
 
   const jumpToMode = useCallback((modeName) => {
     const targetIndex = modes.indexOf(modeName);
-    if (targetIndex >= 0) setModeIndex(targetIndex);
+    if (targetIndex >= 0) {
+      setDirection('forward');
+      setTransitionKey((k) => k + 1);
+      setModeIndex(targetIndex);
+    }
   }, []);
 
   const toggleRotationPaused = useCallback(() => {
@@ -258,6 +268,8 @@ export function useDashboardData() {
       timeText: clock.timeText,
       dateText: clock.dateText,
       currentMode: modes[modeIndex],
+      direction,
+      transitionKey,
       learning: learningPool[learningIndex],
       refresh,
       rotationPaused,
@@ -268,6 +280,6 @@ export function useDashboardData() {
       nytHome: data.nytHome,
       nytTech: data.nytTech
     }),
-    [data, clock, modeIndex, learningIndex, refresh, rotationPaused, lastRemoteAction, activeTaskGroupIndex]
+    [data, clock, modeIndex, direction, transitionKey, learningIndex, refresh, rotationPaused, lastRemoteAction, activeTaskGroupIndex]
   );
 }

@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect } from 'react';
+import { useMemo, useState, useEffect, useLayoutEffect, useRef } from 'react';
 import { useDashboardData } from './hooks/useDashboardData';
 
 const OW_TO_BASMILIUS = {
@@ -265,8 +265,8 @@ function NytHomeMode({ items }) {
         {/* Lead story — square */}
         <Card style={{ aspectRatio: '1 / 1', height: '100%', flexShrink: 0, padding: 0, overflow: 'hidden', position: 'relative', backgroundImage: lead.image ? `linear-gradient(to bottom, rgba(2,6,23,0.1) 0%, rgba(2,6,23,0.82) 100%), url(${lead.image})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '20px 24px' }}>
-            <div style={{ fontSize: 38, lineHeight: 1.2, fontWeight: 700 }}>{lead.title}</div>
-            {lead.description && <div style={{ fontSize: 22, color: '#d8e2ef', marginTop: 8, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{lead.description}</div>}
+            <div style={{ fontSize: 46, lineHeight: 1.2, fontWeight: 700 }}>{lead.title}</div>
+            {lead.description && <div style={{ fontSize: 26, color: '#d8e2ef', marginTop: 8, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{lead.description}</div>}
             {lead.date && <div style={{ fontSize: 13, color: '#7dd3fc', marginTop: 8 }}>{lead.date}</div>}
           </div>
         </Card>
@@ -275,8 +275,8 @@ function NytHomeMode({ items }) {
           {rest.slice(0, 3).map((item) => (
             <Card key={item.title} style={{ padding: 0, overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'flex-end', backgroundImage: item.image ? `linear-gradient(to bottom, rgba(2,6,23,0.05) 0%, rgba(2,6,23,0.88) 60%), url(${item.image})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
               <div style={{ padding: '14px 18px' }}>
-                <div style={{ fontSize: 26, lineHeight: 1.3, fontWeight: 600 }}>{item.title}</div>
-                {item.description && <div style={{ fontSize: 19, color: '#d8e2ef', marginTop: 5, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{item.description}</div>}
+                <div style={{ fontSize: 32, lineHeight: 1.3, fontWeight: 600 }}>{item.title}</div>
+                {item.description && <div style={{ fontSize: 22, color: '#d8e2ef', marginTop: 5, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{item.description}</div>}
                 {item.date && <div style={{ fontSize: 13, color: '#7dd3fc', marginTop: 5 }}>{item.date}</div>}
               </div>
             </Card>
@@ -300,8 +300,8 @@ function NytTechMode({ items }) {
       <div style={{ flex: 1, display: 'flex', gap: 12, minHeight: 0 }}>
         <Card style={{ aspectRatio: '1 / 1', height: '100%', flexShrink: 0, padding: 0, overflow: 'hidden', position: 'relative', backgroundImage: lead.image ? `linear-gradient(to bottom, rgba(2,6,23,0.1) 0%, rgba(2,6,23,0.82) 100%), url(${lead.image})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, padding: '20px 24px' }}>
-            <div style={{ fontSize: 38, lineHeight: 1.2, fontWeight: 700 }}>{lead.title}</div>
-            {lead.description && <div style={{ fontSize: 22, color: '#d8e2ef', marginTop: 8, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{lead.description}</div>}
+            <div style={{ fontSize: 46, lineHeight: 1.2, fontWeight: 700 }}>{lead.title}</div>
+            {lead.description && <div style={{ fontSize: 26, color: '#d8e2ef', marginTop: 8, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{lead.description}</div>}
             {lead.date && <div style={{ fontSize: 13, color: '#7dd3fc', marginTop: 8 }}>{lead.date}</div>}
           </div>
         </Card>
@@ -309,8 +309,8 @@ function NytTechMode({ items }) {
           {rest.slice(0, 3).map((item) => (
             <Card key={item.title} style={{ padding: 0, overflow: 'hidden', position: 'relative', display: 'flex', alignItems: 'flex-end', backgroundImage: item.image ? `linear-gradient(to bottom, rgba(2,6,23,0.05) 0%, rgba(2,6,23,0.88) 60%), url(${item.image})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
               <div style={{ padding: '14px 18px' }}>
-                <div style={{ fontSize: 26, lineHeight: 1.3, fontWeight: 600 }}>{item.title}</div>
-                {item.description && <div style={{ fontSize: 19, color: '#d8e2ef', marginTop: 5, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{item.description}</div>}
+                <div style={{ fontSize: 32, lineHeight: 1.3, fontWeight: 600 }}>{item.title}</div>
+                {item.description && <div style={{ fontSize: 22, color: '#d8e2ef', marginTop: 5, lineHeight: 1.4, display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{item.description}</div>}
                 {item.date && <div style={{ fontSize: 13, color: '#7dd3fc', marginTop: 5 }}>{item.date}</div>}
               </div>
             </Card>
@@ -531,24 +531,66 @@ function WodMode({ wod }) {
   );
 }
 
-function MainZone(props) {
-  const style = { height: '100%', padding: 24, boxSizing: 'border-box', animation: 'fadeSlide 600ms ease' };
-  switch (props.mode) {
-    case 'weather': return <WeatherMode weather={props.weather} />;
-    case 'trends': return <Card style={style}><TrendsMode items={props.trends} /></Card>;
-    case 'stocks': return <Card style={style}><StocksMode items={props.stocks} /></Card>;
-    case 'wod': return <WodMode wod={props.wod} />;
-    case 'learning': return <LearningMode learning={props.learning} />;
-    case 'tasks': return <FullScreenTasksMode tasks={props.tasks} activeTaskGroupIndex={props.activeTaskGroupIndex} tasksSourceLabel={props.tasksSourceLabel} />;
-    case 'nythome': return <Card style={style}><NytHomeMode items={props.nytHome} /></Card>;
+function buildMainContent(mode, p, cardStyle) {
+  switch (mode) {
+    case 'weather': return <WeatherMode weather={p.weather} />;
+    case 'trends': return <Card style={cardStyle}><TrendsMode items={p.trends} /></Card>;
+    case 'stocks': return <Card style={cardStyle}><StocksMode items={p.stocks} /></Card>;
+    case 'wod': return <WodMode wod={p.wod} />;
+    case 'learning': return <LearningMode learning={p.learning} />;
+    case 'tasks': return <FullScreenTasksMode tasks={p.tasks} activeTaskGroupIndex={p.activeTaskGroupIndex} tasksSourceLabel={p.tasksSourceLabel} />;
+    case 'nythome': return <Card style={cardStyle}><NytHomeMode items={p.nytHome} /></Card>;
     case 'nyttech':
     default:
-      return <Card style={style}><NytTechMode items={props.nytTech} /></Card>;
+      return <Card style={cardStyle}><NytTechMode items={p.nytTech} /></Card>;
   }
 }
 
+function MainZone(props) {
+  const DURATION = 400;
+  const cardStyle = { height: '100%', padding: 24, boxSizing: 'border-box' };
+
+  const [exitNode, setExitNode] = useState(null);
+  const [exitDir, setExitDir] = useState('forward');
+  const [exitKey, setExitKey] = useState(0);
+  const prevKeyRef = useRef(props.transitionKey);
+  const prevPropsRef = useRef(props);
+
+  useLayoutEffect(() => {
+    if (props.transitionKey !== prevKeyRef.current) {
+      setExitNode(buildMainContent(prevPropsRef.current.mode, prevPropsRef.current, cardStyle));
+      setExitDir(props.direction);
+      setExitKey((k) => k + 1);
+      prevKeyRef.current = props.transitionKey;
+    }
+    prevPropsRef.current = props;
+  });
+
+  useEffect(() => {
+    if (!exitNode) return;
+    const t = setTimeout(() => setExitNode(null), DURATION + 50);
+    return () => clearTimeout(t);
+  }, [exitNode]);
+
+  const enterAnim = props.direction === 'backward' ? 'cubeInBackward' : 'cubeInForward';
+  const exitAnim  = exitDir === 'backward' ? 'cubeOutBackward' : 'cubeOutForward';
+
+  return (
+    <div style={{ height: '100%', position: 'relative' }}>
+      {exitNode && (
+        <div key={exitKey} style={{ position: 'absolute', inset: 0, zIndex: 1, animation: `${exitAnim} ${DURATION}ms ease forwards` }}>
+          {exitNode}
+        </div>
+      )}
+      <div style={{ height: '100%', animation: exitNode ? `${enterAnim} ${DURATION}ms ease ${DURATION}ms both` : 'none' }}>
+        {buildMainContent(props.mode, props, cardStyle)}
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
-  const { timeText, dateText, weather, nytHome, nytTech, trends, stocks, tasks, wod, learning, currentMode, error, updatedAt, rotationPaused, lastRemoteAction, remoteSupported, activeTaskGroupIndex } = useDashboardData();
+  const { timeText, dateText, weather, nytHome, nytTech, trends, stocks, tasks, wod, learning, currentMode, direction, transitionKey, error, updatedAt, rotationPaused, lastRemoteAction, remoteSupported, activeTaskGroupIndex } = useDashboardData();
 
   const tasksSourceLabel = tasks?.configured ? (tasks?.listName || 'Google Tasks') : 'Sample tasks';
 
@@ -562,7 +604,22 @@ export default function App() {
     <div style={{ width: '100vw', height: '100vh', overflow: 'hidden', color: '#fff', background: 'radial-gradient(circle at top, #1e3a5f 0%, #0f172a 45%, #020617 100%)', boxSizing: 'border-box', padding: 20 }}>
       <style>{`
         * { box-sizing: border-box; }
-        @keyframes fadeSlide { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes cubeInForward {
+          from { transform: translateX(100%); }
+          to   { transform: translateX(0); }
+        }
+        @keyframes cubeInBackward {
+          from { transform: translateX(-100%); }
+          to   { transform: translateX(0); }
+        }
+        @keyframes cubeOutForward {
+          from { transform: translateX(0); }
+          to   { transform: translateX(-100%); }
+        }
+        @keyframes cubeOutBackward {
+          from { transform: translateX(0); }
+          to   { transform: translateX(100%); }
+        }
       `}</style>
 
       <div style={{ height: '100%', borderRadius: 24, padding: '16px 20px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 25px 80px rgba(0,0,0,0.4)', display: 'grid', gridTemplateRows: '120px 1fr auto', gap: 16 }}>
@@ -585,7 +642,7 @@ export default function App() {
 
         {/* Main zone */}
         <div style={{ position: 'relative', minHeight: 0, overflow: 'hidden' }}>
-          <MainZone mode={currentMode} weather={weather} nytHome={nytHome} nytTech={nytTech} trends={trends} stocks={stocks} tasks={tasks} wod={wod} learning={learning} activeTaskGroupIndex={activeTaskGroupIndex} tasksSourceLabel={tasksSourceLabel} />
+          <MainZone direction={direction} transitionKey={transitionKey} mode={currentMode} weather={weather} nytHome={nytHome} nytTech={nytTech} trends={trends} stocks={stocks} tasks={tasks} wod={wod} learning={learning} activeTaskGroupIndex={activeTaskGroupIndex} tasksSourceLabel={tasksSourceLabel} />
           {lastRemoteAction ? (
             <div style={{ position: 'absolute', top: 16, right: 16, padding: '10px 16px', borderRadius: 12, background: 'rgba(2,6,23,0.82)', border: '1px solid rgba(125,211,252,0.3)', color: '#e2e8f0', fontSize: 18, backdropFilter: 'blur(8px)', visibility: 'hidden' }}>
               {lastRemoteAction}

@@ -16,6 +16,7 @@
     <feature name="http://tizen.org/feature/tv.inputdevice" />
     <tizen:privilege name="http://tizen.org/privilege/internet" />
     <tizen:privilege name="http://tizen.org/privilege/power" />
+    <tizen:privilege name="http://developer.samsung.com/privilege/appcommon" />
     <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice" />
     <access origin="*" subdomains="true" />
     <tizen:profile name="tv-samsung" />

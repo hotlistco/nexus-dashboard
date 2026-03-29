@@ -9,6 +9,16 @@ const OPTIONAL_KEYS = [
 ];
 
 export function initTizenPower() {
+  // Samsung TV screensaver API (Tizen TV / webapis)
+  try {
+    const appcommon = globalThis?.webapis?.appcommon;
+    if (appcommon?.setScreenSaver) {
+      appcommon.setScreenSaver(appcommon.AppCommonScreenSaverState.SCREEN_SAVER_OFF);
+    }
+  } catch (error) {
+    console.warn('webapis.appcommon.setScreenSaver failed', error);
+  }
+  // Fallback: generic Tizen power API (works on some platforms)
   try {
     globalThis?.tizen?.power?.request('SCREEN', 'SCREEN_NORMAL');
   } catch (error) {
